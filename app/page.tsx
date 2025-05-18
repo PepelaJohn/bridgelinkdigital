@@ -17,7 +17,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'BridgeLink | Home',
-  description: 'BridgeLink - IT Solutions and Services React Nextjs Template',
+  description: 'BridgeLink - IT Solutions and Services .',
 };
 
 export default function Page() {
