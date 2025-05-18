@@ -23,7 +23,7 @@ export function ModeToggle() {
         <DropdownMenuTrigger asChild>
           <div
             aria-label="theme switcher"
-            className="grid h-12 w-12 cursor-pointer place-items-center rounded-5 bg-primary p-0 text-white hover:bg-primary-light"
+            className="flex items-center justify-center h-12 w-12 cursor-pointer place-items-center  rounded-5 bg-primary p-0 text-white hover:bg-primary-light"
           >
             <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
             <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
