@@ -1,272 +1,134 @@
 'use client';
 
 import { Container } from '@/src/components/container';
+
 import { ImageProps, LinkProps } from '@/src/common-types';
 import { Button } from '@/src/components/button';
 import { CustomLink } from '@/src/components/custom-link';
-import { Shapes } from '../v1/shapes';
+import { Shapes } from './../v1/shapes';
 import { heroData } from '@/data/hero/v1';
 import { cn } from '@/src/utils/shadcn';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectFade, Navigation, Autoplay, Pagination } from 'swiper';
-import { Swiper as SwiperType } from 'swiper/types';
-import { useRef, useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, Play, Pause } from 'lucide-react';
+import styles from './hero.module.css';
+import SwiperCore, { EffectFade } from 'swiper';
+import { Swiper as SwiperType, Navigation } from 'swiper';
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/effect-fade';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import 'swiper/swiper-bundle.min.css';
+import { useRef } from 'react';
+import { FaArrowLeftLong, FaArrowRightLong } from 'react-icons/fa6';
 
-export interface HeroSlide {
-  title: string;
-  subtitle?: string;
-  description?: string;
-  image: Omit<ImageProps, 'width' | 'height'>;
-  button: LinkProps;
-}
+SwiperCore.use([EffectFade, Navigation]);
+
+const navigationButtonCommonClasses = cn(
+  'w-[60px] relative z-40 h-[60px] grid place-items-center leading-none text-[1.25rem] bg-accent-900 hover:bg-primary transition-all duration-300 text-white rounded-full'
+);
 
 export interface HeroProps {
-  items: HeroSlide[];
+  items: {
+    title: string;
+    image: Omit<ImageProps, 'width' | 'height'>;
+    button: LinkProps;
+  }[];
 }
 
+/** This section is expected to be used at the top of a given page */
 export function Hero() {
   const swiperRef = useRef<SwiperType>();
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(true);
-  const [isLoaded, setIsLoaded] = useState(false);
   const { items } = heroData;
-
-  useEffect(() => {
-    setIsLoaded(true);
-  }, []);
-
-  const toggleAutoplay = () => {
-    if (swiperRef.current) {
-      if (isPlaying) {
-        swiperRef.current.autoplay.stop();
-      } else {
-        swiperRef.current.autoplay.start();
-      }
-      setIsPlaying(!isPlaying);
-    }
-  };
-
-  const goToSlide = (index: number) => {
-    if (swiperRef.current) {
-      swiperRef.current.slideTo(index);
-    }
-  };
-
-  if (!items || items.length === 0) {
-    return null;
-  }
-
   return (
-    <section className="relative h-screen overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
-      {/* Animated Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(120,119,198,0.3),transparent_50%)]" />
-        <div className="h-full w-full bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIj48Y2lyY2xlIGN4PSIzNiIgY3k9IjUiIHI9IjUiLz48Y2lyY2xlIGN4PSI2IiBjeT0iNSIgcj0iNSIvPjxjaXJjbGUgY3g9IjM2IiBjeT0iMjMiIHI9IjUiLz48Y2lyY2xlIGN4PSI2IiBjeT0iMjMiIHI9IjUiLz48Y2lyY2xlIGN4PSIzNiIgY3k9IjQxIiByPSI1Ii8+PGNpcmNsZSBjeD0iNiIgY3k9IjQxIiByPSI1Ii8+PGNpcmNsZSBjeD0iMzYiIGN5PSI1OSIgcj0iNSIvPjxjaXJjbGUgY3g9IjYiIGN5PSI1OSIgcj0iNSIvPjwvZz48L2c+PC9zdmc+')] opacity-20" />
-      </div>
+    <section className={styles['hero']}>
+      {items && items.length > 0 && (
+        <Swiper
+          effect="fade"
+          loop
+          speed={300}
+          autoplay={{ delay: 3000 }}
+          onBeforeInit={(swiper) => {
+            swiperRef.current = swiper;
+          }}
+        >
+          {items.map((item, index) => (
+            <SwiperSlide key={index}>
+              <div
+                className={cn(
+                  'relative flex items-center justify-center overflow-hidden py-16 sm:py-20 md:py-24 lg:min-h-screen lg:py-28 xl:py-32'
+                )}
+              >
+                {/* Shapes  */}
+                <Shapes />
 
-      <Swiper
-        modules={[EffectFade, Navigation, Autoplay, Pagination]}
-        effect="fade"
-        speed={800}
-        loop={true}
-        autoplay={{
-          delay: 5000,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true,
-        }}
-        fadeEffect={{
-          crossFade: true,
-        }}
-        onSwiper={(swiper) => {
-          swiperRef.current = swiper;
-        }}
-        onSlideChange={(swiper) => {
-          setCurrentSlide(swiper.realIndex);
-        }}
-        className="h-full w-full"
-      >
-        {items.map((item, index) => (
-          <SwiperSlide key={index}>
-            <div className="relative flex h-full items-center justify-center">
-              {/* Background Image with Overlay */}
-              <div className="absolute inset-0">
                 <div
-                  className="duration-[8000ms] h-full w-full bg-cover bg-center bg-no-repeat transition-transform ease-out hover:scale-105"
+                  className={cn(
+                    'absolute inset-0 -z-1  bg-accent-700 bg-cover bg-no-repeat bg-blend-luminosity [background-position:top_center] [transform:scale(1)] [transition:7000ms_ease,opacity_1500ms_ease-in]',
+                    styles['hero-bg'],
+                    // before
+                    'before:absolute before:inset-0 before:bg-[#EDF8FE] before:opacity-80  dark:before:bg-accent-900',
+                    // after
+                    'after:absolute after:inset-0  after:[background:linear-gradient(180deg,rgba(255,255,255,0)_0%,#FFFFFF_100%)]  dark:after:[background:linear-gradient(180deg,rgba(20,20,22,0.00)_0%,#141416_100%)]'
+                  )}
                   style={{ backgroundImage: `url(${item.image.src})` }}
                 />
-                {/* Gradient Overlays */}
-                <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30" />
-              </div>
 
-              {/* Decorative Shapes */}
-              <Shapes />
-
-              {/* Content */}
-              <Container >
-                <div className="flex h-full items-center">
+                <Container>
+                  {/* Main content  */}
                   <div
                     className={cn(
-                      'max-w-3xl transform space-y-8 transition-all duration-1000 ease-out',
-                      isLoaded
-                        ? 'translate-y-0 opacity-100'
-                        : 'translate-y-12 opacity-0'
+                      'relative z-10 mx-auto max-w-[800px] text-center text-accent-900 dark:text-white lg:mt-[60px]',
+                      styles['hero-content']
                     )}
-                    style={{
-                      transitionDelay: `${index * 200}ms`,
-                    }}
                   >
-                    {/* Subtitle */}
-                    {/* {item?.subtitle && (
-                      <div className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-2 backdrop-blur-sm">
-                        <span className="text-sm font-medium tracking-wide text-white/90">
-                          {item.subtitle}
-                        </span>
-                      </div>
-                    )} */}
-
-                    {/* Main Title */}
-                    <h1 className="font-display md:text-5xl lg:text-6xl xl:text-7xl text-4xl font-bold leading-tight text-white">
-                      <span className="block">
-                        {item.title.split(' ').map((word, wordIndex) => (
-                          <span
-                            key={wordIndex}
-                            className="animate-fade-in-up inline-block"
-                            style={{
-                              animationDelay: `${index * 200 + wordIndex * 100}ms`,
-                              animationFillMode: 'both',
-                            }}
-                          >
-                            {word}&nbsp;
-                          </span>
-                        ))}
-                      </span>
-                    </h1>
-
-                    {/* Description */}
-                    {/* {item.description && (
-                      <p className="text-lg leading-relaxed text-white/80 md:text-xl">
-                        {item.description}
-                      </p>
-                    )} */}
-
-                    {/* CTA Button */}
-                    <div className="flex flex-wrap gap-4">
-                      <Button
-                        asChild
-                        className="group relative overflow-hidden rounded-full bg-white px-8 py-4 !text-black transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-white/25"
-                      >
+                    <div className="space-y-6 sm:space-y-7 md:space-y-8">
+                      <h1 className="2xl:text-5xl font-secondary text-lg font-semibold uppercase leading-[1.1] sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">
+                        {item.title}
+                      </h1>
+                      <Button asChild className={cn('rounded-full')}>
                         <CustomLink
+                          aria-label={item.button.label}
                           href={item.button.href}
                           openNewTab={item.button.openNewTab}
-                          aria-label={item.button.label}
-                          className="flex items-center gap-3"
                         >
-                          <span className="font-semibold">
-                            {item.button.label}
-                          </span>
-                          <ChevronRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+                          <span>{item.button.label}</span>
+                          <svg
+                            width={28}
+                            height={9}
+                            viewBox="0 0 28 9"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M27.7911 5.02543C27.9863 4.83016 27.9863 4.51358 27.7911 4.31832L24.6091 1.13634C24.4138 0.941077 24.0972 0.941077 23.902 1.13634C23.7067 1.3316 23.7067 1.64818 23.902 1.84345L26.7304 4.67187L23.902 7.5003C23.7067 7.69556 23.7067 8.01214 23.902 8.20741C24.0972 8.40267 24.4138 8.40267 24.6091 8.20741L27.7911 5.02543ZM0.4375 5.17188L27.4375 5.17187L27.4375 4.17187L0.4375 4.17188L0.4375 5.17188Z" />
+                          </svg>
                         </CustomLink>
                       </Button>
                     </div>
                   </div>
-                </div>
-              </Container>
-
-              {/* Slide Progress Indicator */}
-              <div className="absolute bottom-8 left-1/2 z-20 -translate-x-1/2">
-                <div className="flex items-center gap-2">
-                  {items.map((_, slideIndex) => (
-                    <button
-                      key={slideIndex}
-                      onClick={() => goToSlide(slideIndex)}
-                      className={cn(
-                        'h-2 rounded-full transition-all duration-300',
-                        slideIndex === currentSlide
-                          ? 'w-8 bg-white'
-                          : 'w-2 bg-white/40 hover:bg-white/60'
-                      )}
-                      aria-label={`Go to slide ${slideIndex + 1}`}
-                    />
-                  ))}
-                </div>
+                </Container>
               </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+            </SwiperSlide>
+          ))}
 
-      {/* Navigation Controls */}
-      <div className="absolute right-8 top-1/2 z-20 hidden -translate-y-1/2 lg:block">
-        <div className="flex flex-col gap-4">
-          {/* Navigation Buttons */}
-          <div className="flex flex-col gap-2">
-            <button
-              onClick={() => swiperRef.current?.slidePrev()}
-              className="group flex h-12 w-12 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-white/30"
-              aria-label="Previous slide"
-            >
-              <ChevronLeft className="h-6 w-6 text-white transition-transform duration-300 group-hover:-translate-x-0.5" />
-            </button>
-            <button
-              onClick={() => swiperRef.current?.slideNext()}
-              className="group flex h-12 w-12 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-white/30"
-              aria-label="Next slide"
-            >
-              <ChevronRight className="h-6 w-6 text-white transition-transform duration-300 group-hover:translate-x-0.5" />
-            </button>
+          <div className="absolute right-0 top-[50%] z-50 hidden h-max w-full [transform:translateY(-50%)] lg:block">
+            <Container>
+              <div className="ml-auto grid max-w-max gap-2.5 px-4">
+                <button
+                  className={cn(navigationButtonCommonClasses)}
+                  onClick={() => swiperRef.current?.slidePrev()}
+                  aria-label="slide prev"
+                >
+                  <FaArrowLeftLong />
+                </button>
+                <button
+                  className={cn(navigationButtonCommonClasses)}
+                  onClick={() => swiperRef.current?.slideNext()}
+                  aria-label="slide next"
+                >
+                  <FaArrowRightLong />
+                </button>
+              </div>
+            </Container>
           </div>
-
-          {/* Autoplay Control */}
-          <button
-            onClick={toggleAutoplay}
-            className="group flex h-12 w-12 items-center justify-center rounded-full bg-white/20 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-white/30"
-            aria-label={isPlaying ? 'Pause slideshow' : 'Play slideshow'}
-          >
-            {isPlaying ? (
-              <Pause className="h-5 w-5 text-white" />
-            ) : (
-              <Play className="h-5 w-5 text-white" />
-            )}
-          </button>
-        </div>
-      </div>
-
-      {/* Slide Counter */}
-      <div className="absolute bottom-8 right-8 z-20 hidden lg:block">
-        <div className="rounded-full bg-white/20 px-4 py-2 backdrop-blur-sm">
-          <span className="text-sm font-medium text-white">
-            {String(currentSlide + 1).padStart(2, '0')} /{' '}
-            {String(items.length).padStart(2, '0')}
-          </span>
-        </div>
-      </div>
-
-      {/* Custom CSS for animations */}
-      <style jsx>{`
-        @keyframes fade-in-up {
-          from {
-            opacity: 0;
-            transform: translateY(30px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
-        .animate-fade-in-up {
-          animation: fade-in-up 0.8s ease-out forwards;
-          opacity: 0;
-        }
-      `}</style>
+        </Swiper>
+      )}
     </section>
   );
 }
