@@ -14,7 +14,7 @@ interface Props {
 
 export const metadata: Metadata = {
   title: 'BridgeLink',
-  description: 'BridgeLink - IT Solutions and Services React Nextjs Template',
+  description: 'BridgeLink - IT Solutions and Services ',
 };
 
 export default async function RootLayout({ children }: Props) {
