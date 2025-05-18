@@ -21,22 +21,23 @@ import {
   FaInstagram,
   FaLinkedinIn,
 } from 'react-icons/fa6';
+import { BrandLogo } from '@/src/layout/brand-logo';
 
 const mainTitleClasses = cn(
-  'relative mb-30px pb-[0px] font-secondary text-[1.25rem] font-bold uppercase text-accent-700',
-  'after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-[32px] after:bg-accent-700'
+  'relative mb-30px pb-[0px] font-secondary text-[1.25rem] font-bold uppercase text-accent-700 dark:text-accent-300',
+  'after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-[32px] after:bg-accent-700 dark:after:bg-accent-300'
 );
 
 const socialIconClasses = cn(
-  'text-base/[1] transition-all duration-350 hover:-translate-y-1 w-[36px] h-[36px] rounded-full grid place-items-center bg-accent-700 hover:bg-primary text-white'
+  'text-base/[1] transition-all duration-350 hover:-translate-y-1 w-[36px] h-[36px] rounded-full grid place-items-center bg-accent-700 dark:bg-accent-600 hover:bg-primary dark:hover:bg-primary-light text-white'
 );
 
 const addressIconParentClasses = cn(
-  ' text-primary flex-none leading-none self-start relative top-2'
+  'text-primary dark:text-primary-light flex-none leading-none self-start relative top-2'
 );
 const addressItemClasses = cn('flex gap-5');
 const textColor = cn(
-  'transition-colors text-accent-700 dark:text-accent-700 duration-300 hover:text-primary dark:hover:text-primary-light'
+  'transition-colors text-accent-700 dark:text-accent-300 duration-300 hover:text-primary dark:hover:text-primary-light'
 );
 
 interface SocialLinkProps {
@@ -53,11 +54,12 @@ interface IOffCanvas {
   socialLinks: SocialLinkProps[];
 }
 
+
 const offCanvasProps: IOffCanvas = {
   contactInfo: {
-    location: ' 88 broklyn street, New York',
-    phoneNumber: '+1 555-9990-153',
-    mail: 'info@example.com',
+    location: ' Nairobi, Kenya',
+    phoneNumber: '+254 798014749',
+    mail: 'info@bridgelink.com',
   },
   socialLinks: [
     {
@@ -79,6 +81,7 @@ const offCanvasProps: IOffCanvas = {
   ],
 };
 
+
 export function OffCanvas({ menuItems }: Pick<HeaderProps, 'menuItems'>) {
   const { contactInfo, socialLinks } = offCanvasProps;
   return (
@@ -87,14 +90,14 @@ export function OffCanvas({ menuItems }: Pick<HeaderProps, 'menuItems'>) {
         aria-label="Mobile hamburger menu"
         aria-controls="mobile-hamburger-menu"
         className={cn(
-          'group text-[2rem]/[1] text-primary transition-colors duration-300 hover:text-primary-light'
+          'group text-[2rem]/[1] text-primary transition-colors duration-300 hover:text-primary-light dark:text-primary-light dark:hover:text-primary'
         )}
       >
         <MdMenu className="icon-menu" id="mobile-hamburger-menu" />
       </SheetTrigger>
       <SheetContent
         side={'left'}
-        className="z-444 !max-w-[300px] border-none bg-white p-0"
+        className="z-444 !max-w-[300px] border-none bg-white p-0 dark:bg-accent-900"
       >
         <ScrollArea
           viewportClassName={cn('h-[100vh]')}
@@ -102,20 +105,9 @@ export function OffCanvas({ menuItems }: Pick<HeaderProps, 'menuItems'>) {
         >
           <div className="grid gap-8">
             {/* Logo area  */}
-            <div className="sticky top-0 flex items-center justify-between bg-white/90 px-5 py-3 shadow-sm backdrop-blur-sm">
-              <CustomLink href="/">
-                <Image
-                  src={logoLight.src}
-                  width={logoLight.width}
-                  height={logoLight.height}
-                  placeholder="blur"
-                  blurDataURL={logoLight.blurDataURL}
-                  alt={`${process.env.NEXT_PUBLIC_SITE_NAME} brand logo`}
-                  sizes="100vw"
-                  priority
-                />
-              </CustomLink>
-              <SheetClose className="data-[state=open]:bg-secondary rounded-sm text-accent-900 ring-offset-0 transition-colors hover:text-primary  focus:outline-none focus:ring-0 focus:ring-offset-0  disabled:pointer-events-none">
+            <div className="sticky top-0 flex items-center justify-between bg-white/90 px-5 py-3 shadow-sm backdrop-blur-sm dark:bg-accent-900/90">
+              <BrandLogo></BrandLogo>
+              <SheetClose className="data-[state=open]:bg-secondary rounded-sm text-accent-900 ring-offset-0 transition-colors hover:text-primary focus:outline-none focus:ring-0 focus:ring-offset-0 disabled:pointer-events-none dark:text-accent-100 dark:hover:text-primary-light">
                 <X className="h-8 w-8" />
                 <span className="sr-only">Close</span>
               </SheetClose>

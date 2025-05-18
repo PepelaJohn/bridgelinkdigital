@@ -12,7 +12,7 @@ import { FiChevronDown } from 'react-icons/fi';
 import { HeaderProps } from '../../desktop/v1';
 
 const menuItemClasses = cn(
-  'min-h-[3rem] inline-flex items-center w-full gap-4 rounded-none border-b-0  px-5 text-left font-primary text-base  text-accent-700 font-bold no-underline hover:no-underline border-t focus:text-primary active:text-primary'
+  'min-h-[3rem] inline-flex items-center w-full gap-4 rounded-none border-b-0  px-5 text-left font-primary text-base   font-bold no-underline hover:no-underline border-t focus:text-primary active:text-primary'
 );
 
 export function Navigation({ menuItems }: Pick<HeaderProps, 'menuItems'>) {
@@ -25,12 +25,12 @@ export function Navigation({ menuItems }: Pick<HeaderProps, 'menuItems'>) {
               {/* Megamenu  */}
               <AccordionItem
                 value={`${menuItem.title}-${index}`}
-                className="border-none"
+                className="border-none !text-white"
               >
                 <AccordionTrigger
                   className={cn(
                     menuItemClasses,
-                    "[&[data-state='open']&_.accordion-icon]:-rotate-180 [&[data-state='open']]:bg-accent-100 [&[data-state='open']]:text-primary"
+                    "text-accent-700 dark:text-white [&[data-state='open']&_.accordion-icon]:-rotate-180 [&[data-state='open']]:bg-accent-100  [&[data-state='open']]:text-primary"
                   )}
                 >
                   {menuItem.title}
