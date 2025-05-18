@@ -6,8 +6,8 @@ import {
   SheetTrigger,
 } from '@/src/components/ui/sheet';
 import { cn } from '@/src/utils/shadcn';
-import Image from 'next/image';
-import logoLight from 'public/assets/images/brand/logo-light.png';
+// import Image from 'next/image';
+// import logoLight from 'public/assets/images/brand/logo-light.png';
 import { FaEnvelope, FaPhone } from 'react-icons/fa6';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { CustomLink } from '@/src/components/custom-link';
