@@ -14,7 +14,7 @@ module.exports = {
       ...BREAKPOINTS,
     },
     fontFamily: {
-      primary: ['var(--font-primary)', ...fontFamily.sans],
+      primary: ['var(--font-primary)', ...fontFamily.serif],
       secondary: ['var(--font-secondary)', ...fontFamily.sans],
     },
     fontSize: {
