@@ -26,7 +26,7 @@ export function Header() {
   return (
     <header
       className={cn(
-        'left-0 right-0 top-0 z-99 mx-auto hidden w-full  lg:block',
+        'left-0 right-0 top-0 z-99 mx-auto hidden w-full py-2 lg:block',
         isSticky
           ? 'sticky-header fixed left-0 top-0 w-full animate-fadeInDown bg-white/90 backdrop-blur-md [box-shadow:0px_0px_15px_10px_rgba(223,42,25,.1)] dark:bg-accent-900/90'
           : 'absolute backdrop-blur-md  '

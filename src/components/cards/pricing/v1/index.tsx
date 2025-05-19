@@ -28,7 +28,7 @@ export function PricingCard({
       {isPopular && (
         <div
           className={cn(
-            // general
+           
             'absolute right-0 top-2.5 inline-flex min-h-[44px] items-center justify-center bg-primary pl-[54px] pr-[34px] uppercase text-white md:px-6 md:pl-10',
             // Overlay
             '[background:linear-gradient(0.04deg,#DF2A19_16.34%,#0E0E0E_127.37%)] dark:[background:linear-gradient(90deg,rgba(223,42,25,1)_0%,rgba(223,42,25,0.5634628851540616)_43%,rgba(223,42,25,0.10968137254901966)_99%)]',
