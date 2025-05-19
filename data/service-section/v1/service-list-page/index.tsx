@@ -96,42 +96,42 @@ export const serviceSectionData: ServiceSectionProps = {
       title: 'Net Connect Plus',
       description:
         'It is a long established fact that a reader will be distracted by the readable content of a page layout long established',
-      slug: '/services/single',
+      slug: '/ #',
     },
     {
       icon: <Icon2 />,
       title: 'Data Guard Sentinel',
       description:
         'It is a long established fact that a reader will be distracted by the readable content of a page layout long established',
-      slug: '/services/single',
+      slug: '/ #',
     },
     {
       icon: <Icon3 />,
       title: 'App Swift DevOps',
       description:
         'It is a long established fact that a reader will be distracted by the readable content of a page layout long established',
-      slug: '/services/single',
+      slug: '/ #',
     },
     {
       icon: <Icon4 />,
       title: 'Data Guard Sentinels',
       description:
         'It is a long established fact that a reader will be distracted by the readable content of a page layout long established',
-      slug: '/services/single',
+      slug: '/ #',
     },
     {
       icon: <Icon5 />,
       title: 'App Swift DevOps',
       description:
         'It is a long established fact that a reader will be distracted by the readable content of a page layout long established',
-      slug: '/services/single',
+      slug: '/ #',
     },
     {
       icon: <Icon6 />,
       title: 'Net Connect Plus',
       description:
         'It is a long established fact that a reader will be distracted by the readable content of a page layout long established',
-      slug: '/services/single',
+      slug: '/ #',
     },
   ],
 };

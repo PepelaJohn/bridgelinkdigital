@@ -51,21 +51,21 @@ export const serviceSectionData: ServiceSectionProps = {
       title: 'Web Design',
       description:
         'Professional website design services that transform your vision into captivating digital experiences. Our expert designers create stunning, responsive layouts that engage your audience and strengthen your brand identity.',
-      slug: '/services/single',
+      slug: '/ #',
     },
     {
       icon: <Icon2 />,
       title: 'Web Development',
       description:
         'End-to-end website development solutions that bring designs to life. We build fast, secure, and feature-rich websites optimized for performance across all devices, ensuring a seamless user experience that drives results.',
-      slug: '/services/single',
+      slug: '/ #',
     },
     {
       icon: <Icon3 />,
       title: 'Social Media Management',
       description:
         'Comprehensive social media management services that amplify your online presence. Our strategic content creation, community engagement, and analytics-driven campaigns connect your brand with target audiences across all major platforms.',
-      slug: '/services/single',
+      slug: '/ #',
     },
   ],
 };
