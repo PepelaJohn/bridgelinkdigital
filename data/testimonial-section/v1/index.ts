@@ -35,7 +35,7 @@ export const testimonialSectionData: TestimonialSectionProps = {
     {
       person: {
         image: {
-          src: '/assets/images/testimonial/person-11.jpeg',
+          src: '/assets/images/testimonial/person-11.png',
           alt: 'April Cabrera',
         },
         name: 'April Cabrera',
@@ -48,7 +48,7 @@ export const testimonialSectionData: TestimonialSectionProps = {
     {
       person: {
         image: {
-          src: '/assets/images/testimonial/person-12.jpeg',
+          src: '/assets/images/testimonial/person-12.png',
           alt: 'Kevin Martin',
         },
         name: 'Kevin Martin',
@@ -61,7 +61,7 @@ export const testimonialSectionData: TestimonialSectionProps = {
     {
       person: {
         image: {
-          src: '/assets/images/testimonial/person-13.jpeg',
+          src: '/assets/images/testimonial/person-13.png',
           alt: 'Jada Christian',
         },
         name: 'Jada Christian',
@@ -74,7 +74,7 @@ export const testimonialSectionData: TestimonialSectionProps = {
     {
       person: {
         image: {
-          src: '/assets/images/testimonial/person-14.jpeg',
+          src: '/assets/images/testimonial/person-14.png',
           alt: 'Kevin Deen',
         },
         name: 'Kevin Deen',

@@ -23,9 +23,9 @@ export const testimonialSectionData: TestimonialSectionProps = {
       person: {
         image: {
           src: '/assets/images/testimonial/person-2.jpg',
-          alt: 'Robert Fox',
+          alt: 'Jane Otieno ',
         },
-        name: 'Robert Fox',
+        name: 'Jane Otieno',
         about: 'Small Business Owner',
       },
       speech:
@@ -35,10 +35,10 @@ export const testimonialSectionData: TestimonialSectionProps = {
     {
       person: {
         image: {
-          src: '/assets/images/testimonial/person-11.jpeg',
-          alt: 'April Cabrera',
+          src: '/assets/images/testimonial/person-11.png',
+          alt: 'John Wiliiams',
         },
-        name: 'April Cabrera',
+        name: 'John Wiliiams',
         about: 'E-commerce Manager',
       },
       speech:
@@ -48,7 +48,7 @@ export const testimonialSectionData: TestimonialSectionProps = {
     {
       person: {
         image: {
-          src: '/assets/images/testimonial/person-12.jpeg',
+          src: '/assets/images/testimonial/person-12.png',
           alt: 'Kevin Martin',
         },
         name: 'Kevin Martin',
@@ -61,10 +61,10 @@ export const testimonialSectionData: TestimonialSectionProps = {
     {
       person: {
         image: {
-          src: '/assets/images/testimonial/person-13.jpeg',
-          alt: 'Jada Christian',
+          src: '/assets/images/testimonial/person-13.png',
+          alt: 'Christian Okello',
         },
-        name: 'Jada Christian',
+        name: 'Christian Okello',
         about: 'Creative Director',
       },
       speech:
@@ -74,7 +74,7 @@ export const testimonialSectionData: TestimonialSectionProps = {
     {
       person: {
         image: {
-          src: '/assets/images/testimonial/person-14.jpeg',
+          src: '/assets/images/testimonial/person-14.png',
           alt: 'Kevin Deen',
         },
         name: 'Kevin Deen',

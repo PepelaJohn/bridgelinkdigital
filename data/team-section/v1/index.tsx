@@ -15,7 +15,7 @@ export const teamSectionData: TeamSectionProps = {
     {
       slug: '#',
       image: {
-        src: '/assets/images/team/people-1.png',
+        src: '/assets/images/team/pepela1.png',
         alt: 'Victor Bwire',
       },
       socials: [
@@ -39,7 +39,7 @@ export const teamSectionData: TeamSectionProps = {
     {
       slug: '#',
       image: {
-        src: '/assets/images/team/people-2.png',
+        src: '/assets/images/team/pepela2.jpg',
         alt: 'James Mugeni',
       },
       socials: [
@@ -63,7 +63,7 @@ export const teamSectionData: TeamSectionProps = {
     {
       slug: '#',
       image: {
-        src: '/assets/images/team/people-3.png',
+        src: '/assets/images/team/mugeni.png',
         alt: 'Caleb Bwire',
       },
       socials: [
@@ -84,77 +84,77 @@ export const teamSectionData: TeamSectionProps = {
       name: 'Caleb Bwire',
       about: 'Marketing Director',
     },
-    {
-      slug: '#',
-      image: {
-        src: '/assets/images/team/people-1.png',
-        alt: 'Victor Bwire',
-      },
-      socials: [
-        // {
-        //   href: 'https://www.facebook.com/',
-        //   icon: <FaFacebookF />,
-        // },
-        // {
-        //   href: 'https://twitter.com/',
-        //   icon: <FaTwitter />,
-        // },
-        {
-          href: 'https://www.linkedin.com/',
-          icon: <FaLinkedinIn />,
-        },
+    // {
+    //   slug: '#',
+    //   image: {
+    //     src: '/assets/images/team/people-1.png',
+    //     alt: 'Victor Bwire',
+    //   },
+    //   socials: [
+    //     // {
+    //     //   href: 'https://www.facebook.com/',
+    //     //   icon: <FaFacebookF />,
+    //     // },
+    //     // {
+    //     //   href: 'https://twitter.com/',
+    //     //   icon: <FaTwitter />,
+    //     // },
+    //     {
+    //       href: 'https://www.linkedin.com/',
+    //       icon: <FaLinkedinIn />,
+    //     },
      
-      ],
-      name: 'Victor Bwire',
-      about: 'Chief Excecutive Officer',
-    },
-    {
-      slug: '#',
-      image: {
-        src: '/assets/images/team/people-2.png',
-        alt: 'James Mugeni',
-      },
-      socials: [
-        // {
-        //   href: 'https://www.facebook.com/',
-        //   icon: <FaFacebookF />,
-        // },
-        // {
-        //   href: 'https://twitter.com/',
-        //   icon: <FaTwitter />,
-        // },
-        {
-          href: 'https://www.linkedin.com/',
-          icon: <FaLinkedinIn />,
-        },
+    //   ],
+    //   name: 'Victor Bwire',
+    //   about: 'Chief Excecutive Officer',
+    // },
+    // {
+    //   slug: '#',
+    //   image: {
+    //     src: '/assets/images/team/people-2.png',
+    //     alt: 'James Mugeni',
+    //   },
+    //   socials: [
+    //     // {
+    //     //   href: 'https://www.facebook.com/',
+    //     //   icon: <FaFacebookF />,
+    //     // },
+    //     // {
+    //     //   href: 'https://twitter.com/',
+    //     //   icon: <FaTwitter />,
+    //     // },
+    //     {
+    //       href: 'https://www.linkedin.com/',
+    //       icon: <FaLinkedinIn />,
+    //     },
      
-      ],
-      name: 'James Mugeni',
-      about: 'Operations Manager',
-    },
-    {
-      slug: '#',
-      image: {
-        src: '/assets/images/team/people-3.png',
-        alt: 'Caleb Bwire',
-      },
-      socials: [
-        // {
-        //   href: 'https://www.facebook.com/',
-        //   icon: <FaFacebookF />,
-        // },
-        // {
-        //   href: 'https://twitter.com/',
-        //   icon: <FaTwitter />,
-        // },
-        {
-          href: 'https://www.linkedin.com/',
-          icon: <FaLinkedinIn />,
-        },
+    //   ],
+    //   name: 'James Mugeni',
+    //   about: 'Operations Manager',
+    // },
+    // {
+    //   slug: '#',
+    //   image: {
+    //     src: '/assets/images/team/people-3.png',
+    //     alt: 'Caleb Bwire',
+    //   },
+    //   socials: [
+    //     // {
+    //     //   href: 'https://www.facebook.com/',
+    //     //   icon: <FaFacebookF />,
+    //     // },
+    //     // {
+    //     //   href: 'https://twitter.com/',
+    //     //   icon: <FaTwitter />,
+    //     // },
+    //     {
+    //       href: 'https://www.linkedin.com/',
+    //       icon: <FaLinkedinIn />,
+    //     },
      
-      ],
-      name: 'Caleb Bwire',
-      about: ' Marketing Director',
-    },
+    //   ],
+    //   name: 'Caleb Bwire',
+    //   about: ' Marketing Director',
+    // },
   ],
 };

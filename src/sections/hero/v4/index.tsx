@@ -98,7 +98,7 @@ export function Hero() {
               {/* Background Image with Overlay */}
               <div className="absolute inset-0">
                 <div
-                  className="duration-[8000ms] h-full w-full bg-cover bg-center grayscale-1 bg-no-repeat transition-transform ease-out hover:scale-105"
+                  className=" h-full w-full bg-cover bg-center grayscale-1 bg-no-repeat transition-transform ease-out hover:scale-105"
                   style={{ backgroundImage: `url(${item.image.src})` }}
                 />
                 {/* Gradient Overlays */}
