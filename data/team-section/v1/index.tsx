@@ -63,7 +63,7 @@ export const teamSectionData: TeamSectionProps = {
     {
       slug: '#',
       image: {
-        src: '/assets/images/team/mugeni.png',
+        src: '/assets/images/team/mugeni 2.jpg',
         alt: 'Caleb Bwire',
       },
       socials: [
