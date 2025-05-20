@@ -39,7 +39,7 @@ export const teamSectionData: TeamSectionProps = {
     {
       slug: '#',
       image: {
-        src: '/assets/images/team/pepela2.jpg',
+        src: '/assets/images/team/jemo.jpg',
         alt: 'James Mugeni',
       },
       socials: [
@@ -84,30 +84,30 @@ export const teamSectionData: TeamSectionProps = {
       name: 'Caleb Bwire',
       about: 'Marketing Director',
     },
-    // {
-    //   slug: '#',
-    //   image: {
-    //     src: '/assets/images/team/people-1.png',
-    //     alt: 'Victor Bwire',
-    //   },
-    //   socials: [
-    //     // {
-    //     //   href: 'https://www.facebook.com/',
-    //     //   icon: <FaFacebookF />,
-    //     // },
-    //     // {
-    //     //   href: 'https://twitter.com/',
-    //     //   icon: <FaTwitter />,
-    //     // },
-    //     {
-    //       href: 'https://www.linkedin.com/',
-    //       icon: <FaLinkedinIn />,
-    //     },
+    {
+      slug: '#',
+      image: {
+        src: '/assets/images/team/pepela2.jpg',
+        alt: 'John Pepela',
+      },
+      socials: [
+        // {
+        //   href: 'https://www.facebook.com/',
+        //   icon: <FaFacebookF />,
+        // },
+        // {
+        //   href: 'https://twitter.com/',
+        //   icon: <FaTwitter />,
+        // },
+        {
+          href: 'https://www.linkedin.com/',
+          icon: <FaLinkedinIn />,
+        },
      
-    //   ],
-    //   name: 'Victor Bwire',
-    //   about: 'Chief Excecutive Officer',
-    // },
+      ],
+      name: 'John Pepela',
+      about: 'Technical Director',
+    },
     // {
     //   slug: '#',
     //   image: {

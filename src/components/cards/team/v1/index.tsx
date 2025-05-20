@@ -29,11 +29,11 @@ export function TeamCard({
   contentWrapperClassName,
 }: TeamCardProps) {
   return (
-    <div className="group">
+    <div className="group ">
       <div
         className={cn(
           // General
-          'relative z-1 mr-30px overflow-hidden rounded-5',
+          'relative z-1 mr-30px overflow-hidden rounded-5 ',
 
           // after => image overlay effect
           'after:pointer-events-none after:absolute after:left-0 after:top-0 after:z-1 after:h-0 after:w-full after:bg-white/30 after:opacity-100',
@@ -51,7 +51,7 @@ export function TeamCard({
           (min-width:1024px) 33vw,
           100vw
           "
-          className="object-cover transition-transform duration-500 [transform:scale(1.05)] group-hover:[transform:scale(1)]"
+          className="object-cover max-h-[80vh] h-full transition-transform duration-500 [transform:scale(1.05)] group-hover:[transform:scale(1)]"
         />
         {socials && socials.length > 0 && (
           <div className="absolute bottom-0 left-30px">
