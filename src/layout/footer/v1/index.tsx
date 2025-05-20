@@ -3,7 +3,7 @@ import { ImageProps, LinkProps, SectionProps } from '@/src/common-types';
 import { Container } from '@/src/components/container';
 import { CustomLink } from '@/src/components/custom-link';
 import { cn } from '@/src/utils/shadcn';
-import Image from 'next/image';
+// import Image from 'next/image';
 import { BrandLogo } from 'src/layout/brand-logo';
 import {
   FaChevronRight,
