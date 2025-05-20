@@ -76,7 +76,7 @@ export const footerSectionData: FooterSectionProps = {
     phoneNumbers: ['(+254) 798-014749', '(+254) 107-709038'],
   },
   columnThree: {
-    title: 'Recent Blog',
+    title: 'Recent Blogs',
     blogs: [
       {
         image: {
@@ -85,7 +85,7 @@ export const footerSectionData: FooterSectionProps = {
         },
         title: 'Responsive Design Trends for 2025',
         date: 'May 15, 2025',
-        slug: './blog-details',
+        slug: '#',
       },
       {
         image: {
@@ -94,7 +94,7 @@ export const footerSectionData: FooterSectionProps = {
         },
         title: 'Social Media Strategies That Convert',
         date: 'May 10, 2025',
-        slug: './blog-details',
+        slug: '#',
       },
     ],
   },
@@ -103,17 +103,17 @@ export const footerSectionData: FooterSectionProps = {
     links: [
       {
         label: 'Terms & Conditions',
-        href: '/',
+        href: '/terms-and-conditions',
         openNewTab: false,
       },
       {
         label: 'Privacy Policy',
-        href: '/',
+        href: '/privacy-policy',
         openNewTab: false,
       },
       {
         label: 'Contact Us',
-        href: '/',
+        href: '/contact',
         openNewTab: false,
       },
     ],

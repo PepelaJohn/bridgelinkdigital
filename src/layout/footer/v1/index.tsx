@@ -189,15 +189,7 @@ export function Footer({ className }: SectionProps) {
                       key={index}
                       className="group flex items-center gap-4 text-accent-800  dark:text-white"
                     >
-                      <div className="flex-none overflow-hidden rounded-5">
-                        <Image
-                          {...blog.image}
-                          alt={blog.image.alt}
-                          width={80}
-                          height={80}
-                          className="object-cover transition-transform duration-700 group-hover:scale-105"
-                        />
-                      </div>
+                      
                       <div>
                         <p className="flex items-center gap-2.5 dark:text-body">
                           <span className="text-primary">
