@@ -2,22 +2,22 @@ import { AboutSectionProps } from '@/src/sections/about/v2';
 
 export const aboutSectionData: AboutSectionProps = {
   sectionHeading: {
-    subtitle: 'About Us',
-    title: 'Sculpting Digital Landscapes',
+    subtitle: 'About BridgeLink',
+    title: 'Connecting Brands to Digital Success',
     description:
-      'Nulla vitae ex nunc. Morbi quis purus convallis, fermentum metus volutpat, sodales purus. Nunc quis an mauris et eros vulputate mattis Nulla vitae ex nunc. Morbi quis purus convallis, fermentum metus the volutpatquis purus convallis',
+      "At BridgeLink, we bridge the gap between your business and its digital potential. Our team of experts specializes in creating comprehensive digital solutions that elevate your brand presence and drive meaningful results. From captivating websites to strategic social media campaigns and technical SEO optimization, we build the digital bridges your business needs to thrive in today's competitive landscape.",
   },
   aboutUsPoints: [
-    'Mistakes To Avoid',
-    'Your Startup business',
-    'Knew About Fonts',
-    'Mistakes To Avoid',
-    'Your Startup business',
-    'Knew About Fonts',
+    'Strategic Social Media Marketing',
+    'Responsive Website Design',
+    'Custom Web Development',
+    'SEO Optimization & Strategy',
+    'Brand Identity Development',
+    'Data-Driven Digital Solutions',
   ],
   image: {
     src: '/assets/images/about/about-5.png',
-    alt: 'about image five',
+    alt: 'BridgeLink digital solutions team',
   },
-  videoUrl: 'https://www.youtube.com/embed/SxVmSQaPc4E',
+  videoUrl: 'https://www.youtube.com/embed/uqlCtR1fu-w',
 };

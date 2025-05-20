@@ -35,7 +35,7 @@ export default function Page() {
       <TestimonialSection />
       <StatisticsSection />
       <AboutSectionTwo />
-      <WorkprocessSection />
+      {/* <WorkprocessSection /> */}
       <Footer />
     </>
   );
