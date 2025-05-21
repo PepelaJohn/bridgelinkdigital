@@ -12,39 +12,43 @@ export const projectSectionData: ProjectSectionProps = {
       slug: '/project/responsive-ecommerce',
       image: {
         src: '/assets/images/project/luna.jpg',
-        alt: 'ecommerce-website-design',
+        alt: 'drone-delivery-platform',
       },
       title: 'Drone Delivery Service',
-      description: 'Custom drone delivery platform ',
+      description:
+        'Autonomous drone delivery system for medical logistics and emergency response.',
     },
     {
       href: 'https://events-team.netlify.app',
       slug: '/project/social-media-campaign',
       image: {
         src: '/assets/images/project/events.jpg',
-        alt: 'social-media-strategy',
+        alt: 'event-management-platform',
       },
-      title: 'Event Management.',
-      description: 'Event management and planning platform',
+      title: 'Event Management',
+      description:
+        'Interactive platform for organizing, scheduling, and marketing live events.',
     },
     {
       href: 'https://milanodirouge.com/',
       slug: '/project/business-rebrand',
       image: {
         src: '/assets/images/project/luxury.jpg ',
-        alt: 'business-website-redesign',
+        alt: 'luxury-fashion-brand',
       },
       title: 'Luxury Design Brand',
-      description: 'Independent luxury designs shop.',
+      description: 'Ecommerce platform for a premium streetwear fashion label.',
     },
     {
+      href: 'https://www.thediamondstore.co.uk/',
       slug: '/project/digital-marketing',
       image: {
-        src: '/assets/images/project/4.png',
-        alt: 'digital-marketing-solution',
+        src: '/assets/images/project/diamond.jpg',
+        alt: 'jewelry-ecommerce-store',
       },
-      title: 'Comprehensive Digital Marketing',
-      description: 'Website optimization and social media integration',
+      title: 'Diamond Shop',
+      description:
+        'Online jewelry store with SEO and social commerce features.',
     },
   ],
 };

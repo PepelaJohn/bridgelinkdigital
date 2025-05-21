@@ -12,80 +12,87 @@ export const projectSectionData: ProjectSectionProps = {
       slug: '/project/responsive-ecommerce',
       image: {
         src: '/assets/images/project/luna.jpg',
-        alt: 'ecommerce-website-design',
+        alt: 'drone-delivery-platform',
       },
       title: 'Drone Delivery Service',
-      description: 'Custom drone delivery platform ',
+      description:
+        'Autonomous drone delivery system for medical logistics and emergency response.',
     },
     {
       href: 'https://events-team.netlify.app',
       slug: '/project/social-media-campaign',
       image: {
         src: '/assets/images/project/events.jpg',
-        alt: 'social-media-strategy',
+        alt: 'event-management-platform',
       },
-      title: 'Event Management.',
-      description: 'Event management and planning platform',
+      title: 'Event Management',
+      description:
+        'Interactive platform for organizing, scheduling, and marketing live events.',
     },
     {
       href: 'https://milanodirouge.com/',
       slug: '/project/business-rebrand',
       image: {
         src: '/assets/images/project/luxury.jpg ',
-        alt: 'business-website-redesign',
+        alt: 'luxury-fashion-brand',
       },
       title: 'Luxury Design Brand',
-      description: 'Independent luxury designs shop.',
+      description: 'Ecommerce platform for a premium streetwear fashion label.',
     },
     {
       href: 'https://www.thediamondstore.co.uk/',
       slug: '/project/digital-marketing',
       image: {
         src: '/assets/images/project/diamond.jpg',
-        alt: 'digital-marketing-solution',
+        alt: 'jewelry-ecommerce-store',
       },
       title: 'Diamond Shop',
-      description: 'SEO optimization with social media integration',
+      description:
+        'Online jewelry store with SEO and social commerce features.',
     },
     {
       href: 'https://www.wausausmiles.com/',
       slug: '/project/web-development',
       image: {
         src: '/assets/images/project/dental.jpg',
-        alt: 'custom-web-application',
+        alt: 'dental-clinic-website',
       },
-      title: 'Dentist ...',
-      description: 'Secure patient engagement platform',
+      title: 'Dental Clinic',
+      description:
+        'Professional clinic site with secure patient services and appointment booking.',
     },
     {
       href: 'https://milanoitalianfurniture.com/',
       slug: '/project/content-creation',
       image: {
         src: '/assets/images/project/furniture.jpg',
-        alt: 'content-strategy',
+        alt: 'luxury-furniture-ecommerce',
       },
-      title: 'Millano italian Furniture',
-      description: 'Cohesive visual storytelling across channels',
+      title: 'Milano Italian Furniture',
+      description:
+        'High-end furniture ecommerce site with immersive visual storytelling.',
     },
     {
       href: 'https://parkdaledentalcenter.com/cosmetic-dentistry/',
       slug: '/project/mobile-responsive',
       image: {
         src: '/assets/images/project/dental1.jpg',
-        alt: 'mobile-first-design',
+        alt: 'cosmetic-dentistry-website',
       },
       title: 'Dental Consultancy',
-      description: 'Seamless website and application experience',
+      description:
+        'Mobile-first website for promoting cosmetic and general dentistry services.',
     },
     {
       href: 'https://bayparksmiles.com/',
       slug: '/project/analytics-dashboard',
       image: {
         src: '/assets/images/project/dental2.jpg',
-        alt: 'performance-analytics',
+        alt: 'dental-analytics-platform',
       },
       title: 'BayPark Smiles Dental Clinic',
-      description: 'Real-time performance tracking and reporting',
+      description:
+        'Optimized dental website with patient engagement and analytics tools.',
     },
   ],
 };
