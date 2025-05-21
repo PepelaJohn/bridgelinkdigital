@@ -8,8 +8,8 @@ import {
 
 export const teamSectionData: TeamSectionProps = {
   sectionHeading: {
-    subtitle: 'our active members',
-    title: 'Transforming Challenges into Seamless Solutions',
+    subtitle: 'Meet the Team',
+    title: 'Experts in SEO, Web Design, Development & Digital Marketing',
   },
   cards: [
     {
@@ -19,22 +19,13 @@ export const teamSectionData: TeamSectionProps = {
         alt: 'Victor Bwire',
       },
       socials: [
-        // {
-        //   href: 'https://www.facebook.com/',
-        //   icon: <FaFacebookF />,
-        // },
-        // {
-        //   href: 'https://twitter.com/',
-        //   icon: <FaTwitter />,
-        // },
         {
           href: 'https://www.linkedin.com/',
           icon: <FaLinkedinIn />,
         },
-     
       ],
       name: 'Victor Bwire',
-      about: 'Chief Excecutive Officer',
+      about: 'Chief Executive Officer',
     },
     {
       slug: '#',
@@ -43,22 +34,13 @@ export const teamSectionData: TeamSectionProps = {
         alt: 'James Mugeni',
       },
       socials: [
-        // {
-        //   href: 'https://www.facebook.com/',
-        //   icon: <FaFacebookF />,
-        // },
-        // {
-        //   href: 'https://twitter.com/',
-        //   icon: <FaTwitter />,
-        // },
         {
           href: 'https://www.linkedin.com/',
           icon: <FaLinkedinIn />,
         },
-     
       ],
       name: 'James Mugeni',
-      about: 'Operations Manager',
+      about: 'Head of Digital Strategy',
     },
     {
       slug: '#',
@@ -67,22 +49,13 @@ export const teamSectionData: TeamSectionProps = {
         alt: 'Caleb Bwire',
       },
       socials: [
-        // {
-        //   href: 'https://www.facebook.com/',
-        //   icon: <FaFacebookF />,
-        // },
-        // {
-        //   href: 'https://twitter.com/',
-        //   icon: <FaTwitter />,
-        // },
         {
           href: 'https://www.linkedin.com/',
           icon: <FaLinkedinIn />,
         },
-     
       ],
       name: 'Caleb Bwire',
-      about: 'Marketing Director',
+      about: 'Director of Marketing & SEO',
     },
     {
       slug: '#',
@@ -91,70 +64,13 @@ export const teamSectionData: TeamSectionProps = {
         alt: 'John Pepela',
       },
       socials: [
-        // {
-        //   href: 'https://www.facebook.com/',
-        //   icon: <FaFacebookF />,
-        // },
-        // {
-        //   href: 'https://twitter.com/',
-        //   icon: <FaTwitter />,
-        // },
         {
           href: 'https://www.linkedin.com/',
           icon: <FaLinkedinIn />,
         },
-     
       ],
       name: 'John Pepela',
-      about: 'Technical Director',
+      about: 'Lead Developer & Tech Specialist',
     },
-    // {
-    //   slug: '#',
-    //   image: {
-    //     src: '/assets/images/team/people-2.png',
-    //     alt: 'James Mugeni',
-    //   },
-    //   socials: [
-    //     // {
-    //     //   href: 'https://www.facebook.com/',
-    //     //   icon: <FaFacebookF />,
-    //     // },
-    //     // {
-    //     //   href: 'https://twitter.com/',
-    //     //   icon: <FaTwitter />,
-    //     // },
-    //     {
-    //       href: 'https://www.linkedin.com/',
-    //       icon: <FaLinkedinIn />,
-    //     },
-     
-    //   ],
-    //   name: 'James Mugeni',
-    //   about: 'Operations Manager',
-    // },
-    // {
-    //   slug: '#',
-    //   image: {
-    //     src: '/assets/images/team/people-3.png',
-    //     alt: 'Caleb Bwire',
-    //   },
-    //   socials: [
-    //     // {
-    //     //   href: 'https://www.facebook.com/',
-    //     //   icon: <FaFacebookF />,
-    //     // },
-    //     // {
-    //     //   href: 'https://twitter.com/',
-    //     //   icon: <FaTwitter />,
-    //     // },
-    //     {
-    //       href: 'https://www.linkedin.com/',
-    //       icon: <FaLinkedinIn />,
-    //     },
-     
-    //   ],
-    //   name: 'Caleb Bwire',
-    //   about: ' Marketing Director',
-    // },
   ],
 };

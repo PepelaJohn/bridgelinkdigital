@@ -12,7 +12,7 @@ export interface StatisticsSectionProps {
 export function StatisticsSection({ className }: SectionProps) {
   const { statistics } = statisticsSectionData;
   return (
-    <section className={cn(className)}>
+    <section className={`${cn(className)} py-4`}>
       <Container>
         {statistics && statistics.length > 0 && (
           <div className="grid gap-30px sm:grid-cols-2 xl:grid-cols-4">

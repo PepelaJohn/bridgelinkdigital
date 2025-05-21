@@ -12,169 +12,67 @@ export const teamSectionData: TeamSectionProps = {
     title: 'Unleash the Power of Technology',
   },
   description:
-    'With a commitment to driving technological evolution, our IT solutions and services are the cornerstone of your digital progression. We transcend boundaries, enabling businesses to not only adapt but thrive in dynamic landscapes. ',
+    'At Bridgelink, we combine creativity and strategy to deliver outstanding digital solutions. From SEO to custom web development and social media marketing, our team transforms your vision into impactful digital experiences.',
   cards: [
     {
       slug: '#',
       image: {
-        src: '/assets/images/team/people-4.png',
-        alt: 'Leslie Alexander',
+        src: '/assets/images/team/viki.jpg',
+        alt: 'Victor Bwire',
       },
       socials: [
-        {
-          href: 'https://www.facebook.com/',
-          icon: <FaFacebookF />,
-        },
-        {
-          href: 'https://twitter.com/',
-          icon: <FaTwitter />,
-        },
         {
           href: 'https://www.linkedin.com/',
           icon: <FaLinkedinIn />,
         },
-        {
-          href: 'https://www.pinterest.com/',
-          icon: <FaPinterest />,
-        },
       ],
-      name: 'Leslie Alexander',
-      about: 'Medical Assistant',
+      name: 'Victor Bwire',
+      about: 'Chief Executive Officer',
     },
     {
       slug: '#',
       image: {
-        src: '/assets/images/team/people-4.png',
-        alt: 'Wade Warren',
+        src: '/assets/images/team/jemo.jpg',
+        alt: 'James Mugeni',
       },
       socials: [
-        {
-          href: 'https://www.facebook.com/',
-          icon: <FaFacebookF />,
-        },
-        {
-          href: 'https://twitter.com/',
-          icon: <FaTwitter />,
-        },
         {
           href: 'https://www.linkedin.com/',
           icon: <FaLinkedinIn />,
         },
-        {
-          href: 'https://www.pinterest.com/',
-          icon: <FaPinterest />,
-        },
       ],
-      name: 'Wade Warren',
-      about: 'Marketing Coordinator',
+      name: 'James Mugeni',
+      about: 'Operations Manager',
     },
     {
       slug: '#',
       image: {
-        src: '/assets/images/team/people-4.png',
-        alt: 'Esther Howard',
+        src: '/assets/images/team/bush.jpg',
+        alt: 'Caleb Bwire',
       },
       socials: [
-        {
-          href: 'https://www.facebook.com/',
-          icon: <FaFacebookF />,
-        },
-        {
-          href: 'https://twitter.com/',
-          icon: <FaTwitter />,
-        },
         {
           href: 'https://www.linkedin.com/',
           icon: <FaLinkedinIn />,
         },
-        {
-          href: 'https://www.pinterest.com/',
-          icon: <FaPinterest />,
-        },
       ],
-      name: 'Esther Howard',
-      about: 'Web Designer',
+      name: 'Caleb Bwire',
+      about: 'Marketing Director',
     },
     {
       slug: '#',
       image: {
-        src: '/assets/images/team/people-4.png',
-        alt: 'Leslie Alexander',
+        src: '/assets/images/team/pepela2.jpg',
+        alt: 'John Pepela',
       },
       socials: [
-        {
-          href: 'https://www.facebook.com/',
-          icon: <FaFacebookF />,
-        },
-        {
-          href: 'https://twitter.com/',
-          icon: <FaTwitter />,
-        },
         {
           href: 'https://www.linkedin.com/',
           icon: <FaLinkedinIn />,
         },
-        {
-          href: 'https://www.pinterest.com/',
-          icon: <FaPinterest />,
-        },
       ],
-      name: 'Leslie Alexander',
-      about: 'Medical Assistant',
-    },
-    {
-      slug: '#',
-      image: {
-        src: '/assets/images/team/people-4.png',
-        alt: 'Wade Warren',
-      },
-      socials: [
-        {
-          href: 'https://www.facebook.com/',
-          icon: <FaFacebookF />,
-        },
-        {
-          href: 'https://twitter.com/',
-          icon: <FaTwitter />,
-        },
-        {
-          href: 'https://www.linkedin.com/',
-          icon: <FaLinkedinIn />,
-        },
-        {
-          href: 'https://www.pinterest.com/',
-          icon: <FaPinterest />,
-        },
-      ],
-      name: 'Wade Warren',
-      about: 'Marketing Coordinator',
-    },
-    {
-      slug: '#',
-      image: {
-        src: '/assets/images/team/people-4.png',
-        alt: 'Jenny Wilson',
-      },
-      socials: [
-        {
-          href: 'https://www.facebook.com/',
-          icon: <FaFacebookF />,
-        },
-        {
-          href: 'https://twitter.com/',
-          icon: <FaTwitter />,
-        },
-        {
-          href: 'https://www.linkedin.com/',
-          icon: <FaLinkedinIn />,
-        },
-        {
-          href: 'https://www.pinterest.com/',
-          icon: <FaPinterest />,
-        },
-      ],
-      name: 'Jenny Wilson',
-      about: 'Nursing Assistant',
+      name: 'John Pepela',
+      about: 'Technical Director & Developer',
     },
   ],
 };

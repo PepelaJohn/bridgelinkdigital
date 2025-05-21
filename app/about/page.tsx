@@ -1,6 +1,6 @@
 import { Footer } from '@/src/layout/footer/v1';
 import { MainHeader } from '@/src/layout/header';
-import { AboutSection } from '@/src/sections/about/v1';
+// import { AboutSection } from '@/src/sections/about/v1';
 import { AboutSection as AboutSectionTwo } from '@/src/sections/about/v2';
 import { CtaSection } from '@/src/sections/cta/v1';
 import { HeroSection } from '@/src/sections/hero/v3';
@@ -30,11 +30,11 @@ export default function Page() {
           },
         ]}
       />
-      <AboutSection />
+     
+      <AboutSectionTwo />
       <CtaSection />
       <TestimonialSection />
       <StatisticsSection />
-      <AboutSectionTwo />
       {/* <WorkprocessSection /> */}
       <Footer />
     </>
