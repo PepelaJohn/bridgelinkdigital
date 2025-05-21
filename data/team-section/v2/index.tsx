@@ -32,7 +32,7 @@ export const teamSectionData: TeamSectionProps = {
       slug: '#',
       image: {
         src: '/assets/images/team/jemo.jpg',
-        alt: 'James Mugeni',
+        alt: 'Head Of Digital Strategy',
       },
       socials: [
         {
@@ -56,7 +56,7 @@ export const teamSectionData: TeamSectionProps = {
         },
       ],
       name: 'Caleb Bwire',
-      about: 'Marketing Director',
+      about: 'Director Of Marketing and SEO',
     },
     {
       slug: '#',
