@@ -13,7 +13,7 @@ export interface PortfolioCardProps {
 }
 
 export function ProjectCard({
-  slug,
+  
   image,
   title,
   description,
