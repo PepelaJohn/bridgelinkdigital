@@ -21,7 +21,7 @@ export interface TeamCardProps {
 }
 
 const imageWrapperCommonClasses = cn(
-  'max-w-max overflow-hidden pointer-events-none rounded-full after:absolute  after:inset-0 after:bg-gradient-1 after:from-primary/[.53] after:to-primary/0'
+  'max-w-max overflow-hidden pointer-events-none rounded-full '
 );
 
 export function TeamCard({ slug, image, name, about, socials }: TeamCardProps) {
@@ -55,7 +55,7 @@ export function TeamCard({ slug, image, name, about, socials }: TeamCardProps) {
           // base
           'pointer-events-none absolute z-1 hidden overflow-hidden rounded-full [transition:all_.5s_ease-out] lg:block ',
           // after
-          'after:absolute after:inset-0 after:bg-gradient-1  after:from-primary/[.53] after:to-primary/0',
+          
 
           // normal position
           'left-[400px] top-[90px] opacity-0 [transform:translateY(-50%)]',

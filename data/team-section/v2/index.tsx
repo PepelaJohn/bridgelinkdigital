@@ -1,9 +1,8 @@
 import { TeamSectionProps } from '@/src/sections/team/v2';
 import {
-  FaFacebookF,
+  
   FaLinkedinIn,
-  FaPinterest,
-  FaTwitter,
+
 } from 'react-icons/fa6';
 
 export const teamSectionData: TeamSectionProps = {
