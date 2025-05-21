@@ -33,7 +33,7 @@ export const projectSectionData: ProjectSectionProps = {
       href: 'https://milanodirouge.com/',
       slug: '/project/business-rebrand',
       image: {
-        src: '/assets/images/project/lux.webp ',
+        src: '/assets/images/project/lux.webp',
         alt: 'luxury-fashion-brand',
       },
       title: 'Luxury Design Brand',
