@@ -10,7 +10,7 @@ export const heroData: HeroProps = {
       title: 'Empowering Your Digital Future',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '#about',
       },
     },
     {
@@ -21,7 +21,7 @@ export const heroData: HeroProps = {
       title: 'Empowering Your Digital Future',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '#about',
       },
     },
     {
@@ -32,7 +32,7 @@ export const heroData: HeroProps = {
       title: 'Empowering Your Digital Future',
       button: {
         label: 'Discover More',
-        href: '/',
+        href: '#about',
       },
     },
   ],

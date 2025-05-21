@@ -22,7 +22,7 @@ export const heroSectionData: HeroSectionProps = {
     suffix: '+',
   },
   ctaButton: {
-    href: '',
+    href: '#about',
     label: 'Discover More',
   },
   imageLarge: {

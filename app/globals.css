@@ -30,3 +30,7 @@
   text-shadow: none;
   @apply bg-primary text-white;
 }
+
+*{
+  scroll-behavior: smooth!important;
+}

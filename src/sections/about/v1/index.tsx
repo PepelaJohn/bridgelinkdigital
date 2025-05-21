@@ -25,7 +25,7 @@ export interface AboutSectionProps {
 export function AboutSection() {
   const { images, sectionHeading, keyPoints, description } = aboutSectionData;
   return (
-    <section className="section-padding-primary overflow-hidden">
+    <section id='about' className="section-padding-primary overflow-hidden">
       <Container>
         <div className="grid items-center gap-12 lg:grid-cols-[.92fr_1fr] 2xl:gap-20">
           {/* Content  */}
