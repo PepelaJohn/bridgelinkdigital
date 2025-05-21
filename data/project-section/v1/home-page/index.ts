@@ -8,31 +8,34 @@ export const projectSectionData: ProjectSectionProps = {
   isWave: true,
   works: [
     {
+      href: 'https://lunadrone.com',
       slug: '/project/responsive-ecommerce',
       image: {
-        src: '/assets/images/project/1.png',
+        src: '/assets/images/project/luna.jpg',
         alt: 'ecommerce-website-design',
       },
-      title: 'Responsive E-Commerce Platform',
-      description: 'Modern shopping experience with seamless navigation',
+      title: 'Drone Delivery Service',
+      description: 'Custom drone delivery platform ',
     },
     {
+      href: 'https://events-team.netlify.app',
       slug: '/project/social-media-campaign',
       image: {
-        src: '/assets/images/project/2.png',
-        alt: 'social-media-management',
+        src: '/assets/images/project/events.jpg',
+        alt: 'social-media-strategy',
       },
-      title: 'Integrated Social Media Campaign',
-      description: 'Strategic content planning and audience engagement',
+      title: 'Event Management.',
+      description: 'Event management and planning platform',
     },
     {
+      href: 'https://milanodirouge.com/',
       slug: '/project/business-rebrand',
       image: {
-        src: '/assets/images/project/3.png',
-        alt: 'website-redesign',
+        src: '/assets/images/project/luxury.jpg ',
+        alt: 'business-website-redesign',
       },
-      title: 'Complete Business Rebrand',
-      description: 'Website redesign with brand identity overhaul',
+      title: 'Luxury Design Brand',
+      description: 'Independent luxury designs shop.',
     },
     {
       slug: '/project/digital-marketing',

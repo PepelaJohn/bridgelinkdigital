@@ -9,6 +9,7 @@ export interface PortfolioCardProps {
   image: Omit<ImageProps, 'width' | 'height'>;
   title: string;
   description: string;
+  href?: string;
 }
 
 export function ProjectCard({
@@ -16,10 +17,12 @@ export function ProjectCard({
   image,
   title,
   description,
+  href,
 }: PortfolioCardProps) {
   return (
     <CustomLink
-      href={slug}
+      target={href ? "_blank":"_self"}
+      href={href ? href : '#'}
       className="group/portfolio relative z-1 block aspect-[640/916] overflow-hidden rounded-5 p-6 md:p-[1.875rem]"
     >
       <span
