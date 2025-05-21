@@ -23,7 +23,7 @@ export function ProjectCard({
     <CustomLink
       target={href ? "_blank":"_self"}
       href={href ? href : '#'}
-      className="group/portfolio relative z-1 block aspect-[640/916] overflow-hidden rounded-5 p-6 md:p-[1.875rem]"
+      className="group/portfolio relative z-1 block aspect-[640/916] h-auto overflow-hidden rounded-5 p-6 md:p-[1.875rem]"
     >
       <span
         className={cn(
