@@ -15,14 +15,14 @@ export default function Page() {
     <>
       <MainHeader version="1" />
       <HeroSection
-        title="Testimonial"
+        title="Testimonials"
         breadcrumbItems={[
           {
             label: 'Home',
             href: '/',
           },
           {
-            label: 'Testimonial',
+            label: 'Testimonials',
           },
         ]}
       />

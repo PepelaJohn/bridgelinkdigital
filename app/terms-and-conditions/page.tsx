@@ -8,14 +8,14 @@ export default function Privacy() {
     <>
       <MainHeader version="1" />
       <HeroSection
-        title="Privacy Policy"
+        title="Terms and Conditions"
         breadcrumbItems={[
           {
             label: 'Home',
             href: '/',
           },
           {
-            label: 'Privacy Policy',
+            label: 'Terms and Conditions',
           },
         ]}
       />

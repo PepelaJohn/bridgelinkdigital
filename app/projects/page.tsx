@@ -6,7 +6,7 @@ import { HeroSection } from '@/src/sections/hero/v3';
 import { Metadata } from 'next';
 import PortfolioShowcase from '@/src/components/cards/project/v3';
 export const metadata: Metadata = {
-  title: 'BridgeLink | Project',
+  title: 'BridgeLink | Projects',
   description: 'BridgeLink - IT Solutions and Services .',
 };
 
@@ -15,14 +15,14 @@ export default function Page() {
     <>
       <MainHeader version="1" />
       <HeroSection
-        title="Project"
+        title="Projects"
         breadcrumbItems={[
           {
             label: 'Home',
             href: '/',
           },
           {
-            label: 'Project',
+            label: 'Projects',
           },
         ]}
       />

@@ -17,7 +17,7 @@ export interface HeroSectionProps {
 
 export function HeroSection({ title, breadcrumbItems }: HeroSectionProps) {
   return (
-    <section className="section-padding-primary relative flex h-[250px] items-center">
+    <section className="section-padding-primary relative flex max-sm:h-[100px] h-[250px] items-center">
       {/* Background image  */}
       <Image
         priority

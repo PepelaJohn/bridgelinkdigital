@@ -177,10 +177,11 @@ const PortfolioShowcase: React.FC = () => {
   
 
   return (
-    <div className="min-h-screen  px-6 py-12">
+    <div className="min-h-screen  px-6 sm:py-12">
       <div className="max-w-8xl mx-auto">
         <div className="mb-12 text-center">
-         <SectionHeading
+          <SectionHeading
+            className="max-sm:hidden"
                       subtitle="Featured Portfolio"
                       title="Connecting brands to digital world"
                       alignment="center"
