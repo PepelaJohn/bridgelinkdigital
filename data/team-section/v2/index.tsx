@@ -36,7 +36,7 @@ export const teamSectionData: TeamSectionProps = {
       },
       socials: [
         {
-          href: 'https://www.linkedin.com/',
+          href: 'https://www.linkedin.com/in/james-mugeni-065a15208',
           icon: <FaLinkedinIn />,
         },
       ],
@@ -51,7 +51,7 @@ export const teamSectionData: TeamSectionProps = {
       },
       socials: [
         {
-          href: 'https://www.linkedin.com/',
+          href: 'https://www.linkedin.com/in/caleb-bwire-786696186',
           icon: <FaLinkedinIn />,
         },
       ],
@@ -66,7 +66,7 @@ export const teamSectionData: TeamSectionProps = {
       },
       socials: [
         {
-          href: 'https://www.linkedin.com/',
+          href: 'https://www.linkedin.com/in/pepelajohn',
           icon: <FaLinkedinIn />,
         },
       ],

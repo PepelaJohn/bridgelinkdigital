@@ -31,16 +31,16 @@ export const teamSectionData: TeamSectionProps = {
       slug: '#',
       image: {
         src: '/assets/images/team/jemo.jpg',
-        alt: 'James Mugeni',
+        alt: 'Head Of Digital Strategy',
       },
       socials: [
         {
-          href: 'https://www.linkedin.com/',
+          href: 'https://www.linkedin.com/in/james-mugeni-065a15208',
           icon: <FaLinkedinIn />,
         },
       ],
       name: 'James Mugeni',
-      about: 'Head of Digital Strategy',
+      about: 'Operations Manager',
     },
     {
       slug: '#',
@@ -50,12 +50,12 @@ export const teamSectionData: TeamSectionProps = {
       },
       socials: [
         {
-          href: 'https://www.linkedin.com/',
+          href: 'https://www.linkedin.com/in/caleb-bwire-786696186',
           icon: <FaLinkedinIn />,
         },
       ],
       name: 'Caleb Bwire',
-      about: 'Director of Marketing & SEO',
+      about: 'Director Of Marketing and SEO',
     },
     {
       slug: '#',
@@ -65,12 +65,12 @@ export const teamSectionData: TeamSectionProps = {
       },
       socials: [
         {
-          href: 'https://www.linkedin.com/',
+          href: 'https://www.linkedin.com/in/pepelajohn',
           icon: <FaLinkedinIn />,
         },
       ],
       name: 'John Pepela',
-      about: 'Lead Developer & Tech Specialist',
+      about: 'Technical Director & Developer',
     },
   ],
 };
