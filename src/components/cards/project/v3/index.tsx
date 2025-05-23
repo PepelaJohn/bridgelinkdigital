@@ -22,7 +22,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
   const [isHovered, setIsHovered] = useState(false);
   const [offset, setOffset] = useState(0);
   const animationRef = useRef<number>();
-  const containerRef = useRef<HTMLAnchorElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
 
   const startScrolling = () => {
@@ -60,9 +60,9 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
   }, [isHovered]);
 
   return (
-    <CustomLink
-      target="_blank"
-      href={websiteUrl}
+    <div
+    
+     
       ref={containerRef}
       className="group/portfolio relative aspect-[1280/800] w-full overflow-hidden bg-gray-50 transition-all duration-300 hover:shadow-2xl dark:bg-gray-700"
       onMouseEnter={() => setIsHovered(true)}
@@ -100,9 +100,9 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
         <div className="relative z-10 flex h-full p-2 flex-col">
           <div className="mt-auto divide-y max-w-[80%] md:opacity-0 md:transition-[transform,opacity] md:duration-500  md:group-hover/portfolio:opacity-100">
             <h3 className="overflow-hidden text-md font-bold leading-[1.25] text-white md:text-lg">
-              <span className="block [transition-delay:500ms] [transition:all_.9s_ease] md:[transform:translateY(-100%)] md:group-hover/portfolio:[transform:translateY(0)]">
+              <CustomLink href={websiteUrl} className="block text-primary [transition-delay:500ms] [transition:all_.9s_ease] md:[transform:translateY(-100%)] md:group-hover/portfolio:[transform:translateY(0)]">
                 {title}
-              </span>
+              </CustomLink>
             </h3>
             <p className=" overflow-hidden pt-[11px] text-body">
               <span className="block [transition-delay:500ms] [transition:all_.9s_ease] md:[transform:translateY(100%)] md:group-hover/portfolio:[transform:translateY(0)]">
@@ -119,7 +119,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
           Auto-scrolling
         </div>
       )}
-    </CustomLink>
+    </div>
   );
 };
 
