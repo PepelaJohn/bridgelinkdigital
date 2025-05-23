@@ -62,7 +62,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
       target='_blank'
       href={websiteUrl}
       ref={containerRef}
-      className="group relative aspect-[1280/800] w-full overflow-hidden bg-yellow-500 transition-all duration-300 hover:shadow-2xl"
+      className="group relative aspect-[1280/800] w-full overflow-hidden bg-gray-50 dark:bg-gray-700 transition-all duration-300 hover:shadow-2xl"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
