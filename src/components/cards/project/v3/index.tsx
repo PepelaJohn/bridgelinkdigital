@@ -100,12 +100,12 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
         <div className="relative z-10 flex h-full p-2 flex-col">
           <div className="mt-auto divide-y max-w-[80%] md:opacity-0 md:transition-[transform,opacity] md:duration-500  md:group-hover/portfolio:opacity-100">
             <h3 className="overflow-hidden text-md font-bold leading-[1.25] text-white md:text-lg">
-              <CustomLink href={websiteUrl} className="block text-primary [transition-delay:500ms] [transition:all_.9s_ease] md:[transform:translateY(-100%)] md:group-hover/portfolio:[transform:translateY(0)]">
+              <CustomLink href={websiteUrl} className="block text-primary max-sm:text-sm [transition-delay:500ms] [transition:all_.9s_ease] md:[transform:translateY(-100%)] md:group-hover/portfolio:[transform:translateY(0)] font-bold">
                 {title}
               </CustomLink>
             </h3>
-            <p className=" overflow-hidden pt-[11px] text-body">
-              <span className="block [transition-delay:500ms] [transition:all_.9s_ease] md:[transform:translateY(100%)] md:group-hover/portfolio:[transform:translateY(0)]">
+            <p className=" overflow-hidden max-sm:pt-[2px] pt-[11px] md:pt-[6px] text-body">
+              <span className="block max-sm:text-xs [transition-delay:500ms] [transition:all_.9s_ease] md:[transform:translateY(100%)] md:group-hover/portfolio:[transform:translateY(0)]">
                 {description}
               </span>
             </p>
