@@ -1,6 +1,8 @@
 'use client';
 import { CustomLink } from '@/src/components/custom-link';
 import { SectionHeading } from '@/src/components/section-heading';
+import { cn } from '@/src/utils/shadcn';
+import Image from 'next/image';
 import React, { useState, useRef, useEffect } from 'react';
 
 interface PortfolioCardProps {
@@ -59,17 +61,27 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
 
   return (
     <CustomLink
-      target='_blank'
+      target="_blank"
       href={websiteUrl}
       ref={containerRef}
-      className="group relative aspect-[1280/800] w-full overflow-hidden bg-gray-50 dark:bg-gray-700 transition-all duration-300 hover:shadow-2xl"
+      className="group/portfolio relative aspect-[1280/800] w-full overflow-hidden bg-gray-50 transition-all duration-300 hover:shadow-2xl dark:bg-gray-700"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
+      <span
+        className={cn(
+          // Normal
+          'absolute inset-0 z-[2] bg-gradient-1 from-primary/0 via-black/20 to-black/80 [transition:all_500ms_ease] md:[transform:perspective(400px)_rotateX(90deg)_scaleY(0.5)]',
+          // Hover
+          'md:group-hover/portfolio:[transform:perspective(400px)_rotateX(0deg)_scaleY(1.0)] md:group-hover/portfolio:[transition-delay:.1s] md:group-hover/portfolio:[transition:all_.7s_ease]'
+        )}
+      ></span>
       {/* Scrolling Website Screenshot */}
       {imageUrl && (
         <div className="absolute inset-0 overflow-hidden">
-          <img
+          <Image
+            height={800}
+            width={1200}
             ref={imageRef}
             src={imageUrl}
             alt={title}
@@ -81,19 +93,23 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
 
       {/* Hover Overlay */}
       <div
-        className={`absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent transition-all duration-300 ${
+        className={`absolute inset-0 z-10 bg-gradient-to-t duration-300 ${
           isHovered ? 'opacity-100' : 'opacity-0'
         }`}
       >
-        <div className="absolute bottom-0 left-0 right-0 p-2 text-white">
-          <h3 className=" translate-y-2 text-xl uppercase font-bold transition-transform duration-300 group-hover:translate-y-0">
-            {title}
-          </h3>
-          <p className="m translate-y-2 text-sm text-gray-200 transition-transform delay-75 duration-300 group-hover:translate-y-0">
-            {description}
-          </p>
-        
-        
+        <div className="relative z-10 flex h-full p-2 flex-col">
+          <div className="mt-auto divide-y max-w-[80%] md:opacity-0 md:transition-[transform,opacity] md:duration-500  md:group-hover/portfolio:opacity-100">
+            <h3 className="overflow-hidden text-md font-bold leading-[1.25] text-white md:text-lg">
+              <span className="block [transition-delay:500ms] [transition:all_.9s_ease] md:[transform:translateY(-100%)] md:group-hover/portfolio:[transform:translateY(0)]">
+                {title}
+              </span>
+            </h3>
+            <p className=" overflow-hidden pt-[11px] text-body">
+              <span className="block [transition-delay:500ms] [transition:all_.9s_ease] md:[transform:translateY(100%)] md:group-hover/portfolio:[transform:translateY(0)]">
+                {description}
+              </span>
+            </p>
+          </div>
         </div>
       </div>
 
