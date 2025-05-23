@@ -71,7 +71,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
       <span
         className={cn(
           // Normal
-          'absolute inset-0 z-[2] bg-gradient-1 from-primary/0 via-black/20 to-black/80 [transition:all_500ms_ease] md:[transform:perspective(400px)_rotateX(90deg)_scaleY(0.5)]',
+          'absolute inset-0 z-[2] bg-gradient-to-b from-black/0 via-black/20 to-black/80 [transition:all_500ms_ease] md:[transform:perspective(400px)_rotateX(90deg)_scaleY(0.5)]',
           // Hover
           'md:group-hover/portfolio:[transform:perspective(400px)_rotateX(0deg)_scaleY(1.0)] md:group-hover/portfolio:[transition-delay:.1s] md:group-hover/portfolio:[transition:all_.7s_ease]'
         )}
