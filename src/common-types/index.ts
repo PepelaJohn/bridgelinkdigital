@@ -18,6 +18,7 @@ export interface LinkProps {
   href: string;
   /** This control specifies where to open the linked document */
   openNewTab?: boolean;
+  ref?: React.Ref<HTMLAnchorElement>;
 }
 
 export interface PersonProps {
