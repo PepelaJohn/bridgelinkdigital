@@ -1,6 +1,7 @@
 import { TeamSectionProps } from '@/src/sections/team/v2';
 import {
   
+  FaLink,
   FaLinkedinIn,
 
 } from 'react-icons/fa6';
@@ -69,6 +70,12 @@ export const teamSectionData: TeamSectionProps = {
           href: 'https://www.linkedin.com/in/pepelajohn',
           icon: <FaLinkedinIn />,
         },
+        
+                {
+                  href: "https://www.pepelajohn.site",
+                  icon: <FaLink/>
+                }
+        
       ],
       name: 'John Pepela',
       about: 'Technical Director & Developer',
