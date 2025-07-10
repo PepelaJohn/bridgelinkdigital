@@ -1,5 +1,5 @@
 {
-  "name": "BridgeLink-react",
+  "name": "bridgelink",
   "version": "2.0",
   "private": true,
   "scripts": {
@@ -11,7 +11,8 @@
     "tsc-watch": "npx tsc --w",
     "prettier": "prettier --check --ignore-path .gitignore .",
     "prettier:fix": "prettier --write --ignore-path .gitignore .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.1.2",
@@ -35,6 +36,7 @@
     "lucide-react": "^0.279.0",
     "mongoose": "^8.16.2",
     "next": "^14.1.0",
+    "next-sitemap": "^4.2.3",
     "next-themes": "^0.2.1",
     "nodemailer": "^6.9.12",
     "react": "^18.2.0",

@@ -16,16 +16,16 @@ export const metadata: Metadata = {
   title: 'BridgeLink',
   description: 'BridgeLink - Digital Solutions for a Smarter Future',
   keywords:
-    'tech, IT, web development, SEO, digital marketing, social media, UI/UX design',
+    'tech, IT, web development, SEO, digital marketing, social media, UI/UX design, website development in kenya',
   openGraph: {
     title: 'BridgeLink | Empowering Businesses with Smart Digital Solutions',
     description:
       'BridgeLink delivers expert web development, SEO, UI/UX design, and digital marketing services. We empower your business to thrive in the digital age.',
-    url: 'https://musimeter.site/', // Update to your actual domain
+    url: 'https://bridgelink.co.ke/', // Update to your actual domain
     siteName: 'BridgeLink',
     images: [
       {
-        url: 'https://musimeter.site/preview.jpeg', // Replace with your actual preview image URL
+        url: 'https://bridgelink.co.ke/preview.jpeg', // Replace with your actual preview image URL
         width: 1200,
         height: 630,
         alt: 'BridgeLink team crafting digital solutions for modern businesses.',
@@ -36,12 +36,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@bridgelink_ke', // Replace with your actual Twitter/X handle
+    site: '@bridgelink_ke', 
     creator: '@bridgelink_ke',
     title: 'BridgeLink | Empowering Businesses with Smart Digital Solutions',
     description:
       'BridgeLink delivers expert web development, SEO, UI/UX design, and digital marketing services. We empower your business to thrive in the digital age.',
-    images: ['https://musimeter.site/preview.jpeg'], // Same as Open Graph image
+    images: ['https://bridgelink.co.ke/preview.jpeg'], // Same as Open Graph image
   },
 };
 

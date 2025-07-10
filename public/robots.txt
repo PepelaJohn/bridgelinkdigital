@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://bridgelink.co.ke
+
+# Sitemaps
+Sitemap: https://bridgelink.co.ke/sitemap.xml
