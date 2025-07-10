@@ -13,7 +13,6 @@ export interface PortfolioCardProps {
 }
 
 export function ProjectCard({
-  
   image,
   title,
   description,
@@ -21,7 +20,7 @@ export function ProjectCard({
 }: PortfolioCardProps) {
   return (
     <CustomLink
-      target={href ? "_blank":"_self"}
+      target={href ? '_blank' : '_self'}
       href={href ? href : '#'}
       className="group/portfolio relative z-1 block aspect-[640/916] h-auto overflow-hidden rounded-5 p-6 md:p-[1.875rem]"
     >

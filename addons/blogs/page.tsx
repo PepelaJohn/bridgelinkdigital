@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import React, { useState, useEffect, useRef } from 'react';
 import {
   Bold,
@@ -85,7 +85,17 @@ const BlogEditor = () => {
     setIsPreview(!isPreview);
   };
 
-  const ToolbarButton = ({ icon: Icon, onClick, title, isActive = false }:{icon:any, onClick:()=>void, title:string, isActive?:boolean}) => (
+  const ToolbarButton = ({
+    icon: Icon,
+    onClick,
+    title,
+    isActive = false,
+  }: {
+    icon: any;
+    onClick: () => void;
+    title: string;
+    isActive?: boolean;
+  }) => (
     <button
       onClick={onClick}
       title={title}
@@ -265,7 +275,6 @@ const BlogEditor = () => {
                     style={{ wordBreak: 'break-word' }}
                     onInput={(e) => setContent(e.currentTarget.innerHTML)}
                     dangerouslySetInnerHTML={{ __html: content }}
-                    
                   />
                 </div>
               </>

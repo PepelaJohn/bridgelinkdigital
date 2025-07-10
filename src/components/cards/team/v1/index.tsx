@@ -51,7 +51,7 @@ export function TeamCard({
           (min-width:1024px) 33vw,
           100vw
           "
-          className="object-cover max-h-[80vh] h-full transition-transform duration-500 [transform:scale(1.05)] group-hover:[transform:scale(1)]"
+          className="h-full max-h-[80vh] object-cover transition-transform duration-500 [transform:scale(1.05)] group-hover:[transform:scale(1)]"
         />
         {socials && socials.length > 0 && (
           <div className="absolute bottom-0 left-30px">

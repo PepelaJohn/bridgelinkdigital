@@ -16,7 +16,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
   title,
   description,
   websiteUrl,
- 
+
   imageUrl,
 }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -61,8 +61,6 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
 
   return (
     <div
-    
-     
       ref={containerRef}
       className="group/portfolio relative aspect-[1280/800] w-full overflow-hidden bg-gray-50 transition-all duration-300 hover:shadow-2xl dark:bg-gray-700"
       onMouseEnter={() => setIsHovered(true)}
@@ -97,15 +95,19 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
           isHovered ? 'opacity-100' : 'opacity-0'
         }`}
       >
-        <div className="relative z-10 flex h-full p-2 flex-col">
+        <div className="relative z-10 flex h-full flex-col p-2">
           <div className="mt-auto divide-y sm:max-w-[80%] md:opacity-0 md:transition-[transform,opacity] md:duration-500  md:group-hover/portfolio:opacity-100">
             <h3 className="overflow-hidden text-md font-bold leading-[1.25] text-white md:text-lg">
-              <CustomLink target='_blank' href={websiteUrl} className="block text-primary max-sm:text-sm [transition-delay:500ms] [transition:all_.9s_ease] md:[transform:translateY(-100%)] md:group-hover/portfolio:[transform:translateY(0)] font-bold">
+              <CustomLink
+                target="_blank"
+                href={websiteUrl}
+                className="block font-bold text-primary [transition-delay:500ms] [transition:all_.9s_ease] max-sm:text-sm md:[transform:translateY(-100%)] md:group-hover/portfolio:[transform:translateY(0)]"
+              >
                 {title}
               </CustomLink>
             </h3>
-            <p className=" overflow-hidden max-sm:pt-[2px] pt-[11px] md:pt-[6px] text-body">
-              <span className="block max-sm:text-xs [transition-delay:500ms] [transition:all_.9s_ease] md:[transform:translateY(100%)] md:group-hover/portfolio:[transform:translateY(0)]">
+            <p className=" overflow-hidden pt-[11px] text-body max-sm:pt-[2px] md:pt-[6px]">
+              <span className="block [transition-delay:500ms] [transition:all_.9s_ease] max-sm:text-xs md:[transform:translateY(100%)] md:group-hover/portfolio:[transform:translateY(0)]">
                 {description}
               </span>
             </p>
@@ -190,29 +192,27 @@ const PortfolioShowcase: React.FC = () => {
       imageUrl: '/assets/images/project/baypark.jpg',
     },
   ];
-  
 
   return (
-    <div id='projects' className="min-h-screen  px-6 sm:py-12">
+    <div id="projects" className="min-h-screen  px-6 sm:py-12">
       <div className="max-w-8xl mx-auto">
         <div className="mb-12 text-center">
           <SectionHeading
             className="max-sm:hidden"
-                      subtitle="Featured Portfolio"
-                      title="Connecting brands to digital world"
-                      alignment="center"
-                      hasBottomSpacing
-                    />
+            subtitle="Featured Portfolio"
+            title="Connecting brands to digital world"
+            alignment="center"
+            hasBottomSpacing
+          />
         </div>
 
-        <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 cursor-auto">
+        <div className="grid cursor-auto grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
           {portfolioItems.map((item, index) => (
             <PortfolioCard
               key={index}
               title={item.title}
               description={item.description}
               websiteUrl={item.websiteUrl}
- 
               imageUrl={item.imageUrl}
             />
           ))}

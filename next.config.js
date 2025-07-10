@@ -3,7 +3,7 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: '/_next/image', 
+        source: '/_next/image',
         headers: [
           {
             key: 'X-Content-Type-Options',
@@ -12,7 +12,7 @@ const nextConfig = {
         ],
       },
       {
-        source: '/assets/:path*', 
+        source: '/assets/:path*',
         headers: [
           {
             key: 'X-Content-Type-Options',

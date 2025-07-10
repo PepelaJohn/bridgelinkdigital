@@ -1,8 +1,7 @@
 import { Footer } from '@/src/layout/footer/v1';
 import { MainHeader } from '@/src/layout/header';
 
-
-import React from 'react'
+import React from 'react';
 import UnsubscribeSuccess from './comp';
 
 const UnsubScribePage = () => {
@@ -13,6 +12,6 @@ const UnsubScribePage = () => {
       <Footer></Footer>
     </>
   );
-}
+};
 
-export default UnsubScribePage
+export default UnsubScribePage;

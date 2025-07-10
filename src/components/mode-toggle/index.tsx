@@ -117,7 +117,7 @@ export function ModeToggle() {
                     )}
                     onClick={() => {
                       setTheme(option.value);
-                      setIsExpanded(false)
+                      setIsExpanded(false);
                     }}
                   >
                     <Icon className="mr-2 h-4 w-4" />

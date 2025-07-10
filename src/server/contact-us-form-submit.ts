@@ -1,6 +1,6 @@
 // server/contact-us-form-submit.ts
 
-import { ContactUsSchemaType } from "../sections/contact/v1/form";
+import { ContactUsSchemaType } from '../sections/contact/v1/form';
 
 export async function contactUsFormSubmit(values: ContactUsSchemaType) {
   try {

@@ -98,7 +98,7 @@ export function Hero() {
               {/* Background Image with Overlay */}
               <div className="absolute inset-0">
                 <div
-                  className=" h-full w-full bg-cover bg-center grayscale-1 bg-no-repeat transition-transform ease-out hover:scale-105"
+                  className=" grayscale-1 h-full w-full bg-cover bg-center bg-no-repeat transition-transform ease-out hover:scale-105"
                   style={{ backgroundImage: `url(${item.image.src})` }}
                 />
                 {/* Gradient Overlays */}
@@ -140,8 +140,6 @@ export function Hero() {
                         ))}
                       </span>
                     </h1>
-
-                   
 
                     {/* CTA Button - Responsive */}
                     <div className="flex flex-wrap gap-4">

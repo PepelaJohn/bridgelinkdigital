@@ -96,7 +96,7 @@ export function Footer({ className }: SectionProps) {
             viewport={{ once: true, amount: 0.3 }}
           >
             {/* About Section */}
-            <motion.div variants={fadeInUp } custom={0}>
+            <motion.div variants={fadeInUp} custom={0}>
               <BrandLogo />
               <p className="mb-7 mt-3 text-gray-600 dark:text-gray-400">
                 {about.description}
@@ -122,7 +122,7 @@ export function Footer({ className }: SectionProps) {
             </motion.div>
 
             {/* Column One - Links */}
-            <motion.div variants={fadeInUp } custom={1}>
+            <motion.div variants={fadeInUp} custom={1}>
               <h3 className="mb-5 text-lg font-bold leading-tight text-gray-900 dark:text-white md:mb-8 md:text-xl">
                 {columnOne.title}
               </h3>
@@ -152,7 +152,7 @@ export function Footer({ className }: SectionProps) {
             </motion.div>
 
             {/* Column Two - Contact Info */}
-            <motion.div variants={fadeInUp } custom={2}>
+            <motion.div variants={fadeInUp} custom={2}>
               <h3 className="mb-5 text-lg font-bold leading-tight text-gray-900 dark:text-white md:mb-8 md:text-xl">
                 {columnTwo.title}
               </h3>
@@ -206,7 +206,7 @@ export function Footer({ className }: SectionProps) {
             </motion.div>
 
             {/* Column Three - Recent Blogs */}
-            <motion.div variants={fadeInUp } custom={3}>
+            <motion.div variants={fadeInUp} custom={3}>
               <h3 className="mb-5 text-lg font-bold leading-tight text-gray-900 dark:text-white md:mb-8 md:text-xl">
                 {columnThree.title}
               </h3>

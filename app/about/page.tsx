@@ -30,7 +30,7 @@ export default function Page() {
           },
         ]}
       />
-     
+
       <AboutSectionTwo />
       <CtaSection />
       <TestimonialSection />

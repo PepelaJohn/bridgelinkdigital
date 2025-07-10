@@ -21,7 +21,12 @@ export function CustomLink({
   ...props
 }: CustomLinkProps) {
   return (
-    <Link href={href} ref={ref} target={openNewTab ? '_blank' : '_self'} {...props}>
+    <Link
+      href={href}
+      ref={ref}
+      target={openNewTab ? '_blank' : '_self'}
+      {...props}
+    >
       {children}
     </Link>
   );

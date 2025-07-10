@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 export default function UnsubscribeSuccess() {
   return (
-    <div className="flex min-h-[80vh] pt-[100px] items-center justify-center dark:bg-gray-900 bg-gray-50">
-      <div className="w-full max-w-md rounded-lg dark:bg-gray-800 bg-white p-8 text-center shadow-md">
+    <div className="flex min-h-[80vh] items-center justify-center bg-gray-50 pt-[100px] dark:bg-gray-900">
+      <div className="w-full max-w-md rounded-lg bg-white p-8 text-center shadow-md dark:bg-gray-800">
         <div className="mb-6">
           <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-green-100">
             <svg
@@ -21,7 +21,7 @@ export default function UnsubscribeSuccess() {
               />
             </svg>
           </div>
-          <h1 className="mb-2 text-2xl font-bold dark:text-gray-50 text-gray-900">
+          <h1 className="mb-2 text-2xl font-bold text-gray-900 dark:text-gray-50">
             Successfully Unsubscribed
           </h1>
           <p className="text-gray-600 dark:text-gray-300">
@@ -31,8 +31,6 @@ export default function UnsubscribeSuccess() {
         </div>
 
         <div className="space-y-4">
-        
-
           <div className="pt-4">
             <Link
               href="/"

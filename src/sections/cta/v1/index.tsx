@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import { SectionProps } from '@/src/common-types';
 import { Button } from '@/src/components/button';
 import { Container } from '@/src/components/container';
@@ -21,35 +21,37 @@ export function CtaSection({ className }: SectionProps) {
     'idle' | 'loading' | 'success' | 'error'
   >('idle');
 
-const [email, setEmail] = useState('');
-const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
-  setStatus('loading');
+  const [email, setEmail] = useState('');
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus('loading');
 
-  try {
-    const response = await fetch('/api/newsletter', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ email }),
-    });
+    try {
+      const response = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
 
-    const data = await response.json();
+      const data = await response.json();
 
-    if (response.ok) {
-      setStatus('success');
-      toast.success('Successfully subscribed! Check your email for confirmation.');
-      setEmail('');
-    } else {
+      if (response.ok) {
+        setStatus('success');
+        toast.success(
+          'Successfully subscribed! Check your email for confirmation.'
+        );
+        setEmail('');
+      } else {
+        setStatus('error');
+        toast.error(data.error || 'Something went wrong. Please try again.');
+      }
+    } catch (error) {
       setStatus('error');
-      toast.error(data.error || 'Something went wrong. Please try again.');
+      toast.error('Network error. Please check your connection and try again.');
     }
-  } catch (error) {
-    setStatus('error');
-    toast.error('Network error. Please check your connection and try again.');
-  }
-};
+  };
   return (
     <section className={cn(className)}>
       <Container>
@@ -79,7 +81,6 @@ const handleSubmit = async (e: React.FormEvent) => {
                 )}
               >
                 <span>
-                
                   {status === 'loading' ? 'SUBSCRIBING...' : 'SUBSCRIBE'}
                 </span>
               </Button>

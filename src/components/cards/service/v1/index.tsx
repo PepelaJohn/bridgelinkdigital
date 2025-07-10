@@ -50,9 +50,7 @@ export function ServiceCard({ icon, title, description, slug }: ServiceProps) {
           // stop default button hover effects
           'before:hidden after:hidden',
         ])}
-      >
-       
-      </Button>
+      ></Button>
 
       {/* Bottom line animation  */}
       <span className="invisible absolute bottom-0 left-0 h-[2px] w-full scale-x-[30%] bg-primary opacity-0 transition-all duration-400 group-hover/service:visible group-hover/service:scale-x-100  group-hover/service:opacity-100"></span>

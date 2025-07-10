@@ -1,9 +1,5 @@
 import { TeamSectionProps } from '@/src/sections/team/v1';
-import {
-
-  FaLinkedinIn,
-  FaLink
-} from 'react-icons/fa6';
+import { FaLinkedinIn, FaLink } from 'react-icons/fa6';
 
 export const teamSectionData: TeamSectionProps = {
   sectionHeading: {
@@ -15,7 +11,7 @@ export const teamSectionData: TeamSectionProps = {
       slug: '#',
       image: {
         src: '/assets/images/team/viki.jpg',
-        alt: 'Victor Bwire',
+        alt: 'Victor Adriano',
       },
       socials: [
         {
@@ -23,7 +19,7 @@ export const teamSectionData: TeamSectionProps = {
           icon: <FaLinkedinIn />,
         },
       ],
-      name: 'Victor Bwire',
+      name: 'Victor Adriano',
       about: 'Chief Executive Officer',
     },
     {
@@ -39,7 +35,7 @@ export const teamSectionData: TeamSectionProps = {
         },
       ],
       name: 'James Mugeni',
-      about: 'Operations Manager',
+      about: 'Operations ',
     },
     {
       slug: '#',
@@ -54,7 +50,7 @@ export const teamSectionData: TeamSectionProps = {
         },
       ],
       name: 'Caleb Bwire',
-      about: 'Director Of Marketing and SEO',
+      about: 'Marketing and SEO',
     },
     {
       slug: '#',
@@ -73,7 +69,7 @@ export const teamSectionData: TeamSectionProps = {
         },
       ],
       name: 'John Pepela',
-      about: 'Technical Director & Developer',
+      about: 'Developer',
     },
   ],
 };

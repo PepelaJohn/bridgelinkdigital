@@ -12,8 +12,6 @@ interface Props {
   children: React.ReactNode;
 }
 
-
-
 export const metadata: Metadata = {
   title: 'BridgeLink',
   description: 'BridgeLink - Digital Solutions for a Smarter Future',
@@ -46,7 +44,6 @@ export const metadata: Metadata = {
     images: ['https://musimeter.site/preview.jpeg'], // Same as Open Graph image
   },
 };
-
 
 export default async function RootLayout({ children }: Props) {
   return (

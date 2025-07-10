@@ -2,7 +2,6 @@ import { NextRequest, NextResponse } from 'next/server';
 import { dbConnect } from '@/src/lib/db';
 import Subscriber from '@/src/models/Subscriber';
 
-
 export async function GET(request: NextRequest) {
   try {
     const searchParams = request.nextUrl.searchParams;

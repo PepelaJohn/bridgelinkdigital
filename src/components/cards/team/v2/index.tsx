@@ -55,7 +55,6 @@ export function TeamCard({ slug, image, name, about, socials }: TeamCardProps) {
           // base
           'pointer-events-none absolute z-1 hidden overflow-hidden rounded-full [transition:all_.5s_ease-out] lg:block ',
           // after
-          
 
           // normal position
           'left-[400px] top-[90px] opacity-0 [transform:translateY(-50%)]',
