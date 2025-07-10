@@ -31,7 +31,6 @@
   @apply bg-primary text-white;
 }
 
-*{
-  scroll-behavior: smooth!important;
+* {
+  scroll-behavior: smooth !important;
 }
-
