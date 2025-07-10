@@ -5,34 +5,45 @@ export const heroData: HeroProps = {
     {
       image: {
         src: '/assets/images/hero/hero-1.jpg',
-        alt: 'hero 1',
+        alt: 'Custom Website Development',
       },
-      title: 'Empowering Your Digital Future',
+      title: 'Get Stunning Websites That Convert',
       button: {
-        label: 'Discover More',
-        href: '#about',
+        label: 'Explore Web Solutions',
+        href: '/contact',
       },
     },
     {
       image: {
         src: '/assets/images/hero/hero-11.jpg',
-        alt: 'hero 1',
+        alt: 'SEO Strategy',
       },
-      title: 'Empowering Your Digital Future',
+      title: 'Boost Your Visibility with Smart SEO',
       button: {
-        label: 'Discover More',
-        href: '#about',
+        label: 'See SEO Plans',
+        href: '/contact',
       },
     },
     {
       image: {
         src: '/assets/images/hero/hero-12.jpg',
-        alt: 'hero 1',
+        alt: 'Digital Marketing Services',
       },
-      title: 'Empowering Your Digital Future',
+      title: 'Grow Faster with Digital Marketing That Works',
       button: {
-        label: 'Discover More',
-        href: '#about',
+        label: 'Get a Marketing Audit',
+        href: '#projects',
+      },
+    },
+    {
+      image: {
+        src: '/assets/images/hero/hero-13.jpg',
+        alt: 'Social Media Management',
+      },
+      title: 'Turn Followers Into Customers',
+      button: {
+        label: 'View Social Packages',
+        href: '#projects',
       },
     },
   ],

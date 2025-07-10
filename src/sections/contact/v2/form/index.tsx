@@ -6,9 +6,10 @@ import { TextAreaInput } from '@/src/components/inputs/textarea-input';
 import { cn } from '@/src/utils/shadcn';
 
 import * as Yup from 'yup';
-import { contactUsFormSubmit } from './server/contact-us-form-submit';
+
 import { toast } from 'sonner';
 import { Formik } from 'formik';
+import { contactUsFormSubmit } from '@/src/server/contact-us-form-submit';
 
 const validationMessages = {
   tooShort: 'Must be at least ${min} characters',

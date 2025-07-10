@@ -54,12 +54,11 @@ interface IOffCanvas {
   socialLinks: SocialLinkProps[];
 }
 
-
 const offCanvasProps: IOffCanvas = {
   contactInfo: {
     location: ' Nairobi, Kenya',
     phoneNumber: '+254 798014749',
-    mail: 'info@bridgelink.com',
+    mail: 'info@bridgelink.co.ke',
   },
   socialLinks: [
     {
@@ -80,7 +79,6 @@ const offCanvasProps: IOffCanvas = {
     },
   ],
 };
-
 
 export function OffCanvas({ menuItems }: Pick<HeaderProps, 'menuItems'>) {
   const { contactInfo, socialLinks } = offCanvasProps;

@@ -23,11 +23,10 @@ export const contactSectionData: ContactSectionProps = {
   contactInfo: {
     sectionHeading: {
       title: 'Get in touch ',
-      description:
-        'BridgeLink Typically responds in less than 24 hours. ',
+      description: 'BridgeLink Typically responds in less than 24 hours. ',
     },
     location: `Nairobi, Kenya`,
-    mail: 'info@bridgelink.com',
+    mail: 'info@bridgelink.co.ke',
     phone: '254 798-014749',
   },
 };

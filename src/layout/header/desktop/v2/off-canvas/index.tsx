@@ -57,7 +57,7 @@ const offCanvasProps: IOffCanvas = {
   contactInfo: {
     location: ' Nairobi, Kenya',
     phoneNumber: '+254 798014749',
-    mail: 'info@bridgelink.com',
+    mail: 'info@bridgelink.co.ke',
   },
   socialLinks: [
     {

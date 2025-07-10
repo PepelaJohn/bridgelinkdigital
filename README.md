@@ -14,3 +14,19 @@
 - `ci` – continuous integration related
 - `build` – changes that affect the build system or external dependencies
 - `revert` – reverts a previous commit
+
+# Newsletter Section
+
+## Key Features:
+
+1. **Complete Database Setup**: Mongoose schema with proper validation, indexing, and TypeScript interfaces
+2. **Secure Unsubscribe System**: 32-byte hex tokens for secure unsubscription
+3. **Professional Email Templates**: HTML welcome emails with proper styling
+4. **Error Handling**: Comprehensive error handling with proper HTTP status codes
+5. **Email Compliance**: List-Unsubscribe headers and one-click unsubscribe support
+6. **Performance Optimized**: Database connection caching and proper indexing
+
+## API Endpoints:
+
+- `POST /api/newsletter` - Subscribe users with duplicate protection
+- `GET /api/unsubscribe` - Unsubscribe users with token validation

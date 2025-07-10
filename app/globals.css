@@ -34,3 +34,7 @@
 *{
   scroll-behavior: smooth!important;
 }
+[data-aos] {
+  opacity: 1 !important;
+  transform: none !important;
+}

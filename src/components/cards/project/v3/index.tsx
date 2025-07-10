@@ -193,7 +193,7 @@ const PortfolioShowcase: React.FC = () => {
   
 
   return (
-    <div className="min-h-screen  px-6 sm:py-12">
+    <div id='projects' className="min-h-screen  px-6 sm:py-12">
       <div className="max-w-8xl mx-auto">
         <div className="mb-12 text-center">
           <SectionHeading

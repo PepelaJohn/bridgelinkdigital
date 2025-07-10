@@ -7,8 +7,9 @@ import { cn } from '@/src/utils/shadcn';
 import { Formik } from 'formik';
 
 import * as Yup from 'yup';
-import { contactUsFormSubmit } from './server/contact-us-form-submit';
+
 import { toast } from 'sonner';
+import { contactUsFormSubmit } from '@/src/server/contact-us-form-submit';
 
 const mainTitleClasses = cn(
   'relative mb-30px pb-[14px] font-secondary text-[1.25rem] font-bold uppercase text-accent-900 dark:text-white',
