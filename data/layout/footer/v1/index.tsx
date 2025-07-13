@@ -72,7 +72,7 @@ export const footerSectionData: FooterSectionProps = {
   columnTwo: {
     title: 'Contact Us',
     location: 'Nairobi, Kenya',
-    mails: ['info@bridgelink.com', 'support@bridgelink.com'],
+    mails: ['info@bridgelink.co.ke', 'support@bridgelink.co.ke'],
     phoneNumbers: ['(+254) 798-014749', '(+254) 107-709038'],
   },
   columnThree: {

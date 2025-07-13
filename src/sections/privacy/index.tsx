@@ -218,7 +218,7 @@ const PrivacyPolicy: React.FC = () => {
               practices, please contact us at:
             </p>
             <p className="font-medium text-gray-200">
-              Email: privacy@bridgelink.com
+              Email: privacy@bridgelink.co.ke
               <br />
               Phone: 254798014749
               <br />
