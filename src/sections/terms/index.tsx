@@ -165,7 +165,7 @@ const TermsAndConditions: React.FC = () => {
                 please contact us at:
               </p>
               <p className="font-medium text-gray-200">
-                Email: contact@bridgelink.com
+                Email: info@bridgelink.com
                 <br />
                 Phone: 254798014749
                 <br />
