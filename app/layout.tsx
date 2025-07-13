@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@bridgelink_ke', 
+    site: '@bridgelink_ke',
     creator: '@bridgelink_ke',
     title: 'BridgeLink | Empowering Businesses with Smart Digital Solutions',
     description:

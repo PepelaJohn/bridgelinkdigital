@@ -72,7 +72,7 @@ export const teamSectionData: TeamSectionProps = {
         },
       ],
       name: 'John Pepela',
-      about: 'Teveloper',
+      about: 'Developer',
     },
   ],
 };
