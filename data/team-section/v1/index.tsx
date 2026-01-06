@@ -25,7 +25,7 @@ export const teamSectionData: TeamSectionProps = {
     {
       slug: '#',
       image: {
-        src: '/assets/images/team/jemo.jpg',
+        src: '/assets/images/team/jemo.png',
         alt: 'Head Of Digital Strategy',
       },
       socials: [
