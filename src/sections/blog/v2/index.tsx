@@ -19,7 +19,7 @@ export function BlogSection() {
   return (
     <section className="section-padding-primary overflow-hidden">
       <Container>
-        <div className="mb-10 flex flex-col flex-wrap justify-between gap-x-20 gap-y-10 md:mb-[3.75rem] lg:flex-row">
+        <div className="mb-10 flex flex-col flex-wrap justify-between gap-x-20 gap-y-10 md:mb-15 lg:flex-row">
           <div className="max-w-[630px]">
             <div data-aos="fade-up" data-aos-delay="100">
               <SectionHeading {...sectionHeading} alignment="start" />

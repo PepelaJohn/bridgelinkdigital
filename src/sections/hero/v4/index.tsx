@@ -8,7 +8,7 @@ import { Shapes } from '../v1/shapes';
 import { heroData } from '@/data/hero/v1';
 import { cn } from '@/src/utils/shadcn';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectFade, Navigation, Autoplay, Pagination } from 'swiper';
+import { EffectFade, Navigation, Autoplay, Pagination } from 'swiper/modules';
 import { Swiper as SwiperType } from 'swiper/types';
 import { useRef, useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Play, Pause } from 'lucide-react';
@@ -32,7 +32,7 @@ export interface HeroProps {
 }
 
 export function Hero() {
-  const swiperRef = useRef<SwiperType>();
+  const swiperRef = useRef<SwiperType | null>(null);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -64,7 +64,7 @@ export function Hero() {
   }
 
   return (
-    <section className="relative h-screen overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+    <section className="relative h-screen overflow-hidden bg-linear-to-br from-slate-900 via-slate-800 to-slate-900">
       {/* Animated Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(120,119,198,0.3),transparent_50%)]" />
@@ -103,7 +103,7 @@ export function Hero() {
                 />
                 {/* Gradient Overlays */}
                 <div className="absolute inset-0 bg-black/70" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/30" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-black/30" />
               </div>
 
               {/* Decorative Shapes */}
@@ -145,7 +145,7 @@ export function Hero() {
                     <div className="flex flex-wrap gap-4">
                       <Button
                         asChild
-                        className="group relative overflow-hidden rounded-full bg-white px-6 py-3 !text-black transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-white/25 sm:px-8 sm:py-4"
+                        className="group relative overflow-hidden rounded-full bg-white px-6 py-3 text-black! transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-white/25 sm:px-8 sm:py-4"
                       >
                         <CustomLink
                           href={item.button.href}

@@ -21,7 +21,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
 }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [offset, setOffset] = useState(0);
-  const animationRef = useRef<number>();
+  const animationRef = useRef<number | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
 
@@ -62,16 +62,16 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
   return (
     <div
       ref={containerRef}
-      className="group/portfolio relative aspect-[1280/800] w-full overflow-hidden bg-gray-50 transition-all duration-300 hover:shadow-2xl dark:bg-gray-700"
+      className="group/portfolio relative aspect-1280/800 w-full overflow-hidden bg-gray-50 transition-all duration-300 hover:shadow-2xl dark:bg-gray-700"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <span
         className={cn(
           // Normal
-          'absolute inset-0 z-[2] bg-gradient-to-b from-black/0 via-black/20 to-black/80 [transition:all_500ms_ease] md:[transform:perspective(400px)_rotateX(90deg)_scaleY(0.5)]',
+          'absolute inset-0 z-2 bg-linear-to-b from-black/0 via-black/20 to-black/80 [transition:all_500ms_ease] md:transform-[perspective(400px)_rotateX(90deg)_scaleY(0.5)]',
           // Hover
-          'md:group-hover/portfolio:[transform:perspective(400px)_rotateX(0deg)_scaleY(1.0)] md:group-hover/portfolio:[transition-delay:.1s] md:group-hover/portfolio:[transition:all_.7s_ease]'
+          'md:group-hover/portfolio:transform-[perspective(400px)_rotateX(0deg)_scaleY(1.0)] md:group-hover/portfolio:[transition-delay:.1s] md:group-hover/portfolio:[transition:all_.7s_ease]'
         )}
       ></span>
       {/* Scrolling Website Screenshot */}
@@ -91,23 +91,23 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
 
       {/* Hover Overlay */}
       <div
-        className={`absolute inset-0 z-10 bg-gradient-to-t duration-300 ${
+        className={`absolute inset-0 z-10 bg-linear-to-t duration-300 ${
           isHovered ? 'opacity-100' : 'opacity-0'
         }`}
       >
         <div className="relative z-10 flex h-full flex-col p-2">
           <div className="mt-auto divide-y sm:max-w-[80%] md:opacity-0 md:transition-[transform,opacity] md:duration-500 md:group-hover/portfolio:opacity-100">
-            <h3 className="text-md overflow-hidden leading-[1.25] font-bold text-white md:text-lg">
+            <h3 className="text-md overflow-hidden leading-tight font-bold text-white md:text-lg">
               <CustomLink
                 target="_blank"
                 href={websiteUrl}
-                className="text-primary block font-bold [transition-delay:500ms] [transition:all_.9s_ease] max-sm:text-sm md:[transform:translateY(-100%)] md:group-hover/portfolio:[transform:translateY(0)]"
+                className="text-primary block font-bold [transition-delay:500ms] [transition:all_.9s_ease] max-sm:text-sm md:transform-[translateY(-100%)] md:group-hover/portfolio:transform-[translateY(0)]"
               >
                 {title}
               </CustomLink>
             </h3>
             <p className="text-body overflow-hidden pt-[11px] max-sm:pt-[2px] md:pt-[6px]">
-              <span className="block [transition-delay:500ms] [transition:all_.9s_ease] max-sm:text-xs md:[transform:translateY(100%)] md:group-hover/portfolio:[transform:translateY(0)]">
+              <span className="block [transition-delay:500ms] [transition:all_.9s_ease] max-sm:text-xs md:transform-[translateY(100%)] md:group-hover/portfolio:transform-[translateY(0)]">
                 {description}
               </span>
             </p>

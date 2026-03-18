@@ -25,7 +25,7 @@ export function PricingSection({ className }: SectionProps) {
   const { categories, addOns } = pricingSectionData;
 
   return (
-    <section className={cn('section-padding-primary !pb-0', className)}>
+    <section className={cn('section-padding-primary pb-0!', className)}>
       <Container>
         {/* Categories */}
         {categories.map((category, catIndex) => (

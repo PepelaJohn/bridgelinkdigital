@@ -32,8 +32,8 @@ export function BlogCard({
   date,
 }: BlogProps) {
   return (
-    <article className="group/blog rounded-5 relative z-1 flex h-full min-h-[452px] flex-col overflow-hidden p-6 md:p-[1.875rem]">
-      <span className="bg-accent-900/50 absolute inset-0 z-[2]"></span>
+    <article className="group/blog rounded-5 relative z-1 flex h-full min-h-[452px] flex-col overflow-hidden p-6 md:p-7.5">
+      <span className="bg-accent-900/50 absolute inset-0 z-2"></span>
       <Image
         src={image.src}
         alt={image.alt}
@@ -45,9 +45,9 @@ export function BlogCard({
           `}
         className={cn(
           // Normal classes
-          'pointer-events-none [transform:translatex(50%)_scalex(2)] object-cover opacity-0 [filter:blur(10px)] [transition:all_500ms_ease]',
+          'pointer-events-none transform-[translatex(50%)_scalex(2)] object-cover opacity-0 filter-[blur(10px)] [transition:all_500ms_ease]',
           // on card hover classes
-          'group-hover/blog:[transform:translatex(0)_scalex(1)] group-hover/blog:opacity-100 group-hover/blog:[filter:blur(0px)]'
+          'group-hover/blog:transform-[translatex(0)_scalex(1)] group-hover/blog:opacity-100 group-hover/blog:filter-[blur(0px)]'
         )}
       />
       <Image
@@ -63,7 +63,7 @@ export function BlogCard({
           // Normal classes
           'pointer-events-none object-cover [transition:all_500ms_ease]',
           // on card hover classes
-          'group-hover/blog:[transform:translatex(-50%)_scalex(2)] group-hover/blog:opacity-0 group-hover/blog:[filter:blur(10px)]'
+          'group-hover/blog:transform-[translatex(-50%)_scalex(2)] group-hover/blog:opacity-0 group-hover/blog:filter-[blur(10px)]'
         )}
       />
 
@@ -100,7 +100,7 @@ export function BlogCard({
               <span>Comments ({String(commentCount).padStart(2, '0')})</span>
             </p>
           </div>
-          <h3 className="text-md leading-[1.25] font-bold md:text-lg">
+          <h3 className="text-md leading-tight font-bold md:text-lg">
             <CustomLink
               aria-label={title}
               href={slug}
@@ -114,7 +114,7 @@ export function BlogCard({
               href={slug}
               className={cn(
                 inlineFlexLayoutClasses,
-                'font-secondary hover:text-primary gap-[.625rem] text-base leading-[2] font-bold tracking-wide text-white uppercase transition-colors duration-300'
+                'font-secondary hover:text-primary gap-[.625rem] text-base leading-loose font-bold tracking-wide text-white uppercase transition-colors duration-300'
               )}
             >
               <span>Read More</span>

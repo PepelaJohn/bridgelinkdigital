@@ -4,12 +4,13 @@ import { Container } from '@/src/components/container';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css';
 
-import SwiperCore, { Autoplay } from 'swiper';
+import SwiperCore from 'swiper';
+import Autoplay from "swiper"
 import { useDomReady } from '@/src/hooks/dom-ready';
 import { WorkprocessCard } from '../card';
 import { WorkprocessSectionProps } from '..';
 
-SwiperCore.use([Autoplay]);
+// SwiperCore.use([Autoplay]);
 
 export function WorkCardsCaraousl({
   cards,
@@ -23,7 +24,7 @@ export function WorkCardsCaraousl({
           {cards && cards.length > 0 && (
             <div className="mt-[60px]">
               <Swiper
-                className="!overflow-visible"
+                className="overflow-visible!"
                 speed={400}
                 loop
                 spaceBetween={30}

@@ -24,7 +24,7 @@ import {
 import { BrandLogo } from '@/src/layout/brand-logo';
 
 const mainTitleClasses = cn(
-  'relative mb-30px pb-[0px] font-secondary text-[1.25rem] font-bold uppercase text-accent-700 dark:text-accent-300',
+  'relative mb-30px pb-0 font-secondary text-[1.25rem] font-bold uppercase text-accent-700 dark:text-accent-300',
   'after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-[32px] after:bg-accent-700 dark:after:bg-accent-300'
 );
 
@@ -95,10 +95,10 @@ export function OffCanvas({ menuItems }: Pick<HeaderProps, 'menuItems'>) {
       </SheetTrigger>
       <SheetContent
         side={'left'}
-        className="dark:bg-accent-900 z-444 !max-w-[300px] border-none bg-white p-0"
+        className="dark:bg-accent-900 z-444 max-w-[300px]! border-none bg-white p-0"
       >
         <ScrollArea
-          viewportClassName={cn('h-[100vh]')}
+          viewportClassName={cn('h-screen')}
           scrollBarClassName="w-0"
         >
           <div className="grid gap-8">

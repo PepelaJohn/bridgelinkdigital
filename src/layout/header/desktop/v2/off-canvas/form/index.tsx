@@ -18,7 +18,7 @@ const mainTitleClasses = cn(
 
 const inputFieldClasses = cn('border border-current  dark:bg-accent-700');
 
-const errorFieldClasses = cn(' !border-red-600 border');
+const errorFieldClasses = cn(' border-red-600! border');
 const errorMessageClasses = cn('sr-only');
 
 const validationMessages = {

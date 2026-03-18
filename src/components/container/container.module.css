@@ -1,3 +1,4 @@
+
 /*
 * Custom container
 */
@@ -28,19 +29,19 @@
     --padding-x: 0px;
   }
 
-  @screen sm {
+  @media (min-width: var(--breakpoint-sm)) {
     --container-width: var(--container-sm);
   }
-  @screen md {
+  @media (min-width: var(--breakpoint-md)) {
     --container-width: var(--container-md);
   }
-  @screen lg {
+  @media (min-width: var(--breakpoint-lg)) {
     --container-width: var(--container-lg);
   }
-  @screen xl {
+  @media (min-width: var(--breakpoint-xl)) {
     --container-width: var(--container-xl);
   }
-  @screen 2xl {
+  @media (min-width: var(--breakpoint-2xl)) {
     --container-width: var(--container-2xl);
   }
 }

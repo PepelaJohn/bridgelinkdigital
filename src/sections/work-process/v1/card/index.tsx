@@ -31,7 +31,7 @@ export function WorkprocessCard({
         <Button
           asChild
           className={cn(
-            'text-accent-800 hover:text-primary dark:text-primary !min-h-fit gap-2.5 bg-transparent !p-0 uppercase hover:bg-transparent dark:hover:text-white',
+            'text-accent-800 hover:text-primary dark:text-primary min-h-fit! gap-2.5 bg-transparent p-0! uppercase hover:bg-transparent dark:hover:text-white',
 
             // Prevent default button styles
             'after:hidden'

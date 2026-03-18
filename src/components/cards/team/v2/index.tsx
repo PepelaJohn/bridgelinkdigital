@@ -57,9 +57,9 @@ export function TeamCard({ slug, image, name, about, socials }: TeamCardProps) {
           // after
 
           // normal position
-          'top-[90px] left-[400px] [transform:translateY(-50%)] opacity-0',
+          'top-[90px] left-[400px] transform-[translateY(-50%)] opacity-0',
           // hovered position
-          '[.hovered_&]:opacity-100 lg:[.hovered_&]:left-[650px] xl:[.hovered_&]:left-[760px] 2xl:[.hovered_&]:left-[800px]'
+          'in-[.hovered]:opacity-100 lg:in-[.hovered]:left-[650px] xl:in-[.hovered]:left-[760px] 2xl:in-[.hovered]:left-[800px]'
         )}
       >
         <Image
@@ -72,9 +72,9 @@ export function TeamCard({ slug, image, name, about, socials }: TeamCardProps) {
             // base
             'object-cover [transition:transform_.4s_ease-out]',
             //normal
-            '[transform:scale(.8,.8)]',
+            'transform-[scale(.8,.8)]',
             //hover
-            '[.hovered_&]:[transform:scale(1,1)]'
+            'in-[.hovered]:transform-[scale(1,1)]'
           )}
         />
       </div>
@@ -129,7 +129,7 @@ export function TeamCard({ slug, image, name, about, socials }: TeamCardProps) {
               <li
                 key={index}
                 className={cn(
-                  '[transform-origin:bottom] [transform:perspective(400px)_rotateY(0deg)_translateY(80px)] opacity-0 [transition:all_.5s_ease] group-hover:[transform:perspective(400px)_rotateY(0deg)_translateY(0px)] group-hover:opacity-100',
+                  'origin-bottom transform-[perspective(400px)_rotateY(0deg)_translateY(80px)] opacity-0 [transition:all_.5s_ease] group-hover:transform-[perspective(400px)_rotateY(0deg)_translateY(0px)] group-hover:opacity-100',
 
                   'max-lg:[all:unset]'
                 )}

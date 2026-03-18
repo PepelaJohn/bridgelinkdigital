@@ -28,7 +28,7 @@ export function SearchModal({ setIsModalOpen }: Props) {
             />
             <Button
               type="submit"
-              className="bg-primary hover:bg-primary-light !h-[60px] !w-[60px] flex-none rounded-l-none !p-0 after:hidden hover:text-white dark:hover:text-white"
+              className="bg-primary hover:bg-primary-light h-[60px]! w-[60px]! flex-none rounded-l-none p-0! after:hidden hover:text-white dark:hover:text-white"
             >
               <span className="relative z-1">
                 <FaMagnifyingGlass />

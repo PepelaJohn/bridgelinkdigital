@@ -33,7 +33,7 @@ export function HeroSection({ title, breadcrumbItems }: HeroSectionProps) {
       <span className="bg-gradient-1 dark:from-accent-900/0 dark:to-accent-900 absolute inset-0 from-white/0 to-white"></span>
 
       <Container>
-        <div className="text-accent-900 relative z-[4] flex flex-wrap items-center justify-between gap-x-20 gap-y-8 lg:pt-[137px] dark:text-white">
+        <div className="text-accent-900 relative z-4 flex flex-wrap items-center justify-between gap-x-20 gap-y-8 lg:pt-[137px] dark:text-white">
           <h1 className="font-secondary text-xl font-bold lg:w-1/2">{title}</h1>
           {breadcrumbItems && breadcrumbItems.length > 0 && (
             <Breadcrumb breadcrumbItems={breadcrumbItems} />

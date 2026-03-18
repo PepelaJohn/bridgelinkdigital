@@ -17,7 +17,7 @@ export function BlogSection({ className }: SectionProps) {
   return (
     <section
       className={cn(
-        'section-padding-primary dark:bg-accent-700 overflow-hidden bg-white [.light_&]:pt-0',
+        'section-padding-primary dark:bg-accent-700 overflow-hidden bg-white in-[.light]:pt-0',
         className
       )}
     >

@@ -58,7 +58,7 @@ export function PricingCard({
               ))}
             </ul>
           )}
-          <p className="font-secondary text-accent-900 text-xl leading-[1.25] font-bold lg:text-2xl dark:text-white">
+          <p className="font-secondary text-accent-900 text-xl leading-tight font-bold lg:text-2xl dark:text-white">
             {price}
             <sub className="lg:text-md relative bottom-0 ml-1.5 inline-block text-base">
               {duration}
@@ -72,7 +72,7 @@ export function PricingCard({
               <CustomLink href={button.href} openNewTab={button.openNewTab}>
                 <span className="relative z-1">{button.label}</span>
                 <svg
-                  className="relative top-[-1px] z-1"
+                  className="relative -top-px z-1"
                   width={15}
                   height={13}
                   viewBox="0 0 15 13"

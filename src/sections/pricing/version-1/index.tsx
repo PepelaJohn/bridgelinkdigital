@@ -14,7 +14,7 @@ export function PricingSection() {
   const { sectionHeading, cards } = pricingSectionData;
 
   return (
-    <section className="section-padding-primary !pt-0">
+    <section className="section-padding-primary pt-0!">
       <Container>
         <div
           className="mx-auto max-w-[630px]"

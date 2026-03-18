@@ -32,7 +32,7 @@ export function ContactSection() {
 
         <Container>
           <div className="ml-auto md:w-1/2">
-            <div className="rounded-5 shadow-1 dark:bg-accent-700 relative z-[2] bg-white p-10 lg:p-[60px]">
+            <div className="rounded-5 shadow-1 dark:bg-accent-700 relative z-2 bg-white p-10 lg:p-[60px]">
               <div className="mb-30px">
                 <SectionHeading {...sectionHeading} />
               </div>

@@ -34,10 +34,10 @@ export function ProjectCard({
         className={cn(
           'rounded-5 relative z-1 cursor-pointer overflow-hidden',
           // after
-          'after:absolute after:inset-0 after:z-1 after:[transform-origin:top] after:bg-black after:[transition:.5s] max-lg:after:opacity-60 lg:after:[transform:perspective(400px)_rotateX(-10deg)] lg:after:opacity-0',
+          'after:absolute after:inset-0 after:z-1 after:origin-top after:bg-black after:[transition:.5s] max-lg:after:opacity-60 lg:after:transform-[perspective(400px)_rotateX(-10deg)] lg:after:opacity-0',
 
           // hover
-          'lg:group-hover/project:after:[transform:perspective(400px)_rotateX(0deg)] lg:group-hover/project:after:opacity-60'
+          'lg:group-hover/project:after:transform-[perspective(400px)_rotateX(0deg)] lg:group-hover/project:after:opacity-60'
         )}
       >
         <Image
@@ -51,7 +51,7 @@ export function ProjectCard({
         <button
           onClick={onClick}
           className={cn(
-            'text-accent-700 absolute top-1/2 left-1/2 z-[2] grid h-[60px] w-[60px] [transform:translate(-50%,-50%)] place-items-center rounded-full bg-white text-[25px] [transition:.5s]',
+            'text-accent-700 absolute top-1/2 left-1/2 z-2 grid h-[60px] w-[60px] transform-[translate(-50%,-50%)] place-items-center rounded-full bg-white text-[25px] [transition:.5s]',
 
             // desktop
             'lg:opacity-0 lg:group-hover/project:opacity-100'

@@ -32,16 +32,16 @@ export function AboutSection() {
           <div className="lg:order-2" data-aos="fade-left" data-aos-delay="200">
             <SectionHeading {...sectionHeading} />
             {keyPoints && keyPoints.length > 0 && (
-              <div className="text-accent-900 mt-7 grid gap-5 sm:grid-cols-2 md:mt-10 md:gap-[1.875rem] dark:text-white">
+              <div className="text-accent-900 mt-7 grid gap-5 sm:grid-cols-2 md:mt-10 md:gap-7.5 dark:text-white">
                 {keyPoints.map((keyPoint, index) => (
                   <div
                     key={index}
-                    className="group rounded-5 border-primary flex min-h-[64px] items-center gap-5 border px-6 py-2 md:min-h-[85px] md:px-[1.875rem] md:py-3"
+                    className="group rounded-5 border-primary flex min-h-[64px] items-center gap-5 border px-6 py-2 md:min-h-[85px] md:px-7.5 md:py-3"
                   >
                     <span className="duration flex-none scale-100 transition-transform ease-linear group-hover:scale-90">
                       {keyPoint.icon}
                     </span>
-                    <h3 className="text-md leading-[1.25] font-bold md:text-lg">
+                    <h3 className="text-md leading-tight font-bold md:text-lg">
                       {keyPoint.title}
                     </h3>
                   </div>
@@ -49,7 +49,7 @@ export function AboutSection() {
               </div>
             )}
             {description && (
-              <p className="mt-5 md:mt-[1.875rem]">{description}</p>
+              <p className="mt-5 md:mt-7.5">{description}</p>
             )}
           </div>
 
@@ -60,12 +60,12 @@ export function AboutSection() {
                 {/* Image 1  */}
                 <div className="relative flex justify-end overflow-hidden">
                   <div
-                    className="relative z-[2] mt-auto"
+                    className="relative z-2 mt-auto"
                     data-aos="fade-up"
                     data-aos-delay="200"
                   >
                     <span className="bg-primary-light absolute -top-2.5 -left-2.5 -z-1 h-full w-full rounded-tl-[60px]"></span>
-                    <div className="relative z-[4] overflow-hidden">
+                    <div className="relative z-4 overflow-hidden">
                       <Image
                         src={images.image1.src}
                         alt={images.image1.alt}
@@ -129,9 +129,9 @@ export function AboutSection() {
                   />
                 </div>
 
-                <div className="absolute top-1/2 left-1/2 z-[4] -translate-x-1/2 -translate-y-1/2 overflow-hidden">
+                <div className="absolute top-1/2 left-1/2 z-4 -translate-x-1/2 -translate-y-1/2 overflow-hidden">
                   <div data-aos="zoom-in" data-aos-delay="450">
-                    <span className="bg-primary grid h-[100px] w-[100px] place-items-center rounded-full border-[12px] border-white text-[30px] text-white">
+                    <span className="bg-primary grid h-[100px] w-[100px] place-items-center rounded-full border-12 border-white text-[30px] text-white">
                       <svg
                         width="1em"
                         height="1em"

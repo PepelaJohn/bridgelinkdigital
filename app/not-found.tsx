@@ -4,7 +4,7 @@ import { CustomLink } from '@/src/components/custom-link';
 
 export default function NotFound() {
   return (
-    <section className="relative flex min-h-[calc(100vh-(60px+72px))] items-center overflow-hidden bg-white py-[3.75rem]">
+    <section className="relative flex min-h-[calc(100vh-(60px+72px))] items-center overflow-hidden bg-white py-15">
       <Container>
         <div className="mx-auto max-w-[800px] text-center">
           <h2 className="text-2xl leading-[1.11] font-medium text-black lg:text-5xl">

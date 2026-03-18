@@ -13,9 +13,9 @@ export interface TeamSectionProps {
 export function TeamSection() {
   const { sectionHeading, cards, description } = teamSectionData;
   return (
-    <section className="section-padding-primary !pb-0">
+    <section className="section-padding-primary pb-0!">
       <Container>
-        <div className="mb-10 flex flex-col flex-wrap justify-between gap-5 max-md:text-center md:mb-[3.75rem] xl:flex-row xl:items-end">
+        <div className="mb-10 flex flex-col flex-wrap justify-between gap-5 max-md:text-center md:mb-15 xl:flex-row xl:items-end">
           <div className="xl:max-w-[460px]">
             <SectionHeading
               {...sectionHeading}

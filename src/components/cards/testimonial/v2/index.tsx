@@ -44,7 +44,7 @@ export function TestimonialCard({
           </span>
         </div>
         <div>
-          <h3 className="text-md text-accent-900 leading-[1.25] font-bold md:text-lg dark:text-white">
+          <h3 className="text-md text-accent-900 leading-tight font-bold md:text-lg dark:text-white">
             {name}
           </h3>
           <p className="mt-1">{about}</p>

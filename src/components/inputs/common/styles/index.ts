@@ -7,7 +7,7 @@ export function inputFieldCommonClassesGenerator({
 }): string {
   return cn(
     // Layout styles
-    'flex items-center min-h-[3.5rem]  md:min-h-[3.75rem] w-full rounded-5 px-4 md:px-5 py-2',
+    'flex items-center min-h-14  md:min-h-15 w-full rounded-5 px-4 md:px-5 py-2',
 
     // General styles
     ' bg-transparent text-accent-800 placeholder:text-accent-800 dark:text-body dark:placeholder:text-body',

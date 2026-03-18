@@ -112,7 +112,7 @@ export function OffCanvas() {
         className="bg-accent-100 z-444 border-none p-0 dark:bg-black"
       >
         <ScrollArea
-          viewportClassName={cn('h-[100vh]')}
+          viewportClassName={cn('h-screen')}
           scrollBarClassName="w-0"
         >
           <div className="p-30px grid gap-10">

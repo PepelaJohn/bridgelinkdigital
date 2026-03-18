@@ -31,7 +31,7 @@ export function ProjectSection({
           </div>
         </div>
         {works && works.length > 0 && (
-          <div className="grid gap-[1.875rem] md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-7.5 md:grid-cols-2 lg:grid-cols-4">
             {works.map((work, index) => (
               <div
                 key={index}

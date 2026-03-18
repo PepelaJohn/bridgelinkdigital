@@ -82,7 +82,7 @@ export function Carousel({
           ref={sliderRef}
           className={cn(
             'keen-slider max-md:order-2',
-            haveOffset && '!overflow-visible',
+            haveOffset && 'overflow-visible!',
             mainWrapperClassName
           )}
         >

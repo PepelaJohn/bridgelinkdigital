@@ -86,14 +86,14 @@ export function ProjectDetailsSection() {
                       key={index}
                     >
                       <div className="flex items-center gap-5">
-                        <span className="bg-primary-light/[.15] text-md text-primary-light grid h-[46px] w-[46px] place-items-center rounded-full">
+                        <span className="bg-primary-light/15 text-md text-primary-light grid h-[46px] w-[46px] place-items-center rounded-full">
                           {item.icon}
                         </span>
                         <div className="text-accent-700 dark:text-white">
                           <p className="text-sm leading-[1.6]">
                             {item.subHeading}
                           </p>
-                          <h3 className="font-secondary text-md mt-2 leading-[1.5] font-bold">
+                          <h3 className="font-secondary text-md mt-2 leading-normal font-bold">
                             {item.heading}
                           </h3>
                         </div>
@@ -190,11 +190,11 @@ export function ProjectDetailsSection() {
                 <span className="group-hover:text-primary transition-colors duration-300">
                   <FaArrowLeftLong />
                 </span>
-                <p className="text-base leading-[2] font-bold tracking-wide uppercase">
+                <p className="text-base leading-loose font-bold tracking-wide uppercase">
                   Previous
                 </p>
               </div>
-              <h3 className="text-md leading-[1.5] font-medium">
+              <h3 className="text-md leading-normal font-medium">
                 Aliquam eros justo, posuere loborti viverra laoreet matti{' '}
               </h3>
             </CustomLink>
@@ -205,14 +205,14 @@ export function ProjectDetailsSection() {
               className="group text-accent-700 grid max-w-[255px] gap-3 text-right max-md:self-end dark:text-white"
             >
               <div className="flex items-center justify-end gap-2.5">
-                <p className="text-base leading-[2] font-bold tracking-wide uppercase">
+                <p className="text-base leading-loose font-bold tracking-wide uppercase">
                   Next
                 </p>
                 <span className="group-hover:text-primary transition-colors duration-300">
                   <FaArrowRightLong />
                 </span>
               </div>
-              <h3 className="text-md leading-[1.5] font-medium">
+              <h3 className="text-md leading-normal font-medium">
                 Aliquam eros justo, posuere loborti viverra laoreet matti{' '}
               </h3>
             </CustomLink>

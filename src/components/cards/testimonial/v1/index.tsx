@@ -15,7 +15,7 @@ export function TestimonialCard({
   speech,
 }: TestimonialCardProps) {
   return (
-    <div className="rounded-5 bg-accent-100 dark:bg-accent-700 h-full p-6 transition-transform duration-350 hover:[transform:translateY(-.5rem)] sm:p-[50px]">
+    <div className="rounded-5 bg-accent-100 dark:bg-accent-700 h-full p-6 transition-transform duration-350 hover:transform-[translateY(-.5rem)] sm:p-[50px]">
       <div className="flex flex-col gap-12 md:flex-row md:gap-5">
         <div className="relative max-w-max flex-none">
           <Image
@@ -32,7 +32,7 @@ export function TestimonialCard({
           </span>
         </div>
         <div className="flex-1">
-          <h3 className="text-md text-accent-900 leading-[1.25] font-bold md:text-lg dark:text-white">
+          <h3 className="text-md text-accent-900 leading-tight font-bold md:text-lg dark:text-white">
             {name}
           </h3>
           <p className="mt-1">{about}</p>

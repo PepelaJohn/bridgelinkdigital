@@ -12,7 +12,7 @@ export function CarouselPagination({
   return (
     <div
       className={cn(
-        'relative z-[4] mt-10 flex flex-wrap items-center justify-center gap-4 max-md:ml-3 lg:mt-[60px]',
+        'relative z-4 mt-10 flex flex-wrap items-center justify-center gap-4 max-md:ml-3 lg:mt-[60px]',
         paginationWrapperClassName
       )}
     >

@@ -36,7 +36,7 @@ const addressIconParentClasses = cn(
 );
 const addressItemClasses = cn('flex gap-30px');
 const addressTitleClasses = cn(
-  'text-md font-bold leading-[1.5] mb-1.5 text-accent-900 dark:text-white'
+  'text-md font-bold leading-normal mb-1.5 text-accent-900 dark:text-white'
 );
 
 export function ContactSection() {

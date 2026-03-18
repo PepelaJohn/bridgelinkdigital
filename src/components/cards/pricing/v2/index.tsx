@@ -39,7 +39,7 @@ export function PricingCard({
       <p>{description}</p>
       <div
         className={cn(
-          'mb-30px rounded-5 bg-accent-300 font-secondary text-accent-900 dark:bg-accent-900 relative z-1 mx-auto mt-5 flex min-h-[80px] max-w-[274px] items-center justify-center text-xl leading-[1.25] font-bold transition-colors duration-300 lg:text-2xl dark:text-white',
+          'mb-30px rounded-5 bg-accent-300 font-secondary text-accent-900 dark:bg-accent-900 relative z-1 mx-auto mt-5 flex min-h-[80px] max-w-[274px] items-center justify-center text-xl leading-tight font-bold transition-colors duration-300 lg:text-2xl dark:text-white',
           'after:bg-primary after:absolute after:bottom-0 after:left-0 after:-z-1 after:h-0 after:w-full after:rounded-[inherit] after:transition-all after:duration-500 after:ease-in-out',
           'group-hover:after:top-0 group-hover:after:bottom-auto group-hover:after:h-full',
           'group-hover:text-white'
@@ -61,7 +61,7 @@ export function PricingCard({
         >
           {features.map((feature, index) => (
             <li
-              className="font-secondary text-md text-accent-800 flex items-center gap-3 leading-[1.5] font-bold lg:gap-4 dark:text-white"
+              className="font-secondary text-md text-accent-800 flex items-center gap-3 leading-normal font-bold lg:gap-4 dark:text-white"
               key={index}
             >
               <span className="text-primary-light">

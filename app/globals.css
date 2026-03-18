@@ -1,5 +1,7 @@
 @import 'tailwindcss';
+
 @config '../tailwind.config.js';
+
 @layer base {
   h1,
   h2,
@@ -13,15 +15,15 @@
     @apply text-2xl leading-[1.15] font-bold md:text-3xl;
   }
   .h2 {
-    @apply text-xl leading-[1.25] font-bold md:text-2xl;
+    @apply text-xl leading-tight font-bold md:text-2xl;
   }
   .h3 {
-    @apply text-md leading-[1.25] font-bold md:text-lg;
+    @apply text-md leading-tight font-bold md:text-lg;
   }
 }
 
 .section-padding-primary {
-  @apply py-[3.75rem] md:py-[6.25rem] xl:py-[7.5rem];
+  @apply py-15 md:py-25 xl:py-30;
 }
 
 ::selection {
@@ -31,4 +33,26 @@
 
 * {
   scroll-behavior: smooth !important;
+}
+@theme {
+  --font-primary: var(--font-primary);
+  --font-secondary: var(--font-secondary);
+
+  --color-primary: #FF5000;
+  --color-primary-light: #FFC199;
+
+  --color-accent-100: #F5F4FA;
+  --color-accent-200: #E3E3E3;
+  --color-accent-300: #FBF3F2;
+  --color-accent-700: #1A1A1C;
+  --color-accent-800: #616670;
+  --color-accent-900: #141416;
+
+  --color-body: #BEBEBE;
+
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1400px;
 }

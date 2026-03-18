@@ -57,12 +57,12 @@ export function CtaSection({ className }: SectionProps) {
       <Container>
         <div className="rounded-5 bg-primary relative overflow-hidden px-6 py-14">
           <div className="rounded-5 relative z-10 mx-auto max-w-[630px] text-center">
-            <h2 className="font-secondary mx-auto max-w-[490px] text-xl leading-[1.25] font-bold text-white capitalize md:text-2xl">
+            <h2 className="font-secondary mx-auto max-w-[490px] text-xl leading-tight font-bold text-white capitalize md:text-2xl">
               {title}
             </h2>
             <form
               onSubmit={handleSubmit}
-              className="mt-6 flex flex-col items-center justify-center gap-[.625rem] md:mt-[1.875rem] md:flex-row"
+              className="mt-6 flex flex-col items-center justify-center gap-[.625rem] md:mt-7.5 md:flex-row"
             >
               <TextInput
                 value={email}

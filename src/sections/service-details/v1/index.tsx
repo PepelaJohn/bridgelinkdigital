@@ -89,7 +89,7 @@ export function ServiceDetailsSection() {
                 // after
                 'after:bg-accent-700/95 after:absolute after:inset-0 after:z-1',
                 // after
-                'before:absolute before:inset-0 before:z-[2] before:[background:linear-gradient(180deg,rgba(185,18,2,0.00)_0%,rgba(185,18,2,0.22)_100%)]'
+                'before:absolute before:inset-0 before:z-2 before:[background:linear-gradient(180deg,rgba(185,18,2,0.00)_0%,rgba(185,18,2,0.22)_100%)]'
               )}
             >
               <Image
@@ -123,9 +123,9 @@ export function ServiceDetailsSection() {
                 <TextInput
                   name="sarch"
                   placeholder="Search..."
-                  className="!min-h-[40px] !py-0"
+                  className="min-h-[40px]! py-0!"
                 />
-                <Button className={cn('!min-h-[40px]')}>
+                <Button className={cn('min-h-[40px]!')}>
                   <span className="relative z-1">SEARCH</span>
                 </Button>
               </div>

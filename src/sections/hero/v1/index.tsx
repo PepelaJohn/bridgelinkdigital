@@ -35,7 +35,7 @@ export interface HeroProps {
 
 /** This section is expected to be used at the top of a given page */
 export function Hero() {
-  const swiperRef = useRef<SwiperType>();
+  const swiperRef = useRef<SwiperType>(null);
   const { items } = heroData;
   return (
     <section className={styles['hero']}>
@@ -53,7 +53,7 @@ export function Hero() {
             <SwiperSlide key={index}>
               <div
                 className={cn(
-                  'relative flex items-center justify-center overflow-hidden py-[9.375rem] lg:min-h-screen'
+                  'relative flex items-center justify-center overflow-hidden py-37.5 lg:min-h-screen'
                 )}
               >
                 {/* Shapes  */}
@@ -61,7 +61,7 @@ export function Hero() {
 
                 <div
                   className={cn(
-                    'bg-accent-700 absolute inset-0 -z-1 [transform:scale(1)] bg-cover [background-position:top_center] bg-no-repeat bg-blend-luminosity [transition:7000ms_ease,opacity_1500ms_ease-in]',
+                    'bg-accent-700 absolute inset-0 -z-1 transform-[scale(1)] bg-cover bg-position-[top_center] bg-no-repeat bg-blend-luminosity [transition:7000ms_ease,opacity_1500ms_ease-in]',
                     styles['hero-bg'],
                     // before
                     'dark:before:bg-accent-900 before:absolute before:inset-0 before:bg-[#EDF8FE] before:opacity-80',
@@ -108,7 +108,7 @@ export function Hero() {
             </SwiperSlide>
           ))}
 
-          <div className="absolute top-[50%] right-0 z-50 hidden h-max w-full [transform:translateY(-50%)] lg:block">
+          <div className="absolute top-[50%] right-0 z-50 hidden h-max w-full transform-[translateY(-50%)] lg:block">
             <Container>
               <div className="ml-auto grid max-w-max gap-2.5 px-4">
                 <button

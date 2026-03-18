@@ -111,7 +111,7 @@ function Author({ image, name, about, socialLinks }: AuthorProps) {
         height={127}
         className="mx-auto rounded-full object-cover"
       />
-      <h3 className="font-secondary text-accent-900 text-lg leading-[1.25] font-bold md:text-xl dark:text-white">
+      <h3 className="font-secondary text-accent-900 text-lg leading-tight font-bold md:text-xl dark:text-white">
         {name}
       </h3>
       <p>{about}</p>
@@ -139,7 +139,7 @@ function Author({ image, name, about, socialLinks }: AuthorProps) {
 function SearchBox() {
   return (
     <div className="rounded-5 bg-accent-100 dark:bg-accent-700 space-y-5 p-8 lg:p-10">
-      <h3 className="font-secondary text-md text-accent-900 leading-[1.25] font-bold md:text-lg dark:text-white">
+      <h3 className="font-secondary text-md text-accent-900 leading-tight font-bold md:text-lg dark:text-white">
         Searach
       </h3>
       <div className="flex items-center gap-0">
@@ -150,7 +150,7 @@ function SearchBox() {
         />
         <Button
           type="submit"
-          className={cn('!h-[60px] !w-[60px] flex-none rounded-l-none !p-0')}
+          className={cn('h-[60px]! w-[60px]! flex-none rounded-l-none p-0!')}
         >
           <span className="relative z-1">
             <FaMagnifyingGlass />
@@ -193,7 +193,7 @@ const categoryListData: CategoryListProps = {
 function CategoryList({ links }: CategoryListProps) {
   return (
     <div className="rounded-5 bg-accent-100 dark:bg-accent-700 space-y-5 p-8 lg:p-10">
-      <h3 className="font-secondary text-md text-accent-900 leading-[1.25] font-bold md:text-lg dark:text-white">
+      <h3 className="font-secondary text-md text-accent-900 leading-tight font-bold md:text-lg dark:text-white">
         Category
       </h3>
       {links && links.length > 0 && (
@@ -230,7 +230,7 @@ const tagwidgetData: TagwidgetProps = {
 function Tagswidget({ tags }: TagwidgetProps) {
   return (
     <div className="rounded-5 bg-accent-100 dark:bg-accent-700 space-y-5 p-8 lg:p-10">
-      <h3 className="font-secondary text-md text-accent-900 leading-[1.25] font-bold md:text-lg dark:text-white">
+      <h3 className="font-secondary text-md text-accent-900 leading-tight font-bold md:text-lg dark:text-white">
         Tags
       </h3>
       {tags && tags.length > 0 && (
@@ -239,7 +239,7 @@ function Tagswidget({ tags }: TagwidgetProps) {
             {tags.map((tag, index) => (
               <li
                 key={index}
-                className="rounded-5 border-accent-900/20 text-accent-800 hover:bg-primary dark:bg-accent-900 dark:text-body dark:hover:bg-primary inline-flex min-h-[2.5rem] cursor-pointer items-center border px-2.5 py-0.5 transition-colors duration-300 hover:border-transparent hover:text-white dark:border-none dark:hover:text-white"
+                className="rounded-5 border-accent-900/20 text-accent-800 hover:bg-primary dark:bg-accent-900 dark:text-body dark:hover:bg-primary inline-flex min-h-10 cursor-pointer items-center border px-2.5 py-0.5 transition-colors duration-300 hover:border-transparent hover:text-white dark:border-none dark:hover:text-white"
               >
                 {tag}
               </li>
@@ -299,14 +299,14 @@ export function BlogListSection() {
                           width={850}
                           height={575}
                           sizes="100vw"
-                          className="[transform:scale(1.05)] object-cover transition-transform duration-500 group-hover:[transform:scale(1)]"
+                          className="transform-[scale(1.05)] object-cover transition-transform duration-500 group-hover:transform-[scale(1)]"
                         />
                       </figure>
 
                       {/* Meta  */}
                       <ul
                         aria-label="blog meta list"
-                        className="lg:mt-30px mt-6 mb-4 flex flex-wrap items-center gap-x-[1.125rem] gap-y-2 lg:mb-5"
+                        className="lg:mt-30px mt-6 mb-4 flex flex-wrap items-center gap-x-4.5 gap-y-2 lg:mb-5"
                       >
                         <li className="flex items-center gap-2.5">
                           <span className="text-primary flex-none text-sm">
@@ -338,7 +338,7 @@ export function BlogListSection() {
                           </span>
                         </li>
                       </ul>
-                      <h3 className="font-secondary text-accent-900 text-lg leading-[1.25] font-bold md:text-xl dark:text-white">
+                      <h3 className="font-secondary text-accent-900 text-lg leading-tight font-bold md:text-xl dark:text-white">
                         <CustomLink
                           href={slug}
                           className={cn(

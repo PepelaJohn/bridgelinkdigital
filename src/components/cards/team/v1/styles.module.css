@@ -1,4 +1,5 @@
 @reference "tailwindcss";
+@reference "../../../../../app/globals.css"
 
 .social-list {
   @apply absolute bottom-full left-0 flex w-full flex-col-reverse items-center gap-2.5;

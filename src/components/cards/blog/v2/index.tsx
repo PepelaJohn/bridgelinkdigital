@@ -45,7 +45,7 @@ export function BlogCard({ slug, image, author, title, date }: BlogProps) {
           (min-width:1024px) 33vw,
           100vw
           "
-          className="pointer-events-none [transform:scale(1.05)] object-cover [transition:.5s_ease] group-hover:[transform:scale(1)]"
+          className="pointer-events-none transform-[scale(1.05)] object-cover [transition:.5s_ease] group-hover:transform-[scale(1)]"
         />
 
         {/* Post meta  */}
@@ -77,7 +77,7 @@ export function BlogCard({ slug, image, author, title, date }: BlogProps) {
 
       {/* Content  */}
       <div className="space-y-30px p-30px">
-        <h3 className="text-md leading-[1.25] font-bold md:text-lg">
+        <h3 className="text-md leading-tight font-bold md:text-lg">
           <CustomLink
             href={slug}
             className="text-accent-900 hover:text-primary dark:hover:text-primary transition-colors duration-300 dark:text-white"
@@ -89,7 +89,7 @@ export function BlogCard({ slug, image, author, title, date }: BlogProps) {
           href={slug}
           className={cn(
             inlineFlexLayoutClasses,
-            'font-secondary text-accent-900 hover:text-primary dark:hover:text-primary gap-[.625rem] text-base leading-[2] font-bold tracking-wide uppercase transition-colors duration-350 dark:text-white'
+            'font-secondary text-accent-900 hover:text-primary dark:hover:text-primary gap-[.625rem] text-base leading-loose font-bold tracking-wide uppercase transition-colors duration-350 dark:text-white'
           )}
         >
           <span>Read More</span>

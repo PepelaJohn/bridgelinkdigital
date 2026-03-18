@@ -1,3 +1,4 @@
+@reference "../../../../../app/globals.css"
 .modal-enter {
   opacity: 0;
   transform: translateY(-110%);

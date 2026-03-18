@@ -39,8 +39,8 @@ const ContactUsSchema = Yup.object().shape({
 
 export type ContactUsSchemaType = Yup.InferType<typeof ContactUsSchema>;
 
-const fieldCommonClasses = cn('!pr-[44px]');
-const errorClasses = cn('!border-red-600 border');
+const fieldCommonClasses = cn('pr-[44px]!');
+const errorClasses = cn('border-red-600! border');
 const errorMessageClasses = cn('sr-only');
 
 export function Form() {

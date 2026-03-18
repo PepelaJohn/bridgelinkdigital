@@ -87,7 +87,7 @@ function Author({ image, name, about, socialLinks }: AuthorProps) {
         blurDataURL={blurDataUrl}
         className="mx-auto rounded-full object-cover"
       />
-      <h3 className="font-secondary text-accent-900 text-lg leading-[1.25] font-bold md:text-xl dark:text-white">
+      <h3 className="font-secondary text-accent-900 text-lg leading-tight font-bold md:text-xl dark:text-white">
         {name}
       </h3>
       <p>{about}</p>
@@ -115,7 +115,7 @@ function Author({ image, name, about, socialLinks }: AuthorProps) {
 function SearchBox() {
   return (
     <div className="rounded-5 bg-accent-100 dark:bg-accent-700 space-y-5 p-8 lg:p-10">
-      <h3 className="font-secondary text-md text-accent-900 leading-[1.25] font-bold md:text-lg dark:text-white">
+      <h3 className="font-secondary text-md text-accent-900 leading-tight font-bold md:text-lg dark:text-white">
         Searach
       </h3>
       <div className="flex items-center gap-0">
@@ -126,7 +126,7 @@ function SearchBox() {
         />
         <Button
           type="submit"
-          className="!h-[60px] !w-[60px] flex-none rounded-l-none !p-0"
+          className="h-[60px]! w-[60px]! flex-none rounded-l-none p-0!"
         >
           <span className="relative z-1">
             <FaMagnifyingGlass />
@@ -169,7 +169,7 @@ const categoryListData: CategoryListProps = {
 function CategoryList({ links }: CategoryListProps) {
   return (
     <div className="rounded-5 bg-accent-100 dark:bg-accent-700 space-y-5 p-8 lg:p-10">
-      <h3 className="font-secondary text-md text-accent-900 leading-[1.25] font-bold md:text-lg dark:text-white">
+      <h3 className="font-secondary text-md text-accent-900 leading-tight font-bold md:text-lg dark:text-white">
         Category
       </h3>
       {links && links.length > 0 && (
@@ -209,7 +209,7 @@ const tagwidgetData: TagwidgetProps = {
 function Tagswidget({ tags }: TagwidgetProps) {
   return (
     <div className="rounded-5 bg-accent-100 dark:bg-accent-700 space-y-5 p-8 lg:p-10">
-      <h3 className="font-secondary text-md text-accent-900 leading-[1.25] font-bold md:text-lg dark:text-white">
+      <h3 className="font-secondary text-md text-accent-900 leading-tight font-bold md:text-lg dark:text-white">
         Tags
       </h3>
       {tags && tags.length > 0 && (
@@ -218,7 +218,7 @@ function Tagswidget({ tags }: TagwidgetProps) {
             {tags.map((tag, index) => (
               <li
                 key={index}
-                className="rounded-5 border-accent-900/20 text-accent-800 hover:bg-primary dark:bg-accent-900 dark:text-body dark:hover:bg-primary inline-flex min-h-[2.5rem] cursor-pointer items-center border px-2.5 py-0.5 transition-colors duration-300 hover:border-transparent hover:text-white dark:border-none dark:hover:text-white"
+                className="rounded-5 border-accent-900/20 text-accent-800 hover:bg-primary dark:bg-accent-900 dark:text-body dark:hover:bg-primary inline-flex min-h-10 cursor-pointer items-center border px-2.5 py-0.5 transition-colors duration-300 hover:border-transparent hover:text-white dark:border-none dark:hover:text-white"
               >
                 {tag}
               </li>
@@ -258,7 +258,7 @@ export function BlogDetilsSection() {
               {/* Meta  */}
               <ul
                 aria-label="blog meta list"
-                className="lg:mt-30px mt-6 mb-4 flex flex-wrap items-center gap-x-[1.125rem] gap-y-2 lg:mb-5"
+                className="lg:mt-30px mt-6 mb-4 flex flex-wrap items-center gap-x-4.5 gap-y-2 lg:mb-5"
               >
                 <li className="flex items-center gap-2.5">
                   <span className="text-primary flex-none text-sm">
@@ -312,7 +312,7 @@ export function BlogDetilsSection() {
                 <span className="text-primary dark:bg-accent-900 mx-auto grid h-[50px] w-[50px] place-items-center rounded-full bg-white text-[1.25rem]">
                   <FaQuoteRight />
                 </span>
-                <p className="font-secondary text-md leading-[1.25] font-medium md:text-lg">
+                <p className="font-secondary text-md leading-tight font-medium md:text-lg">
                   With a commitment to driving technological evolution, our IT
                   solutions and services are the cornerstone of your digital
                   progression. We transcend boundaries, enabling businesses to
@@ -424,11 +424,11 @@ export function BlogDetilsSection() {
                   className="rounded-10 flex-none"
                 />
                 <div className="text-accent-700 dark:text-white">
-                  <h4 className="font-secondary text-md leading-[1.5] font-bold">
+                  <h4 className="font-secondary text-md leading-normal font-bold">
                     Stanio lainto
                   </h4>
                   <p className="text-sm leading-[1.6]">3 days ago</p>
-                  <p className="text-body !mt-1.5">
+                  <p className="text-body mt-1.5!">
                     ished fact that a reader will be distrol acted bioii
                     the.ished fact that a reader will be distrolra acted laoreet
                     Aliquam reader will be distrol acted ished fact that a

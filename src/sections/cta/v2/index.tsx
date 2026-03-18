@@ -26,7 +26,7 @@ export function CtaSection() {
       <Container>
         <div className="gap-30px relative z-10 grid items-center xl:grid-cols-12">
           <div className="text-white xl:col-span-5">
-            <h2 className="h2 font-secondary max-w-[410px] leading-[1.25] capitalize">
+            <h2 className="h2 font-secondary max-w-[410px] leading-tight capitalize">
               {title}
             </h2>
             <p className="mt-5 text-base leading-[1.875]">{description}</p>

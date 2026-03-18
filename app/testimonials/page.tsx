@@ -27,7 +27,7 @@ export default function Page() {
         ]}
       />
       <TestimonialSection />
-      <CtaSection className="section-padding-primary !pt-0" />
+      <CtaSection className="section-padding-primary pt-0!" />
       <Footer />
     </>
   );

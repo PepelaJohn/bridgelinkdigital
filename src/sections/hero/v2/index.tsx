@@ -31,7 +31,7 @@ const avatarWrapperClasses = cn(
   'h-[54px] w-[54px] overflow-hidden rounded-full border-2 border-body/40 bg-accent-900 grid place-items-center text-primary text-[25px] mr-[-17px]'
 );
 
-const shapeImageClasses = cn('object-cover [.light_&]:invert');
+const shapeImageClasses = cn('object-cover in-[.light]:invert');
 
 export function HeroSection() {
   const {
