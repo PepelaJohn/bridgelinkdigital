@@ -1,9 +1,10 @@
+//src/sections/hero/v3/index.tsx
 import { Container } from '@/src/components/container';
 import { CustomLink } from '@/src/components/custom-link';
 import { cn } from '@/src/utils/shadcn';
 import Image from 'next/image';
 import React from 'react';
-import bannerImage from 'public/assets/images/hero/hero-3.jpg';
+import bannerImage from './public/assets/images/hero/hero-3.jpg';
 
 interface BreadcrumbItem {
   href?: string;

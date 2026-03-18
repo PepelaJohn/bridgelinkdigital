@@ -1,8 +1,11 @@
+//src/components/cards/pricing/v2/index.tsx
 import { LinkProps } from '@/src/common-types';
 import { Button } from '@/src/components/button';
 import { CustomLink } from '@/src/components/custom-link';
 import { cn } from '@/src/utils/shadcn';
 import { FaCheck } from 'react-icons/fa6';
+
+// src/components/cards/pricing/v2/index.tsx  — only the interface and h3 block change
 
 export interface PricingCardProps {
   title: string;
@@ -11,6 +14,7 @@ export interface PricingCardProps {
   price: string;
   duration: string;
   button: LinkProps;
+  badge?: string; // ← add this
 }
 
 export function PricingCard({
@@ -20,9 +24,17 @@ export function PricingCard({
   price,
   duration,
   button,
+  badge, // ← add this
 }: PricingCardProps) {
   return (
     <div className="group rounded-5 bg-white p-10 pb-[50px] text-center shadow-3 dark:bg-accent-700 dark:shadow-none">
+      {/* Badge — only renders when provided */}
+      {badge && (
+        <span className="mb-3 inline-block rounded-full bg-primary px-4 py-1 font-secondary text-sm font-bold text-white">
+          {badge}
+        </span>
+      )}
+
       <h3 className="mb-2.5 text-lg font-bold leading-[1.3] text-accent-900 dark:text-white lg:text-xl">
         {title}
       </h3>
