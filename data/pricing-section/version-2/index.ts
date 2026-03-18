@@ -106,7 +106,7 @@ export const pricingSectionData: PricingSectionProps = {
         {
           title: 'Premium',
           description:
-            'Best for brands focused on aggressive growth and marketing.',
+            'Best for brands focused on aggressive growth.',
           features: [
             'Everything in Growth, plus:',
             'Up to 20 posts per week',
