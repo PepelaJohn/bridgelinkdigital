@@ -15,7 +15,7 @@ export function StatisticsSection({ className }: SectionProps) {
     <section className={cn(className)}>
       <Container>
         {statistics && statistics.length > 0 && (
-          <div className="grid gap-30px sm:grid-cols-2 2xl:grid-cols-4">
+          <div className="gap-30px grid sm:grid-cols-2 2xl:grid-cols-4">
             {statistics.map((stat, index) => (
               <div
                 key={index}

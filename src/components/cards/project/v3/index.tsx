@@ -83,7 +83,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
             ref={imageRef}
             src={imageUrl}
             alt={title}
-            className="absolute left-0 top-0 w-full transition-transform duration-300"
+            className="absolute top-0 left-0 w-full transition-transform duration-300"
             style={{ transform: `translateY(${offset}px)` }}
           />
         </div>
@@ -96,17 +96,17 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
         }`}
       >
         <div className="relative z-10 flex h-full flex-col p-2">
-          <div className="mt-auto divide-y sm:max-w-[80%] md:opacity-0 md:transition-[transform,opacity] md:duration-500  md:group-hover/portfolio:opacity-100">
-            <h3 className="overflow-hidden text-md font-bold leading-[1.25] text-white md:text-lg">
+          <div className="mt-auto divide-y sm:max-w-[80%] md:opacity-0 md:transition-[transform,opacity] md:duration-500 md:group-hover/portfolio:opacity-100">
+            <h3 className="text-md overflow-hidden leading-[1.25] font-bold text-white md:text-lg">
               <CustomLink
                 target="_blank"
                 href={websiteUrl}
-                className="block font-bold text-primary [transition-delay:500ms] [transition:all_.9s_ease] max-sm:text-sm md:[transform:translateY(-100%)] md:group-hover/portfolio:[transform:translateY(0)]"
+                className="text-primary block font-bold [transition-delay:500ms] [transition:all_.9s_ease] max-sm:text-sm md:[transform:translateY(-100%)] md:group-hover/portfolio:[transform:translateY(0)]"
               >
                 {title}
               </CustomLink>
             </h3>
-            <p className=" overflow-hidden pt-[11px] text-body max-sm:pt-[2px] md:pt-[6px]">
+            <p className="text-body overflow-hidden pt-[11px] max-sm:pt-[2px] md:pt-[6px]">
               <span className="block [transition-delay:500ms] [transition:all_.9s_ease] max-sm:text-xs md:[transform:translateY(100%)] md:group-hover/portfolio:[transform:translateY(0)]">
                 {description}
               </span>
@@ -117,7 +117,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
 
       {/* Scroll Status Indicator */}
       {isHovered && (
-        <div className="absolute right-4 top-4 rounded-full border border-white/20 bg-black/60 px-3 py-1 text-xs font-medium text-white backdrop-blur-sm">
+        <div className="absolute top-4 right-4 rounded-full border border-white/20 bg-black/60 px-3 py-1 text-xs font-medium text-white backdrop-blur-sm">
           Auto-scrolling
         </div>
       )}
@@ -194,7 +194,7 @@ const PortfolioShowcase: React.FC = () => {
   ];
 
   return (
-    <div id="projects" className="min-h-screen  px-6 sm:py-12">
+    <div id="projects" className="min-h-screen px-6 sm:py-12">
       <div className="max-w-8xl mx-auto">
         <div className="mb-12 text-center">
           <SectionHeading

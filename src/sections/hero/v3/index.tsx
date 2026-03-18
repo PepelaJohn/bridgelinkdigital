@@ -4,7 +4,7 @@ import { CustomLink } from '@/src/components/custom-link';
 import { cn } from '@/src/utils/shadcn';
 import Image from 'next/image';
 import React from 'react';
-import bannerImage from './public/assets/images/hero/hero-3.jpg';
+const bannerImageSrc = '/assets/images/hero/hero-3.jpg';
 
 interface BreadcrumbItem {
   href?: string;
@@ -22,7 +22,7 @@ export function HeroSection({ title, breadcrumbItems }: HeroSectionProps) {
       {/* Background image  */}
       <Image
         priority
-        src={bannerImage.src}
+        src={bannerImageSrc}
         alt={`${process.env.NEXT_PUBLIC_SITE_NAME} banner 3`}
         fill
         sizes="100vw"
@@ -30,10 +30,10 @@ export function HeroSection({ title, breadcrumbItems }: HeroSectionProps) {
       />
 
       {/* Overlay  */}
-      <span className="absolute inset-0 bg-gradient-1 from-white/0 to-white dark:from-accent-900/0 dark:to-accent-900"></span>
+      <span className="bg-gradient-1 dark:from-accent-900/0 dark:to-accent-900 absolute inset-0 from-white/0 to-white"></span>
 
       <Container>
-        <div className="relative z-[4] flex flex-wrap items-center justify-between gap-x-20 gap-y-8 text-accent-900 dark:text-white lg:pt-[137px]">
+        <div className="text-accent-900 relative z-[4] flex flex-wrap items-center justify-between gap-x-20 gap-y-8 lg:pt-[137px] dark:text-white">
           <h1 className="font-secondary text-xl font-bold lg:w-1/2">{title}</h1>
           {breadcrumbItems && breadcrumbItems.length > 0 && (
             <Breadcrumb breadcrumbItems={breadcrumbItems} />
@@ -59,7 +59,7 @@ function Breadcrumb({
                 <li className={breadcrumbItemClasses}>
                   <CustomLink
                     href={menuItem.href}
-                    className="transition-colors hover:text-primary"
+                    className="hover:text-primary transition-colors"
                   >
                     {menuItem.label}
                   </CustomLink>

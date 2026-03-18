@@ -22,17 +22,17 @@ const inputCommonClasses = cn(
 export function CtaSection() {
   const { title, description } = ctaSectionData;
   return (
-    <section className="relative overflow-hidden bg-primary py-20">
+    <section className="bg-primary relative overflow-hidden py-20">
       <Container>
-        <div className="relative z-10 grid items-center gap-30px xl:grid-cols-12">
+        <div className="gap-30px relative z-10 grid items-center xl:grid-cols-12">
           <div className="text-white xl:col-span-5">
-            <h2 className="h2 max-w-[410px] font-secondary capitalize leading-[1.25] ">
+            <h2 className="h2 font-secondary max-w-[410px] leading-[1.25] capitalize">
               {title}
             </h2>
             <p className="mt-5 text-base leading-[1.875]">{description}</p>
           </div>
           <div className="xl:col-span-7">
-            <form className="grid grid-cols-1 gap-30px md:grid-cols-2 xl:max-w-[630px]">
+            <form className="gap-30px grid grid-cols-1 md:grid-cols-2 xl:max-w-[630px]">
               <TextInput
                 placeholder="Your Name"
                 type="text"
@@ -54,7 +54,7 @@ export function CtaSection() {
                 <Button
                   type="submit"
                   className={cn(
-                    'min-w-[190px]  flex-none bg-primary-light after:bg-white hover:text-accent-700 dark:hover:text-accent-700'
+                    'bg-primary-light hover:text-accent-700 dark:hover:text-accent-700 min-w-[190px] flex-none after:bg-white'
                   )}
                 >
                   <span>SUSCRIBE</span>
@@ -69,7 +69,7 @@ export function CtaSection() {
         alt="cta section bg pattern"
         width={429}
         height={359}
-        className="pointer-events-none absolute bottom-0 right-0 z-1 animate-float-bob-x object-cover max-[1650px]:hidden"
+        className="animate-float-bob-x pointer-events-none absolute right-0 bottom-0 z-1 object-cover max-[1650px]:hidden"
         sizes="100vw"
       />
     </section>

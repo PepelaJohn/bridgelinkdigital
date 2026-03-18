@@ -14,12 +14,12 @@ export function TestimonialCard({
   speech,
 }: TestimonialCardProps) {
   return (
-    <div className="h-full rounded-5 bg-accent-100 p-6  dark:bg-accent-700 sm:p-10">
+    <div className="rounded-5 bg-accent-100 dark:bg-accent-700 h-full p-6 sm:p-10">
       <div className="text-primary">
         <StarRating staticRating={rating} />
       </div>
       <p className="mb-30px mt-2">{speech}</p>
-      <div className="flex items-center gap-30px">
+      <div className="gap-30px flex items-center">
         <div className="relative max-w-max flex-none">
           <Image
             src={image.src}
@@ -30,7 +30,7 @@ export function TestimonialCard({
             blurDataURL={blurDataUrl}
             className="rounded-full object-cover"
           />
-          <span className="absolute -right-2 top-0 text-primary">
+          <span className="text-primary absolute top-0 -right-2">
             <svg
               width={30}
               height={31}
@@ -44,7 +44,7 @@ export function TestimonialCard({
           </span>
         </div>
         <div>
-          <h3 className="text-md font-bold leading-[1.25] text-accent-900 dark:text-white md:text-lg">
+          <h3 className="text-md text-accent-900 leading-[1.25] font-bold md:text-lg dark:text-white">
             {name}
           </h3>
           <p className="mt-1">{about}</p>

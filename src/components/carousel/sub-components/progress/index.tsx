@@ -8,12 +8,12 @@ export function CarouselProgressBar({
   return (
     <div
       className={cn(
-        'relative mt-10 h-1.5 max-w-[300px] overflow-hidden rounded-5 bg-accent-200 dark:bg-accent-700 md:mx-auto md:h-2.5 lg:mt-20',
+        'rounded-5 bg-accent-200 dark:bg-accent-700 relative mt-10 h-1.5 max-w-[300px] overflow-hidden md:mx-auto md:h-2.5 lg:mt-20',
         progressWrapperClassName
       )}
     >
       <span
-        className="absolute inset-0 z-[1] origin-left rounded-[inherit] bg-primary transition-[width] duration-500"
+        className="bg-primary absolute inset-0 z-[1] origin-left rounded-[inherit] transition-[width] duration-500"
         style={{
           width: `${progress * 100}%`,
         }}

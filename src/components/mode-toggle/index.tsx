@@ -24,7 +24,7 @@ export function ModeToggle() {
 
   if (!mounted) {
     return (
-      <div className="fixed right-0 top-1/2 z-50 -translate-y-1/2">
+      <div className="fixed top-1/2 right-0 z-50 -translate-y-1/2">
         <div className="h-20 w-6 animate-pulse bg-gray-200" />
       </div>
     );
@@ -51,7 +51,7 @@ export function ModeToggle() {
   ];
 
   return (
-    <div className="fixed right-0 top-1/2 z-50 -translate-y-1/2">
+    <div className="fixed top-1/2 right-0 z-50 -translate-y-1/2">
       {!isExpanded ? (
         // Vertical indicator when collapsed
         <button
@@ -63,7 +63,7 @@ export function ModeToggle() {
             'text-[0.6rem] font-medium tracking-wider text-white',
             'transition-all duration-200',
             'cursor-pointer',
-            'focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2',
+            'focus:ring-primary focus:ring-2 focus:ring-offset-2 focus:outline-none',
             'writing-vertical-rl'
           )}
           style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}
@@ -82,7 +82,7 @@ export function ModeToggle() {
               'text-white',
               'transition-all duration-200',
               'cursor-pointer',
-              'focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2'
+              'focus:ring-primary focus:ring-2 focus:ring-offset-2 focus:outline-none'
             )}
             aria-label="Collapse theme toggle"
           >
@@ -93,16 +93,16 @@ export function ModeToggle() {
             <DropdownMenuTrigger asChild>
               <div
                 aria-label="theme switcher"
-                className="flex h-12 w-12 cursor-pointer place-items-center items-center justify-center bg-primary p-0 text-white hover:bg-primary-light"
+                className="bg-primary hover:bg-primary-light flex h-12 w-12 cursor-pointer place-items-center items-center justify-center p-0 text-white"
               >
-                <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-                <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+                <Sun className="h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" />
+                <Moon className="absolute h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" />
                 <span className="sr-only">Toggle theme</span>
               </div>
             </DropdownMenuTrigger>
             <DropdownMenuContent
               align="end"
-              className="bg-white dark:border-accent-900 dark:bg-accent-700"
+              className="dark:border-accent-900 dark:bg-accent-700 bg-white"
             >
               {themeOptions.map((option) => {
                 const Icon = option.icon;

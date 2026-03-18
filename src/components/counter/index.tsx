@@ -1,8 +1,7 @@
 'use client';
 
-import React, { useState, FunctionComponent } from 'react';
+import { useEffect, useRef, useState, FunctionComponent } from 'react';
 import CountUp from 'react-countup';
-import VisibilitySensor from 'react-visibility-sensor';
 
 interface CounterProps {
   end: number;
@@ -17,31 +16,30 @@ export const Counter: FunctionComponent<CounterProps> = ({
   delay,
   duration,
 }) => {
+  const ref = useRef<HTMLSpanElement | null>(null);
   const [viewPortEntered, setViewPortEntered] = useState(false);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setViewPortEntered(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    if (ref.current) observer.observe(ref.current);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <CountUp
-      suffix={suffix}
-      end={end}
-      delay={delay}
-      duration={duration}
-      start={viewPortEntered ? undefined : 0}
-    >
-      {({ countUpRef }) => {
-        return (
-          <VisibilitySensor
-            active={!viewPortEntered}
-            onChange={(isVisible: boolean) => {
-              if (isVisible) {
-                setViewPortEntered(true);
-              }
-            }}
-            delayedCall
-          >
-            <span ref={countUpRef} />
-          </VisibilitySensor>
-        );
-      }}
-    </CountUp>
+    <span ref={ref}>
+      {viewPortEntered && (
+        <CountUp end={end} suffix={suffix} delay={delay} duration={duration} />
+      )}
+    </span>
   );
 };

@@ -98,7 +98,7 @@ export function Hero() {
               {/* Background Image with Overlay */}
               <div className="absolute inset-0">
                 <div
-                  className=" grayscale-1 h-full w-full bg-cover bg-center bg-no-repeat transition-transform ease-out hover:scale-105"
+                  className="h-full w-full bg-cover bg-center bg-no-repeat grayscale-1 transition-transform ease-out hover:scale-105"
                   style={{ backgroundImage: `url(${item.image.src})` }}
                 />
                 {/* Gradient Overlays */}
@@ -111,7 +111,7 @@ export function Hero() {
 
               {/* Content */}
               <Container>
-                <div className="flex  h-full items-center px-4 sm:px-6">
+                <div className="flex h-full items-center px-4 sm:px-6">
                   <div
                     className={cn(
                       'w-full max-w-5xl transform space-y-6 transition-all duration-1000 ease-out sm:space-y-8',
@@ -124,7 +124,7 @@ export function Hero() {
                     }}
                   >
                     {/* Main Title - Responsive Typography */}
-                    <h1 className="font-display xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl text-3xl font-bold leading-tight text-white sm:leading-tight md:leading-tight lg:leading-none">
+                    <h1 className="font-display xs:text-4xl text-3xl leading-tight font-bold text-white sm:text-5xl sm:leading-tight md:text-6xl md:leading-tight lg:text-7xl lg:leading-none xl:text-8xl 2xl:text-9xl">
                       <span className="block">
                         {item.title.split(' ').map((word, wordIndex) => (
                           <span
@@ -188,7 +188,7 @@ export function Hero() {
       </Swiper>
 
       {/* Navigation Controls - Hidden on smaller screens */}
-      <div className="absolute right-4 top-1/2 z-20 hidden -translate-y-1/2 sm:right-8 md:block">
+      <div className="absolute top-1/2 right-4 z-20 hidden -translate-y-1/2 sm:right-8 md:block">
         <div className="flex flex-col gap-3 sm:gap-4">
           {/* Navigation Buttons */}
           <div className="flex flex-col gap-1.5 sm:gap-2">
@@ -224,7 +224,7 @@ export function Hero() {
       </div>
 
       {/* Slide Counter - Responsive positioning */}
-      <div className="absolute bottom-4 right-4 z-20 hidden sm:bottom-8 sm:right-8 sm:block">
+      <div className="absolute right-4 bottom-4 z-20 hidden sm:right-8 sm:bottom-8 sm:block">
         <div className="rounded-full bg-white/20 px-3 py-1.5 backdrop-blur-sm sm:px-4 sm:py-2">
           <span className="text-xs font-medium text-white sm:text-sm">
             {String(currentSlide + 1).padStart(2, '0')} /{' '}

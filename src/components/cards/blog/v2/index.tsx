@@ -20,7 +20,7 @@ const inlineFlexLayoutClasses = cn('inline-flex items-center gap-2 text-white');
 
 export function BlogCard({ slug, image, author, title, date }: BlogProps) {
   return (
-    <article className="group relative z-1 block overflow-hidden rounded-5 bg-white shadow-3 dark:bg-accent-700 dark:shadow-none">
+    <article className="group rounded-5 shadow-3 dark:bg-accent-700 relative z-1 block overflow-hidden bg-white dark:shadow-none">
       {/* Media  */}
       <div
         className={cn(
@@ -31,8 +31,8 @@ export function BlogCard({ slug, image, author, title, date }: BlogProps) {
           'before:absolute before:inset-0 before:z-1 before:transition-all before:[transition:all_0.6s_ease-out_0s]',
 
           // hover
-          'group-hover:after:bottom-1/2 group-hover:after:top-1/2 group-hover:after:bg-white/20',
-          'group-hover:before:left-1/2 group-hover:before:right-1/2 group-hover:before:bg-white/20'
+          'group-hover:after:top-1/2 group-hover:after:bottom-1/2 group-hover:after:bg-white/20',
+          'group-hover:before:right-1/2 group-hover:before:left-1/2 group-hover:before:bg-white/20'
         )}
       >
         <Image
@@ -45,12 +45,12 @@ export function BlogCard({ slug, image, author, title, date }: BlogProps) {
           (min-width:1024px) 33vw,
           100vw
           "
-          className="pointer-events-none object-cover [transform:scale(1.05)] [transition:.5s_ease] group-hover:[transform:scale(1)]"
+          className="pointer-events-none [transform:scale(1.05)] object-cover [transition:.5s_ease] group-hover:[transform:scale(1)]"
         />
 
         {/* Post meta  */}
-        <div className="absolute bottom-4 w-full px-30px">
-          <ul className="px flex min-h-[40px] flex-wrap items-center justify-between gap-x-4 gap-y-1 rounded-5 bg-accent-900 px-2.5 py-1 text-body">
+        <div className="px-30px absolute bottom-4 w-full">
+          <ul className="px rounded-5 bg-accent-900 text-body flex min-h-[40px] flex-wrap items-center justify-between gap-x-4 gap-y-1 px-2.5 py-1">
             <li className={listItemClasses}>
               <span className={listItemIconClasses}>
                 <FaUser />
@@ -59,7 +59,7 @@ export function BlogCard({ slug, image, author, title, date }: BlogProps) {
                 By{' '}
                 <CustomLink
                   href={author.slug}
-                  className="transition-colors duration-300 hover:text-primary"
+                  className="hover:text-primary transition-colors duration-300"
                 >
                   {author.name}
                 </CustomLink>
@@ -77,10 +77,10 @@ export function BlogCard({ slug, image, author, title, date }: BlogProps) {
 
       {/* Content  */}
       <div className="space-y-30px p-30px">
-        <h3 className="text-md font-bold leading-[1.25]  md:text-lg">
+        <h3 className="text-md leading-[1.25] font-bold md:text-lg">
           <CustomLink
             href={slug}
-            className="text-accent-900 transition-colors duration-300 hover:text-primary dark:text-white dark:hover:text-primary"
+            className="text-accent-900 hover:text-primary dark:hover:text-primary transition-colors duration-300 dark:text-white"
           >
             {title}
           </CustomLink>
@@ -89,7 +89,7 @@ export function BlogCard({ slug, image, author, title, date }: BlogProps) {
           href={slug}
           className={cn(
             inlineFlexLayoutClasses,
-            'gap-[.625rem] font-secondary text-base font-bold uppercase leading-[2] tracking-wide text-accent-900 transition-colors  duration-350 hover:text-primary dark:text-white dark:hover:text-primary'
+            'font-secondary text-accent-900 hover:text-primary dark:hover:text-primary gap-[.625rem] text-base leading-[2] font-bold tracking-wide uppercase transition-colors duration-350 dark:text-white'
           )}
         >
           <span>Read More</span>

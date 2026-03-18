@@ -99,11 +99,11 @@ export function ProjectSection({
         </div>
 
         {projects && projects.length > 0 && (
-          <div className="grid grid-cols-1 items-start gap-30px lg:grid-cols-[300px_1fr]">
+          <div className="gap-30px grid grid-cols-1 items-start lg:grid-cols-[300px_1fr]">
             <div
               className={cn(
                 'grid gap-5',
-                '[&_.mixitup-control-active]:after:opacity-100 [&_.mixitup-control-active]:after:[transform:perspective(400px)_rotateX(0deg)] [&_.mixitup-control-active]:after:[transition:all_3.s_linear]'
+                '[&_.mixitup-control-active]:after:[transform:perspective(400px)_rotateX(0deg)] [&_.mixitup-control-active]:after:opacity-100 [&_.mixitup-control-active]:after:[transition:all_3.s_linear]'
               )}
             >
               {projectCategories.map((category, index) => (
@@ -111,7 +111,7 @@ export function ProjectSection({
                   key={index}
                   onClick={handleFilterKeyChange(category.value)}
                   className={cn(
-                    'group/button relative z-1 flex !min-h-[3.5rem] justify-between gap-2 bg-accent-100 text-accent-900 dark:bg-accent-700',
+                    'group/button bg-accent-100 text-accent-900 dark:bg-accent-700 relative z-1 flex !min-h-[3.5rem] justify-between gap-2',
 
                     'after:bg-primary',
                     //hover

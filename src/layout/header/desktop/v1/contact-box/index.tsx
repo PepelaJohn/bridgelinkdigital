@@ -5,7 +5,7 @@ export interface ContactBoxProps {
 
 export function ContactBox({ title, phone }: ContactBoxProps) {
   return (
-    <div className="contact-box hidden flex-none items-center gap-4 text-accent-900 dark:text-white xl:flex">
+    <div className="contact-box text-accent-900 hidden flex-none items-center gap-4 xl:flex dark:text-white">
       <svg
         className="flex-none"
         width={56}
@@ -111,7 +111,7 @@ export function ContactBox({ title, phone }: ContactBoxProps) {
         <p>{title}</p>
         <a
           href={`tel:${phone.split(' ').join('')}`}
-          className="block font-secondary text-lg font-bold leading-[1.3]"
+          className="font-secondary block text-lg leading-[1.3] font-bold"
         >
           {phone}
         </a>

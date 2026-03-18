@@ -18,7 +18,7 @@ export function ContactSection() {
     <section className="section-padding-primary">
       <div className="relative py-[60px]">
         {/* Image area  */}
-        <div className="absolute left-0 top-0 z-1 h-full w-full overflow-hidden bg-red-500 md:w-[56%] md:rounded-r-5">
+        <div className="md:rounded-r-5 absolute top-0 left-0 z-1 h-full w-full overflow-hidden bg-red-500 md:w-[56%]">
           <Image
             src={image.src}
             alt={image.alt}
@@ -32,7 +32,7 @@ export function ContactSection() {
 
         <Container>
           <div className="ml-auto md:w-1/2">
-            <div className="relative z-[2] rounded-5 bg-white p-10 shadow-1 dark:bg-accent-700 lg:p-[60px]">
+            <div className="rounded-5 shadow-1 dark:bg-accent-700 relative z-[2] bg-white p-10 lg:p-[60px]">
               <div className="mb-30px">
                 <SectionHeading {...sectionHeading} />
               </div>

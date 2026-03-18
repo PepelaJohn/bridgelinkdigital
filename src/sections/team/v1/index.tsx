@@ -19,9 +19,9 @@ const navigationBtnClasses = cn(
 export function TeamSection() {
   const { sectionHeading, cards } = teamSectionData;
   return (
-    <section className="section-padding-primary overflow-hidden bg-accent-100 dark:bg-accent-700">
+    <section className="section-padding-primary bg-accent-100 dark:bg-accent-700 overflow-hidden">
       <Container>
-        <div className="mb-10 mr-30px max-w-[680px] md:mb-[3.75rem] md:pr-[140px]">
+        <div className="mr-30px mb-10 max-w-[680px] md:mb-[3.75rem] md:pr-[140px]">
           <SectionHeading {...sectionHeading} />
         </div>
         {cards && cards.length > 0 && (

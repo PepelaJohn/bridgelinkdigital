@@ -26,8 +26,8 @@ export function CarouselPagination({
             className={cn(
               'inline-flex h-2.5 w-2.5 items-center justify-center rounded-full outline outline-2 outline-offset-[5px] outline-transparent transition-colors',
               currentSlide === index
-                ? 'cursor-default bg-primary text-white  outline-primary'
-                : 'cursor-pointer bg-primary',
+                ? 'bg-primary outline-primary cursor-default text-white'
+                : 'bg-primary cursor-pointer',
 
               paginationBulletClassName
             )}

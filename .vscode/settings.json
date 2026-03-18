@@ -45,6 +45,9 @@
   "css.lint.float": "warning",
   "css.lint.fontFaceProperties": "ignore",
   "css.lint.hexColorLength": "warning",
+  "css.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore",
+  "less.lint.unknownAtRules": "ignore",
   // Import Settings
   "typescript.updateImportsOnFileMove.enabled": "always",
   "javascript.updateImportsOnFileMove.enabled": "always",

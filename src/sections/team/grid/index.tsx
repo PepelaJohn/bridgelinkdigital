@@ -9,7 +9,7 @@ export function TeamSection() {
     <section className="section-padding-primary overflow-hidden">
       <Container>
         {cards && cards.length > 0 && (
-          <div className="grid gap-30px md:grid-cols-2 xl:grid-cols-3">
+          <div className="gap-30px grid md:grid-cols-2 xl:grid-cols-3">
             {cards.map((card, index) => (
               <TeamCard
                 {...card}

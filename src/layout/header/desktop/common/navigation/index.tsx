@@ -28,7 +28,7 @@ export function Navigation({ menuItems }: Pick<HeaderProps, 'menuItems'>) {
     <nav aria-label="primary navigation">
       <ul className="flex items-center gap-x-6">
         {menuItems.map((menuItem, index) => (
-          <li key={index} className="group/menu-item relative ">
+          <li key={index} className="group/menu-item relative">
             {'title' in menuItem ? (
               <>
                 {/* Megamenu  */}
@@ -43,7 +43,7 @@ export function Navigation({ menuItems }: Pick<HeaderProps, 'menuItems'>) {
                     aria-label="sumenu-items"
                     className={cn([
                       // Layout
-                      'absolute  left-0 top-full z-40 w-[230px] overflow-hidden bg-accent-700 shadow-lg dark:bg-accent-700',
+                      'bg-accent-700 dark:bg-accent-700 absolute top-full left-0 z-40 w-[230px] overflow-hidden shadow-lg',
 
                       // Submenu normal
                       'origin-[0_0_0] scale-y-0 transition-transform duration-350',
@@ -58,7 +58,7 @@ export function Navigation({ menuItems }: Pick<HeaderProps, 'menuItems'>) {
                           <CustomLink
                             href={subMenuItem.href}
                             openNewTab={subMenuItem.openNewTab}
-                            className="flex min-h-[50px] items-center px-4 py-2 pr-6 text-[15px] font-normal capitalize text-white transition-colors duration-200 hover:bg-primary  dark:text-white"
+                            className="hover:bg-primary flex min-h-[50px] items-center px-4 py-2 pr-6 text-[15px] font-normal text-white capitalize transition-colors duration-200 dark:text-white"
                           >
                             {subMenuItem.label}
                           </CustomLink>

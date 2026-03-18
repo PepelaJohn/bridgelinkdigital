@@ -55,7 +55,7 @@ export default async function RootLayout({ children }: Props) {
         'light',
         primary.variable,
         secondary.variable,
-        'text-base leading-[1.875] text-accent-800 [&.dark]:text-body'
+        'text-accent-800 [&.dark]:text-body text-base leading-[1.875]'
       )}
     >
       <AOSInit />
@@ -68,7 +68,7 @@ export default async function RootLayout({ children }: Props) {
         >
           <div
             className={cn(
-              'bg-white text-accent-800 dark:bg-accent-900 dark:text-body'
+              'text-accent-800 dark:bg-accent-900 dark:text-body bg-white'
             )}
           >
             <main>{children}</main>

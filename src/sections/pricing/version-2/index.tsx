@@ -31,12 +31,12 @@ export function PricingSection({ className }: SectionProps) {
         {categories.map((category, catIndex) => (
           <div key={catIndex} className="mb-16 last:mb-0">
             {/* Category heading */}
-            <h2 className="mb-10 text-center font-secondary text-xl font-bold text-accent-900 dark:text-white lg:text-2xl">
+            <h2 className="font-secondary text-accent-900 mb-10 text-center text-xl font-bold lg:text-2xl dark:text-white">
               {category.title}
             </h2>
 
             {/* Cards */}
-            <div className="-mx-4 flex flex-wrap justify-center gap-y-30px">
+            <div className="gap-y-30px -mx-4 flex flex-wrap justify-center">
               {category.cards.map((card, cardIndex) => (
                 <div
                   key={cardIndex}
@@ -56,8 +56,8 @@ export function PricingSection({ className }: SectionProps) {
 
         {/* Add-ons */}
         {addOns && addOns.length > 0 && (
-          <div className="mb-0 mt-16">
-            <h2 className="mb-10 text-center font-secondary text-xl font-bold text-accent-900 dark:text-white lg:text-2xl">
+          <div className="mt-16 mb-0">
+            <h2 className="font-secondary text-accent-900 mb-10 text-center text-xl font-bold lg:text-2xl dark:text-white">
               Optional Add-Ons
             </h2>
             <div className="-mx-4 flex flex-wrap justify-center gap-y-4 pb-16">
@@ -71,11 +71,11 @@ export function PricingSection({ className }: SectionProps) {
                   )}
                   className="w-full px-4 sm:w-1/2 lg:w-1/3"
                 >
-                  <div className="flex items-center justify-between rounded-5 bg-white px-6 py-4 shadow-3 dark:bg-accent-700 dark:shadow-none">
-                    <span className="font-secondary text-md font-bold text-accent-800 dark:text-white">
+                  <div className="rounded-5 shadow-3 dark:bg-accent-700 flex items-center justify-between bg-white px-6 py-4 dark:shadow-none">
+                    <span className="font-secondary text-md text-accent-800 font-bold dark:text-white">
                       {addon.label}
                     </span>
-                    <span className="ml-4 shrink-0 font-secondary text-md font-bold text-primary">
+                    <span className="font-secondary text-md text-primary ml-4 shrink-0 font-bold">
                       {addon.price}
                     </span>
                   </div>
@@ -86,7 +86,7 @@ export function PricingSection({ className }: SectionProps) {
         )}
 
         {/* Notes */}
-        <div className="py-16 text-center text-sm text-accent-700 dark:text-accent-300">
+        <div className="text-accent-700 dark:text-accent-300 py-16 text-center text-sm">
           <p>
             50% deposit required before project start · Remaining balance due
             upon completion

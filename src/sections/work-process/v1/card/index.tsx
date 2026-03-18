@@ -18,11 +18,11 @@ export function WorkprocessCard({
   link,
 }: WorkprocessCardProps) {
   return (
-    <div className="relative whitespace-normal rounded-5 bg-accent-100 p-6  dark:bg-accent-700 lg:p-10">
+    <div className="rounded-5 bg-accent-100 dark:bg-accent-700 relative p-6 whitespace-normal lg:p-10">
       <div className="flex items-center gap-5">
         <div className="relative flex-none">
-          <span className="absolute -top-3 inline-block h-16 w-16 rounded-full bg-primary"></span>
-          <span className="relative -left-3 top-3 z-1 text-white">{icon}</span>
+          <span className="bg-primary absolute -top-3 inline-block h-16 w-16 rounded-full"></span>
+          <span className="relative top-3 -left-3 z-1 text-white">{icon}</span>
         </div>
         <h3 className="h3 text-accent-900 dark:text-white">{title}</h3>
       </div>
@@ -31,7 +31,7 @@ export function WorkprocessCard({
         <Button
           asChild
           className={cn(
-            '!min-h-fit gap-2.5 bg-transparent !p-0  uppercase text-accent-800 hover:bg-transparent hover:text-primary dark:text-primary dark:hover:text-white',
+            'text-accent-800 hover:text-primary dark:text-primary !min-h-fit gap-2.5 bg-transparent !p-0 uppercase hover:bg-transparent dark:hover:text-white',
 
             // Prevent default button styles
             'after:hidden'
@@ -56,7 +56,7 @@ export function WorkprocessCard({
           </CustomLink>
         </Button>
       </div>
-      <span className="absolute -bottom-5 right-5 z-1 text-[68px] font-bold text-primary/10 dark:text-white/10">
+      <span className="text-primary/10 absolute right-5 -bottom-5 z-1 text-[68px] font-bold dark:text-white/10">
         {count}
       </span>
     </div>

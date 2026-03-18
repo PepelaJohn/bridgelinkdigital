@@ -27,7 +27,7 @@ export interface FAQSectionProps {
 export default function FAQSection() {
   const { sectionHeading, faqItems } = faqSectionData;
   return (
-    <section className="section-padding-primary overflow-hidden ">
+    <section className="section-padding-primary overflow-hidden">
       <Container>
         <div className="max-w-[630px]">
           <SectionHeading {...sectionHeading} hasBottomSpacing />
@@ -47,7 +47,7 @@ export default function FAQSection() {
                 <AccordionTrigger
                   className={cn(
                     // Common
-                    `h3 min-h-[70px] justify-start gap-3 rounded-5 bg-accent-100  px-6  py-3 text-left text-accent-900 no-underline hover:no-underline dark:bg-accent-700 dark:text-white md:gap-5 lg:px-30px lg:py-4`,
+                    `h3 rounded-5 bg-accent-100 text-accent-900 dark:bg-accent-700 lg:px-30px min-h-[70px] justify-start gap-3 px-6 py-3 text-left no-underline hover:no-underline md:gap-5 lg:py-4 dark:text-white`,
 
                     // Styled based on `open-close` state
                     // open
@@ -103,7 +103,7 @@ export default function FAQSection() {
                   </span>
                 </AccordionTrigger>
                 <AccordionContent>
-                  <p className="pb-2 pt-4 lg:pb-3 lg:pt-6">{faqItem.answer}</p>
+                  <p className="pt-4 pb-2 lg:pt-6 lg:pb-3">{faqItem.answer}</p>
                 </AccordionContent>
               </AccordionItem>
             ))}

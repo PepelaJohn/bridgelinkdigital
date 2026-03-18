@@ -98,12 +98,12 @@ export function Footer({ className }: SectionProps) {
             {/* About Section */}
             <motion.div variants={fadeInUp} custom={0}>
               <BrandLogo />
-              <p className="mb-7 mt-3 text-gray-600 dark:text-gray-400">
+              <p className="mt-3 mb-7 text-gray-600 dark:text-gray-400">
                 {about.description}
               </p>
               {about.socialLinks && about.socialLinks.length > 0 && (
                 <nav aria-label="social links">
-                  <ul className="inline-flex min-h-[50px] items-center divide-x divide-white/20 rounded-lg bg-primary  text-white">
+                  <ul className="bg-primary inline-flex min-h-[50px] items-center divide-x divide-white/20 rounded-lg text-white">
                     {about.socialLinks.map((socialLink, index) => (
                       <li key={index}>
                         <CustomLink
@@ -123,7 +123,7 @@ export function Footer({ className }: SectionProps) {
 
             {/* Column One - Links */}
             <motion.div variants={fadeInUp} custom={1}>
-              <h3 className="mb-5 text-lg font-bold leading-tight text-gray-900 dark:text-white md:mb-8 md:text-xl">
+              <h3 className="mb-5 text-lg leading-tight font-bold text-gray-900 md:mb-8 md:text-xl dark:text-white">
                 {columnOne.title}
               </h3>
               {columnOne.links && columnOne.links.length > 0 && (
@@ -140,7 +140,7 @@ export function Footer({ className }: SectionProps) {
                         <CustomLink
                           href={link.href}
                           openNewTab={link.openNewTab}
-                          className="text-gray-600 transition-colors duration-300 hover:text-primary dark:text-gray-400 dark:hover:text-white"
+                          className="hover:text-primary text-gray-600 transition-colors duration-300 dark:text-gray-400 dark:hover:text-white"
                         >
                           {link.label}
                         </CustomLink>
@@ -153,20 +153,20 @@ export function Footer({ className }: SectionProps) {
 
             {/* Column Two - Contact Info */}
             <motion.div variants={fadeInUp} custom={2}>
-              <h3 className="mb-5 text-lg font-bold leading-tight text-gray-900 dark:text-white md:mb-8 md:text-xl">
+              <h3 className="mb-5 text-lg leading-tight font-bold text-gray-900 md:mb-8 md:text-xl dark:text-white">
                 {columnTwo.title}
               </h3>
               <ul aria-label="addresses" className="grid gap-5">
                 <li className="flex items-center gap-5">
-                  <span className="inline-grid h-10 w-10 flex-none place-items-center rounded-lg border border-gray-300 bg-white text-primary dark:border-gray-600 dark:bg-gray-800">
+                  <span className="text-primary inline-grid h-10 w-10 flex-none place-items-center rounded-lg border border-gray-300 bg-white dark:border-gray-600 dark:bg-gray-800">
                     <FaPaperPlane />
                   </span>
-                  <address className="not-italic text-gray-600 dark:text-gray-400">
+                  <address className="text-gray-600 not-italic dark:text-gray-400">
                     {columnTwo.location}
                   </address>
                 </li>
                 <li className="flex items-center gap-5">
-                  <span className="inline-grid h-10 w-10 flex-none place-items-center rounded-lg border border-gray-300 bg-white text-primary dark:border-gray-600 dark:bg-gray-800">
+                  <span className="text-primary inline-grid h-10 w-10 flex-none place-items-center rounded-lg border border-gray-300 bg-white dark:border-gray-600 dark:bg-gray-800">
                     <FaEnvelope />
                   </span>
                   {columnTwo.mails && columnTwo.mails.length > 0 && (
@@ -175,7 +175,7 @@ export function Footer({ className }: SectionProps) {
                         <a
                           key={index}
                           href={`mailto:${mail}`}
-                          className="text-gray-600 transition-colors duration-300 hover:text-primary dark:text-gray-400 dark:hover:text-white"
+                          className="hover:text-primary text-gray-600 transition-colors duration-300 dark:text-gray-400 dark:hover:text-white"
                         >
                           {mail}
                         </a>
@@ -184,7 +184,7 @@ export function Footer({ className }: SectionProps) {
                   )}
                 </li>
                 <li className="flex items-center gap-5">
-                  <span className="inline-grid h-10 w-10 flex-none place-items-center rounded-lg border border-gray-300 bg-white text-primary dark:border-gray-600 dark:bg-gray-800">
+                  <span className="text-primary inline-grid h-10 w-10 flex-none place-items-center rounded-lg border border-gray-300 bg-white dark:border-gray-600 dark:bg-gray-800">
                     <FaPhone />
                   </span>
                   {columnTwo.phoneNumbers &&
@@ -194,7 +194,7 @@ export function Footer({ className }: SectionProps) {
                           <a
                             key={index}
                             href={`tel:${phoneNumber.split(' ').join('')}`}
-                            className="text-gray-600 transition-colors duration-300 hover:text-primary dark:text-gray-400 dark:hover:text-white"
+                            className="hover:text-primary text-gray-600 transition-colors duration-300 dark:text-gray-400 dark:hover:text-white"
                           >
                             {phoneNumber}
                           </a>
@@ -207,7 +207,7 @@ export function Footer({ className }: SectionProps) {
 
             {/* Column Three - Recent Blogs */}
             <motion.div variants={fadeInUp} custom={3}>
-              <h3 className="mb-5 text-lg font-bold leading-tight text-gray-900 dark:text-white md:mb-8 md:text-xl">
+              <h3 className="mb-5 text-lg leading-tight font-bold text-gray-900 md:mb-8 md:text-xl dark:text-white">
                 {columnThree.title}
               </h3>
               {columnThree.blogs && columnThree.blogs.length > 0 && (
@@ -224,10 +224,10 @@ export function Footer({ className }: SectionProps) {
                           </span>
                           <span>{blog.date}</span>
                         </p>
-                        <h4 className="text-base font-bold leading-normal">
+                        <h4 className="text-base leading-normal font-bold">
                           <CustomLink
                             href={blog.slug}
-                            className="text-gray-700 transition-colors duration-300 hover:text-primary dark:text-white dark:hover:text-primary"
+                            className="hover:text-primary dark:hover:text-primary text-gray-700 transition-colors duration-300 dark:text-white"
                           >
                             {blog.title}
                           </CustomLink>
@@ -243,7 +243,7 @@ export function Footer({ className }: SectionProps) {
       </div>
 
       {/* Footer Bottom */}
-      <div className="flex min-h-[90px] items-center border-t border-gray-300 border-opacity-20 py-5 dark:border-gray-600 dark:border-opacity-20">
+      <div className="border-opacity-20 dark:border-opacity-20 flex min-h-[90px] items-center border-t border-gray-300 py-5 dark:border-gray-600">
         <Container>
           <motion.div
             className="flex flex-wrap items-center justify-between gap-x-8 gap-y-4 md:gap-x-10"
@@ -264,7 +264,7 @@ export function Footer({ className }: SectionProps) {
                         aria-label={`Go to page ${link.label}`}
                         href={link.href}
                         openNewTab={link.openNewTab}
-                        className="text-gray-600 transition-colors duration-300 hover:text-primary dark:text-gray-400 dark:hover:text-white"
+                        className="hover:text-primary text-gray-600 transition-colors duration-300 dark:text-gray-400 dark:hover:text-white"
                       >
                         {link.label}
                       </CustomLink>

@@ -32,12 +32,12 @@ export function ProjectCard({
       {/* Media  */}
       <div
         className={cn(
-          'relative z-1 cursor-pointer overflow-hidden rounded-5',
+          'rounded-5 relative z-1 cursor-pointer overflow-hidden',
           // after
-          'after:absolute after:inset-0 after:z-1 after:bg-black after:[transform-origin:top] after:[transition:.5s] max-lg:after:opacity-60 lg:after:opacity-0 lg:after:[transform:perspective(400px)_rotateX(-10deg)]',
+          'after:absolute after:inset-0 after:z-1 after:[transform-origin:top] after:bg-black after:[transition:.5s] max-lg:after:opacity-60 lg:after:[transform:perspective(400px)_rotateX(-10deg)] lg:after:opacity-0',
 
           // hover
-          'lg:group-hover/project:after:opacity-60 lg:group-hover/project:after:[transform:perspective(400px)_rotateX(0deg)]'
+          'lg:group-hover/project:after:[transform:perspective(400px)_rotateX(0deg)] lg:group-hover/project:after:opacity-60'
         )}
       >
         <Image
@@ -51,7 +51,7 @@ export function ProjectCard({
         <button
           onClick={onClick}
           className={cn(
-            'absolute left-1/2 top-1/2 z-[2] grid h-[60px] w-[60px] place-items-center rounded-full bg-white text-[25px] text-accent-700 [transform:translate(-50%,-50%)] [transition:.5s]',
+            'text-accent-700 absolute top-1/2 left-1/2 z-[2] grid h-[60px] w-[60px] [transform:translate(-50%,-50%)] place-items-center rounded-full bg-white text-[25px] [transition:.5s]',
 
             // desktop
             'lg:opacity-0 lg:group-hover/project:opacity-100'
@@ -66,17 +66,12 @@ export function ProjectCard({
         <h3 className="h3">
           <CustomLink
             href={slug}
-            className="text-accent-700 transition-colors duration-350 hover:text-primary dark:text-white dark:hover:text-primary"
+            className="text-accent-700 hover:text-primary dark:hover:text-primary transition-colors duration-350 dark:text-white"
           >
             {title}
           </CustomLink>
         </h3>
-        <p
-          className="mt-1 
-         text-body dark:text-accent-800"
-        >
-          {description}
-        </p>
+        <p className="text-body dark:text-accent-800 mt-1">{description}</p>
       </div>
     </div>
   );

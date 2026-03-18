@@ -20,7 +20,7 @@ export function BlogSection() {
     <section className="section-padding-primary overflow-hidden">
       <Container>
         <div className="mb-10 flex flex-col flex-wrap justify-between gap-x-20 gap-y-10 md:mb-[3.75rem] lg:flex-row">
-          <div className=" max-w-[630px]">
+          <div className="max-w-[630px]">
             <div data-aos="fade-up" data-aos-delay="100">
               <SectionHeading {...sectionHeading} alignment="start" />
             </div>
@@ -37,7 +37,7 @@ export function BlogSection() {
           </div>
         </div>
         {blogs && blogs.length > 0 && (
-          <div className="-mx-4 flex flex-wrap gap-y-30px">
+          <div className="gap-y-30px -mx-4 flex flex-wrap">
             {blogs.map((blog, index) => (
               <div
                 key={index}

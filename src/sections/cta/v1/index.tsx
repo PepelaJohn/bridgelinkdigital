@@ -55,9 +55,9 @@ export function CtaSection({ className }: SectionProps) {
   return (
     <section className={cn(className)}>
       <Container>
-        <div className="relative overflow-hidden rounded-5 bg-primary px-6 py-14">
-          <div className="relative z-10 mx-auto max-w-[630px] rounded-5  text-center">
-            <h2 className="mx-auto max-w-[490px] font-secondary text-xl font-bold capitalize leading-[1.25] text-white md:text-2xl">
+        <div className="rounded-5 bg-primary relative overflow-hidden px-6 py-14">
+          <div className="rounded-5 relative z-10 mx-auto max-w-[630px] text-center">
+            <h2 className="font-secondary mx-auto max-w-[490px] text-xl leading-[1.25] font-bold text-white capitalize md:text-2xl">
               {title}
             </h2>
             <form
@@ -69,7 +69,7 @@ export function CtaSection({ className }: SectionProps) {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter Email"
                 disabled={status === 'loading'}
-                className="border-white border-opacity-60 text-white placeholder:text-white focus:border-white dark:border-white dark:border-opacity-60 dark:text-white dark:placeholder:text-white"
+                className="border-opacity-60 dark:border-opacity-60 border-white text-white placeholder:text-white focus:border-white dark:border-white dark:text-white dark:placeholder:text-white"
               />
               <Button
                 disabled={status === 'loading'}
@@ -77,7 +77,7 @@ export function CtaSection({ className }: SectionProps) {
                 className={cn(
                   'min-w-[190px] flex-none text-white max-md:w-full',
                   'bg-primary-light',
-                  'after:bg-white hover:text-accent-700 dark:hover:text-accent-700'
+                  'hover:text-accent-700 dark:hover:text-accent-700 after:bg-white'
                 )}
               >
                 <span>
@@ -91,7 +91,7 @@ export function CtaSection({ className }: SectionProps) {
             alt="cta section bg pattern"
             width={520}
             height={316}
-            className="pointer-events-none absolute -right-30px bottom-0 z-1 h-full animate-float-bob-x object-cover opacity-60"
+            className="-right-30px animate-float-bob-x pointer-events-none absolute bottom-0 z-1 h-full object-cover opacity-60"
             sizes="100vw"
           />
         </div>

@@ -77,7 +77,7 @@ const socialLinks: SocialItemProps[] = [
 
 function Author({ image, name, about, socialLinks }: AuthorProps) {
   return (
-    <div className="space-y-5 rounded-5 bg-accent-100 p-8 text-center dark:bg-accent-700 lg:p-10">
+    <div className="rounded-5 bg-accent-100 dark:bg-accent-700 space-y-5 p-8 text-center lg:p-10">
       <Image
         src={image.src}
         alt={image.alt || name}
@@ -87,19 +87,19 @@ function Author({ image, name, about, socialLinks }: AuthorProps) {
         blurDataURL={blurDataUrl}
         className="mx-auto rounded-full object-cover"
       />
-      <h3 className="font-secondary text-lg font-bold leading-[1.25] text-accent-900 dark:text-white md:text-xl">
+      <h3 className="font-secondary text-accent-900 text-lg leading-[1.25] font-bold md:text-xl dark:text-white">
         {name}
       </h3>
       <p>{about}</p>
       {socialLinks && socialLinks.length > 0 && (
         <nav aria-label="social links">
-          <ul className="inline-flex items-center divide-x  divide-accent-800/50 text-accent-900 dark:divide-accent-100/50  dark:text-white">
+          <ul className="divide-accent-800/50 text-accent-900 dark:divide-accent-100/50 inline-flex items-center divide-x dark:text-white">
             {socialLinks.map((socialLink, index) => (
               <li key={index}>
                 <CustomLink
                   href={socialLink.href}
                   openNewTab
-                  className="block px-4 text-base/[1.75] transition-transform duration-350 hover:-translate-y-1 hover:text-primary"
+                  className="hover:text-primary block px-4 text-base/[1.75] transition-transform duration-350 hover:-translate-y-1"
                 >
                   <span>{socialLink.icon}</span>
                 </CustomLink>
@@ -114,15 +114,15 @@ function Author({ image, name, about, socialLinks }: AuthorProps) {
 
 function SearchBox() {
   return (
-    <div className="space-y-5 rounded-5 bg-accent-100 p-8 dark:bg-accent-700 lg:p-10">
-      <h3 className="font-secondary text-md font-bold leading-[1.25] text-accent-900 dark:text-white md:text-lg">
+    <div className="rounded-5 bg-accent-100 dark:bg-accent-700 space-y-5 p-8 lg:p-10">
+      <h3 className="font-secondary text-md text-accent-900 leading-[1.25] font-bold md:text-lg dark:text-white">
         Searach
       </h3>
       <div className="flex items-center gap-0">
         <TextInput
           placeholder="Your name"
           name="text"
-          className="rounded-5 rounded-r-none border-none bg-white dark:bg-accent-900"
+          className="rounded-5 dark:bg-accent-900 rounded-r-none border-none bg-white"
         />
         <Button
           type="submit"
@@ -168,24 +168,24 @@ const categoryListData: CategoryListProps = {
 
 function CategoryList({ links }: CategoryListProps) {
   return (
-    <div className="space-y-5 rounded-5 bg-accent-100 p-8 dark:bg-accent-700 lg:p-10">
-      <h3 className="font-secondary text-md font-bold leading-[1.25] text-accent-900 dark:text-white md:text-lg">
+    <div className="rounded-5 bg-accent-100 dark:bg-accent-700 space-y-5 p-8 lg:p-10">
+      <h3 className="font-secondary text-md text-accent-900 leading-[1.25] font-bold md:text-lg dark:text-white">
         Category
       </h3>
       {links && links.length > 0 && (
         <nav aria-label="footer links navigation">
-          <ul className="grid gap-2.5 divide-y divide-accent-700/20 dark:divide-accent-200/20">
+          <ul className="divide-accent-700/20 dark:divide-accent-200/20 grid gap-2.5 divide-y">
             {links.map((link, index) => (
               <li
                 key={index}
                 className="flex items-center gap-2.5 pt-2.5 first:pt-0"
               >
-                <span className="grid h-3 w-3 place-items-center border border-primary">
-                  <span className="block h-0.5 w-0.5 bg-primary"></span>
+                <span className="border-primary grid h-3 w-3 place-items-center border">
+                  <span className="bg-primary block h-0.5 w-0.5"></span>
                 </span>
                 <CustomLink
                   href={link.href}
-                  className="transition-colors duration-300 hover:text-primary"
+                  className="hover:text-primary transition-colors duration-300"
                 >
                   {link.label}
                 </CustomLink>
@@ -208,8 +208,8 @@ const tagwidgetData: TagwidgetProps = {
 
 function Tagswidget({ tags }: TagwidgetProps) {
   return (
-    <div className="space-y-5 rounded-5 bg-accent-100 p-8 dark:bg-accent-700 lg:p-10">
-      <h3 className="font-secondary text-md font-bold leading-[1.25] text-accent-900 dark:text-white md:text-lg">
+    <div className="rounded-5 bg-accent-100 dark:bg-accent-700 space-y-5 p-8 lg:p-10">
+      <h3 className="font-secondary text-md text-accent-900 leading-[1.25] font-bold md:text-lg dark:text-white">
         Tags
       </h3>
       {tags && tags.length > 0 && (
@@ -218,7 +218,7 @@ function Tagswidget({ tags }: TagwidgetProps) {
             {tags.map((tag, index) => (
               <li
                 key={index}
-                className="inline-flex min-h-[2.5rem] cursor-pointer items-center rounded-5 border border-accent-900/20 px-2.5 py-0.5 text-accent-800 transition-colors duration-300 hover:border-transparent hover:bg-primary hover:text-white dark:border-none dark:bg-accent-900 dark:text-body  dark:hover:bg-primary dark:hover:text-white"
+                className="rounded-5 border-accent-900/20 text-accent-800 hover:bg-primary dark:bg-accent-900 dark:text-body dark:hover:bg-primary inline-flex min-h-[2.5rem] cursor-pointer items-center border px-2.5 py-0.5 transition-colors duration-300 hover:border-transparent hover:text-white dark:border-none dark:hover:text-white"
               >
                 {tag}
               </li>
@@ -242,7 +242,7 @@ export function BlogDetilsSection() {
   return (
     <section className="section-padding-primary">
       <Container>
-        <div className="grid gap-30px lg:grid-cols-[1fr_410px]">
+        <div className="gap-30px grid lg:grid-cols-[1fr_410px]">
           <div>
             <div className="[&_p+P]:mt-4">
               <Image
@@ -258,10 +258,10 @@ export function BlogDetilsSection() {
               {/* Meta  */}
               <ul
                 aria-label="blog meta list"
-                className="mb-4 mt-6 flex flex-wrap items-center gap-x-[1.125rem] gap-y-2 lg:mb-5 lg:mt-30px"
+                className="lg:mt-30px mt-6 mb-4 flex flex-wrap items-center gap-x-[1.125rem] gap-y-2 lg:mb-5"
               >
                 <li className="flex items-center gap-2.5">
-                  <span className="flex-none text-sm text-primary">
+                  <span className="text-primary flex-none text-sm">
                     <FaRegUser />
                   </span>
                   <span>
@@ -272,7 +272,7 @@ export function BlogDetilsSection() {
                   </span>
                 </li>
                 <li className="flex items-center gap-2.5">
-                  <span className="flex-none text-sm text-primary">
+                  <span className="text-primary flex-none text-sm">
                     <FaRegFolderOpen />
                   </span>
                   <CustomLink href="#" className={linkClasses}>
@@ -280,7 +280,7 @@ export function BlogDetilsSection() {
                   </CustomLink>
                 </li>
                 <li className="flex items-center gap-2.5">
-                  <span className="flex-none text-sm text-primary">
+                  <span className="text-primary flex-none text-sm">
                     <FaRegComments />
                   </span>
                   <span>
@@ -291,7 +291,7 @@ export function BlogDetilsSection() {
                 </li>
               </ul>
 
-              <div className="my-4 h-px bg-body/30 lg:my-5"></div>
+              <div className="bg-body/30 my-4 h-px lg:my-5"></div>
               <p>
                 Aliquam eros justo, posuere loborti viverra laoreet matti
                 ullamcorper posuere viverra .Aliquam eros justo, posuere
@@ -308,17 +308,17 @@ export function BlogDetilsSection() {
                 mattis.
               </p>
 
-              <blockquote className="my-30px grid gap-5 rounded-5 bg-accent-100 py-10 text-center dark:bg-accent-700 lg:px-[70px]">
-                <span className="mx-auto grid h-[50px] w-[50px] place-items-center rounded-full bg-white text-[1.25rem] text-primary dark:bg-accent-900">
+              <blockquote className="my-30px rounded-5 bg-accent-100 dark:bg-accent-700 grid gap-5 py-10 text-center lg:px-[70px]">
+                <span className="text-primary dark:bg-accent-900 mx-auto grid h-[50px] w-[50px] place-items-center rounded-full bg-white text-[1.25rem]">
                   <FaQuoteRight />
                 </span>
-                <p className="font-secondary text-md font-medium leading-[1.25] md:text-lg">
+                <p className="font-secondary text-md leading-[1.25] font-medium md:text-lg">
                   With a commitment to driving technological evolution, our IT
                   solutions and services are the cornerstone of your digital
                   progression. We transcend boundaries, enabling businesses to
                   not
                 </p>
-                <div className="mt-3 text-accent-700 dark:text-white">
+                <div className="text-accent-700 mt-3 dark:text-white">
                   <h3 className="h3">Stanio lainto</h3>
                   <p>Authore</p>
                 </div>
@@ -345,7 +345,7 @@ export function BlogDetilsSection() {
                 placeholder="blur"
                 blurDataURL={blurDataUrl}
                 sizes="100vw"
-                className="mb-30px mt-[60px] block rounded-5"
+                className="mb-30px rounded-5 mt-[60px] block"
               />
               <p>
                 Aliquam eros justo, posuere loborti viverra lao ullamcorper
@@ -362,7 +362,7 @@ export function BlogDetilsSection() {
                 laoreet matti ullamcorper posuere viverra .Aliquam eros justo,
                 posuere lobortis non.
               </p>
-              <div className="my-10 flex flex-wrap items-center justify-between gap-x-5 gap-y-2.5 rounded-5 bg-accent-100 px-30px py-6 dark:bg-accent-700">
+              <div className="rounded-5 bg-accent-100 px-30px dark:bg-accent-700 my-10 flex flex-wrap items-center justify-between gap-x-5 gap-y-2.5 py-6">
                 <div className="flex items-center gap-2.5">
                   <span className="text-primary">
                     <FaTags />
@@ -395,7 +395,7 @@ export function BlogDetilsSection() {
                 </div>
                 {socialLinks && socialLinks.length > 0 && (
                   <nav aria-label="social links">
-                    <ul className="inline-flex items-center gap-4  text-primary">
+                    <ul className="text-primary inline-flex items-center gap-4">
                       {socialLinks.map((socialLink, index) => (
                         <li key={index}>
                           <CustomLink
@@ -421,14 +421,14 @@ export function BlogDetilsSection() {
                   placeholder="blur"
                   blurDataURL={blurDataUrl}
                   sizes="100vw"
-                  className="flex-none rounded-10"
+                  className="rounded-10 flex-none"
                 />
                 <div className="text-accent-700 dark:text-white">
-                  <h4 className="font-secondary text-md font-bold leading-[1.5]">
+                  <h4 className="font-secondary text-md leading-[1.5] font-bold">
                     Stanio lainto
                   </h4>
                   <p className="text-sm leading-[1.6]">3 days ago</p>
-                  <p className="!mt-1.5 text-body">
+                  <p className="text-body !mt-1.5">
                     ished fact that a reader will be distrol acted bioii
                     the.ished fact that a reader will be distrolra acted laoreet
                     Aliquam reader will be distrol acted ished fact that a
@@ -437,7 +437,7 @@ export function BlogDetilsSection() {
                   </p>
                   <CustomLink
                     href="#"
-                    className="mt-4 inline-block text-[1.25rem] text-primary"
+                    className="text-primary mt-4 inline-block text-[1.25rem]"
                   >
                     <FaReply />
                   </CustomLink>
@@ -449,7 +449,7 @@ export function BlogDetilsSection() {
                   Leave a comment
                 </h3>
                 <p className="mt-2">You must have to log in for comment</p>
-                <form className="mt-30px grid grid-cols-1 gap-x-30px gap-y-5 lg:grid-cols-2">
+                <form className="mt-30px gap-x-30px grid grid-cols-1 gap-y-5 lg:grid-cols-2">
                   <div>
                     <TextInput
                       placeholder="Your Email"
@@ -491,7 +491,7 @@ export function BlogDetilsSection() {
               </div>
             </div>
           </div>
-          <div className="grid gap-30px self-baseline max-md:mx-auto max-md:max-w-[410px] lg:gap-10">
+          <div className="gap-30px grid self-baseline max-md:mx-auto max-md:max-w-[410px] lg:gap-10">
             <Author {...authorData} />
             <SearchBox />
             <CategoryList {...categoryListData} />

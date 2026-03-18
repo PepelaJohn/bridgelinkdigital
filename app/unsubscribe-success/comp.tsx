@@ -34,7 +34,7 @@ export default function UnsubscribeSuccess() {
           <div className="pt-4">
             <Link
               href="/"
-              className="inline-flex items-center rounded-md border border-transparent bg-primary px-4 py-2 text-sm font-medium text-white transition-colors  focus:outline-none "
+              className="bg-primary inline-flex items-center rounded-md border border-transparent px-4 py-2 text-sm font-medium text-white transition-colors focus:outline-none"
             >
               Return to Homepage
             </Link>

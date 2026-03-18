@@ -140,7 +140,7 @@ const BlogEditor = () => {
                 </button>
                 <button
                   onClick={handleSave}
-                  className="flex items-center space-x-2 rounded-md bg-primary px-4 py-2 text-white transition-colors duration-200 hover:bg-primary/90"
+                  className="bg-primary hover:bg-primary/90 flex items-center space-x-2 rounded-md px-4 py-2 text-white transition-colors duration-200"
                 >
                   <Save size={18} />
                   <span className="hidden sm:inline">Save</span>
@@ -297,10 +297,10 @@ const BlogEditor = () => {
         </div>
 
         {/* Mobile-friendly floating save button */}
-        <div className="fixed bottom-6 right-6 sm:hidden">
+        <div className="fixed right-6 bottom-6 sm:hidden">
           <button
             onClick={handleSave}
-            className="rounded-full bg-primary p-4 text-white shadow-lg transition-colors duration-200 hover:bg-primary/90"
+            className="bg-primary hover:bg-primary/90 rounded-full p-4 text-white shadow-lg transition-colors duration-200"
           >
             <Save size={24} />
           </button>

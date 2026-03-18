@@ -42,7 +42,7 @@ export function ServiceDetailsSection() {
           {/* Sidebar  */}
           <div className="grid gap-10 md:sticky md:top-[76px] lg:top-[133px] 2xl:gap-[60px]">
             {/* Service list  */}
-            <div className="grid gap-6 rounded-5 bg-accent-100 px-10 py-30px dark:bg-accent-700">
+            <div className="rounded-5 bg-accent-100 py-30px dark:bg-accent-700 grid gap-6 px-10">
               <h3 className="h3 text-accent-700 dark:text-white">
                 Our Service
               </h3>
@@ -52,7 +52,7 @@ export function ServiceDetailsSection() {
                     <li key={index}>
                       <CustomLink
                         href={service.href}
-                        className="flex items-center justify-between gap-4 transition-colors duration-300 hover:text-primary"
+                        className="hover:text-primary flex items-center justify-between gap-4 transition-colors duration-300"
                       >
                         <span className="flex-1">{service.label}</span>
                         <svg
@@ -85,9 +85,9 @@ export function ServiceDetailsSection() {
             {/* Cta box  */}
             <div
               className={cn(
-                'relative grid  min-h-[410px] place-items-center overflow-hidden rounded-5 bg-accent-100 p-10 dark:bg-accent-700',
+                'rounded-5 bg-accent-100 dark:bg-accent-700 relative grid min-h-[410px] place-items-center overflow-hidden p-10',
                 // after
-                'after:absolute after:inset-0 after:z-1 after:bg-accent-700/95',
+                'after:bg-accent-700/95 after:absolute after:inset-0 after:z-1',
                 // after
                 'before:absolute before:inset-0 before:z-[2] before:[background:linear-gradient(180deg,rgba(185,18,2,0.00)_0%,rgba(185,18,2,0.22)_100%)]'
               )}
@@ -100,12 +100,12 @@ export function ServiceDetailsSection() {
                 blurDataURL={blurDataUrl}
               />
               <div className="relative z-10 text-center text-white">
-                <span className="inline-grid h-[68px] w-[68px] place-items-center rounded-full bg-primary text-lg/[1] text-white">
+                <span className="bg-primary inline-grid h-[68px] w-[68px] place-items-center rounded-full text-lg/[1] text-white">
                   <FaPhone />
                 </span>
-                <p className="mb-1 mt-6">Need help? contact our experts</p>
+                <p className="mt-6 mb-1">Need help? contact our experts</p>
                 <a
-                  className="font-secondary text-md font-bold  transition-colors duration-300"
+                  className="font-secondary text-md font-bold transition-colors duration-300"
                   href="tel:+0032-1255-69874"
                 >
                   +0032-1255-69874
@@ -114,11 +114,11 @@ export function ServiceDetailsSection() {
             </div>
 
             {/* Search box  */}
-            <div className="bg-accent-100 p-10 dark:bg-accent-700">
+            <div className="bg-accent-100 dark:bg-accent-700 p-10">
               <h3 className="h3 text-accent-700 dark:text-white">
                 Search Service
               </h3>
-              <span className="mb-7 mt-6 block h-0.5 w-[45px] bg-primary"></span>
+              <span className="bg-primary mt-6 mb-7 block h-0.5 w-[45px]"></span>
               <div className="flex items-center gap-4">
                 <TextInput
                   name="sarch"
@@ -132,15 +132,15 @@ export function ServiceDetailsSection() {
             </div>
 
             {/* Testimonial    */}
-            <div className="grid gap-30px">
-              <div className="relative z-1 bg-accent-100 p-10 dark:bg-accent-700">
+            <div className="gap-30px grid">
+              <div className="bg-accent-100 dark:bg-accent-700 relative z-1 p-10">
                 <p>
                   Aliquam eros justo, posuere loborti vive rra laoreet matti
                   ullamc per posu ere viverra .Aliquam os justo, posuere
                   lobortis non, vive rra oreet augue mattis ferment ullam corper
                   viverra laoreet vive rra
                 </p>
-                <span className="absolute bottom-5 right-5 -z-1">
+                <span className="absolute right-5 bottom-5 -z-1">
                   <svg
                     width="115"
                     height="82"
@@ -175,14 +175,14 @@ export function ServiceDetailsSection() {
 
           {/* Main Content  */}
           <div className="grid gap-6">
-            <div className="relative mb-5 overflow-hidden rounded-5">
+            <div className="rounded-5 relative mb-5 overflow-hidden">
               <Image
                 src={'/assets/images/service-details/main-image-1.png'}
                 alt="service image main"
                 width={850}
                 height={512}
               />
-              <span className="absolute left-30px top-30px rounded-[0_8px_30px_8px] bg-white p-2.5 text-primary">
+              <span className="left-30px top-30px text-primary absolute rounded-[0_8px_30px_8px] bg-white p-2.5">
                 <svg
                   width="40"
                   height="40"
@@ -226,10 +226,10 @@ export function ServiceDetailsSection() {
               <div className="grid gap-4">
                 <div className="grid gap-3">
                   <div className="flex items-center gap-4">
-                    <span className="flex-none text-base/[1] text-primary">
+                    <span className="text-primary flex-none text-base/[1]">
                       <FaCircleCheck />
                     </span>
-                    <h3 className="flex-1 text-md font-bold text-accent-700 dark:text-white">
+                    <h3 className="text-md text-accent-700 flex-1 font-bold dark:text-white">
                       Best Emplementation
                     </h3>
                   </div>
@@ -240,10 +240,10 @@ export function ServiceDetailsSection() {
                 </div>
                 <div className="grid gap-3">
                   <div className="flex items-center gap-4">
-                    <span className="flex-none text-base/[1] text-primary">
+                    <span className="text-primary flex-none text-base/[1]">
                       <FaCircleCheck />
                     </span>
-                    <h3 className="flex-1 text-md font-bold text-accent-700 dark:text-white">
+                    <h3 className="text-md text-accent-700 flex-1 font-bold dark:text-white">
                       Best Emplementation
                     </h3>
                   </div>
@@ -266,7 +266,7 @@ export function ServiceDetailsSection() {
             <div className="mt-2.5 grid grid-cols-[1fr_260px] gap-6">
               <div className="grid items-baseline gap-6 lg:gap-9">
                 <div>
-                  <h3 className="text-md font-bold text-accent-700 dark:text-white">
+                  <h3 className="text-md text-accent-700 font-bold dark:text-white">
                     Best Emplementation
                   </h3>
                   <p>
@@ -276,7 +276,7 @@ export function ServiceDetailsSection() {
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-md font-bold text-accent-700 dark:text-white">
+                  <h3 className="text-md text-accent-700 font-bold dark:text-white">
                     Design make for you.
                   </h3>
                   <p>
@@ -286,7 +286,7 @@ export function ServiceDetailsSection() {
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-md font-bold text-accent-700 dark:text-white">
+                  <h3 className="text-md text-accent-700 font-bold dark:text-white">
                     Finished the process
                   </h3>
                   <p>

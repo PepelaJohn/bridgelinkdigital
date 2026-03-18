@@ -30,7 +30,7 @@ export function Navigation({ menuItems }: Pick<HeaderProps, 'menuItems'>) {
                 <AccordionTrigger
                   className={cn(
                     menuItemClasses,
-                    "text-accent-700 dark:text-white [&[data-state='open']&_.accordion-icon]:-rotate-180 [&[data-state='open']]:bg-accent-100  [&[data-state='open']]:text-primary"
+                    "text-accent-700 [&[data-state='open']]:bg-accent-100 [&[data-state='open']]:text-primary dark:text-white [&[data-state='open']&_.accordion-icon]:-rotate-180"
                   )}
                 >
                   {menuItem.title}

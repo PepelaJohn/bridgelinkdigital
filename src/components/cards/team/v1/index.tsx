@@ -29,14 +29,14 @@ export function TeamCard({
   contentWrapperClassName,
 }: TeamCardProps) {
   return (
-    <div className="group ">
+    <div className="group">
       <div
         className={cn(
           // General
-          'relative z-1 mr-30px overflow-hidden rounded-5 ',
+          'mr-30px rounded-5 relative z-1 overflow-hidden',
 
           // after => image overlay effect
-          'after:pointer-events-none after:absolute after:left-0 after:top-0 after:z-1 after:h-0 after:w-full after:bg-white/30 after:opacity-100',
+          'after:pointer-events-none after:absolute after:top-0 after:left-0 after:z-1 after:h-0 after:w-full after:bg-white/30 after:opacity-100',
           // hover
           'group-hover:transition-all group-hover:after:h-full group-hover:after:opacity-0 group-hover:after:duration-400 group-hover:after:ease-linear'
         )}
@@ -51,14 +51,14 @@ export function TeamCard({
           (min-width:1024px) 33vw,
           100vw
           "
-          className="h-full max-h-[80vh] object-cover transition-transform duration-500 [transform:scale(1.05)] group-hover:[transform:scale(1)]"
+          className="h-full max-h-[80vh] [transform:scale(1.05)] object-cover transition-transform duration-500 group-hover:[transform:scale(1)]"
         />
         {socials && socials.length > 0 && (
-          <div className="absolute bottom-0 left-30px">
+          <div className="left-30px absolute bottom-0">
             <div className={cn('pt-2.5', styles['social-hoverable-area'])}>
               <div
                 className={cn(
-                  'inline-grid h-[65px] w-[65px] cursor-pointer place-items-center rounded-5 bg-primary transition-colors duration-300',
+                  'rounded-5 bg-primary inline-grid h-[65px] w-[65px] cursor-pointer place-items-center transition-colors duration-300',
                   styles['hover-me']
                 )}
               >
@@ -86,7 +86,7 @@ export function TeamCard({
                       aria-label={`${name}'s social link ${social.href}`}
                       href={social.href}
                       openNewTab
-                      className="inline-grid h-[35px] w-[35px] place-items-center rounded-5 bg-accent-700 text-white transition-colors hover:bg-primary"
+                      className="rounded-5 bg-accent-700 hover:bg-primary inline-grid h-[35px] w-[35px] place-items-center text-white transition-colors"
                     >
                       {social.icon}
                     </CustomLink>
@@ -99,14 +99,14 @@ export function TeamCard({
       </div>
       <div
         className={cn(
-          'mt-[-70px] rounded-5 bg-white p-5 pr-[50px] pt-[93PX] text-center dark:bg-accent-900',
+          'rounded-5 dark:bg-accent-900 mt-[-70px] bg-white p-5 pt-[93PX] pr-[50px] text-center',
           contentWrapperClassName
         )}
       >
         <h3 className="h3">
           <CustomLink
             href={slug}
-            className="text-accent-900 transition-colors duration-300 hover:text-primary dark:text-white dark:hover:text-primary"
+            className="text-accent-900 hover:text-primary dark:hover:text-primary transition-colors duration-300 dark:text-white"
           >
             {name}
           </CustomLink>

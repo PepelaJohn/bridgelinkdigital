@@ -7,8 +7,8 @@ import { CustomLink } from '@/src/components/custom-link';
 export function BrandLogo() {
   return (
     <CustomLink href="/">
-      <span className="text-base font-bold sm:text-lg md:text-xl  ">
-        Bridge<span className="!text-primary ">Link</span>
+      <span className="text-base font-bold sm:text-lg md:text-xl">
+        Bridge<span className="!text-primary">Link</span>
       </span>
       {/* <Image
         className="logo-light dark:hidden h-auto w-auto max-h-8 sm:max-h-10 md:max-h-12 lg:max-h-14 xl:max-h-16"

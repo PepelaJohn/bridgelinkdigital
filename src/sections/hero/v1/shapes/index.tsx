@@ -8,7 +8,7 @@ export function Shapes() {
     <>
       {/* Top left  */}
       <span
-        className={cn(commonClasses, 'left-0 top-0 hidden lg:block')}
+        className={cn(commonClasses, 'top-0 left-0 hidden lg:block')}
         data-aos="fade-right"
         data-aos-delay="200"
       >
@@ -26,7 +26,7 @@ export function Shapes() {
           />
         </svg>
 
-        <span className="absolute left-[125px] top-[215px] z-1">
+        <span className="absolute top-[215px] left-[125px] z-1">
           <svg
             className="animate-rotate-me"
             width="58"
@@ -45,7 +45,7 @@ export function Shapes() {
 
       {/* Bottom right  */}
       <span
-        className={cn(commonClasses, 'right-0 top-[60px] hidden lg:block')}
+        className={cn(commonClasses, 'top-[60px] right-0 hidden lg:block')}
         data-aos="fade-left"
         data-aos-delay="350"
       >
@@ -63,9 +63,9 @@ export function Shapes() {
           />
         </svg>
 
-        <span className="absolute right-[80px] top-[350px] z-1">
+        <span className="absolute top-[350px] right-[80px] z-1">
           <svg
-            className="animate-rotate-me "
+            className="animate-rotate-me"
             width="58"
             height="59"
             viewBox="0 0 58 59"
@@ -84,7 +84,7 @@ export function Shapes() {
       <div
         className={cn(
           commonClasses,
-          'bottom-0 left-0 right-0 mx-auto hidden lg:block'
+          'right-0 bottom-0 left-0 mx-auto hidden lg:block'
         )}
         data-aos="fade-up"
         data-aos-delay="450"

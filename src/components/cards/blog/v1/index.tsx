@@ -32,8 +32,8 @@ export function BlogCard({
   date,
 }: BlogProps) {
   return (
-    <article className="group/blog relative z-1 flex h-full min-h-[452px] flex-col  overflow-hidden rounded-5 p-6 md:p-[1.875rem]">
-      <span className="absolute inset-0 z-[2] bg-accent-900/50"></span>
+    <article className="group/blog rounded-5 relative z-1 flex h-full min-h-[452px] flex-col overflow-hidden p-6 md:p-[1.875rem]">
+      <span className="bg-accent-900/50 absolute inset-0 z-[2]"></span>
       <Image
         src={image.src}
         alt={image.alt}
@@ -45,9 +45,9 @@ export function BlogCard({
           `}
         className={cn(
           // Normal classes
-          'pointer-events-none object-cover opacity-0 [filter:blur(10px)] [transform:translatex(50%)_scalex(2)] [transition:all_500ms_ease]',
+          'pointer-events-none [transform:translatex(50%)_scalex(2)] object-cover opacity-0 [filter:blur(10px)] [transition:all_500ms_ease]',
           // on card hover classes
-          'group-hover/blog:opacity-100 group-hover/blog:[filter:blur(0px)] group-hover/blog:[transform:translatex(0)_scalex(1)]'
+          'group-hover/blog:[transform:translatex(0)_scalex(1)] group-hover/blog:opacity-100 group-hover/blog:[filter:blur(0px)]'
         )}
       />
       <Image
@@ -63,7 +63,7 @@ export function BlogCard({
           // Normal classes
           'pointer-events-none object-cover [transition:all_500ms_ease]',
           // on card hover classes
-          'group-hover/blog:opacity-0 group-hover/blog:[filter:blur(10px)] group-hover/blog:[transform:translatex(-50%)_scalex(2)]'
+          'group-hover/blog:[transform:translatex(-50%)_scalex(2)] group-hover/blog:opacity-0 group-hover/blog:[filter:blur(10px)]'
         )}
       />
 
@@ -71,7 +71,7 @@ export function BlogCard({
       <div className="relative z-10 flex h-full flex-1 flex-col">
         {date && (
           <div>
-            <div className="inline-grid min-h-[77px] min-w-[75px] items-center justify-center rounded-5 bg-accent-700 px-4 py-3 text-center font-secondary text-md font-bold text-white transition-colors group-hover/blog:bg-primary md:text-lg">
+            <div className="rounded-5 bg-accent-700 font-secondary text-md group-hover/blog:bg-primary inline-grid min-h-[77px] min-w-[75px] items-center justify-center px-4 py-3 text-center font-bold text-white transition-colors md:text-lg">
               <span className={dateClasses}>{date.day}</span>
               <span className={dateClasses}>{date.month}</span>
             </div>
@@ -86,7 +86,7 @@ export function BlogCard({
               <span>
                 By{' '}
                 <CustomLink
-                  className="transition-colors duration-300 hover:text-primary"
+                  className="hover:text-primary transition-colors duration-300"
                   href={author.slug}
                 >
                   {author.name}
@@ -100,11 +100,11 @@ export function BlogCard({
               <span>Comments ({String(commentCount).padStart(2, '0')})</span>
             </p>
           </div>
-          <h3 className="text-md font-bold leading-[1.25]  md:text-lg">
+          <h3 className="text-md leading-[1.25] font-bold md:text-lg">
             <CustomLink
               aria-label={title}
               href={slug}
-              className="text-white transition-colors duration-300 hover:text-primary"
+              className="hover:text-primary text-white transition-colors duration-300"
             >
               {title}
             </CustomLink>
@@ -114,7 +114,7 @@ export function BlogCard({
               href={slug}
               className={cn(
                 inlineFlexLayoutClasses,
-                'gap-[.625rem] font-secondary text-base font-bold uppercase leading-[2] tracking-wide text-white transition-colors duration-300 hover:text-primary'
+                'font-secondary hover:text-primary gap-[.625rem] text-base leading-[2] font-bold tracking-wide text-white uppercase transition-colors duration-300'
               )}
             >
               <span>Read More</span>

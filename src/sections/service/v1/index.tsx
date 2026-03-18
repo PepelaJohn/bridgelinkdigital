@@ -14,7 +14,7 @@ export function ServiceSection({ services, className }: ServiceSectionProps) {
     <section className={cn('section-padding-primary', className)}>
       <Container>
         {services && services.length > 0 && (
-          <div className="-mx-4 flex flex-wrap justify-center gap-y-30px">
+          <div className="gap-y-30px -mx-4 flex flex-wrap justify-center">
             {services.map((service, index) => (
               <div
                 key={index}

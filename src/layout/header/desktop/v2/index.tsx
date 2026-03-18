@@ -57,20 +57,20 @@ export function Header() {
     <>
       <header
         className={cn(
-          'left-0 right-0 top-0 z-99 mx-auto hidden w-full lg:block',
+          'top-0 right-0 left-0 z-99 mx-auto hidden w-full lg:block',
           isSticky
-            ? 'sticky-header fixed left-0 top-0 w-full animate-fadeInDown bg-white [box-shadow:0px_0px_15px_10px_rgba(223,42,25,.1)] dark:bg-accent-700'
-            : 'absolute pt-30px'
+            ? 'sticky-header animate-fadeInDown dark:bg-accent-700 fixed top-0 left-0 w-full bg-white [box-shadow:0px_0px_15px_10px_rgba(223,42,25,.1)]'
+            : 'pt-30px absolute'
         )}
       >
         <Container>
-          <div className="flex bg-accent-100 dark:bg-accent-700">
+          <div className="bg-accent-100 dark:bg-accent-700 flex">
             {/* Brand logo  */}
-            <div className="grid flex-none place-items-center bg-primary px-9 py-6 dark:bg-[#212124] [&_.logo-light]:[filter:brightness(0)_invert(1)]">
+            <div className="bg-primary grid flex-none place-items-center px-9 py-6 dark:bg-[#212124] [&_.logo-light]:filter-[brightness(0)_invert(1)]">
               <BrandLogo />
             </div>
 
-            <div className="flex-1 divide-y divide-accent-900 divide-opacity-10 dark:divide-accent-200 dark:divide-opacity-10">
+            <div className="divide-accent-900 divide-opacity-10 dark:divide-accent-200 dark:divide-opacity-10 flex-1 divide-y">
               <div className="flex items-center justify-between pl-9">
                 <ul aria-label="contact info" className="flex flex-wrap gap-8">
                   <li className={addressItemClasses}>
@@ -98,7 +98,7 @@ export function Header() {
                     </address>
                   </li>
                 </ul>
-                <Button asChild className={cn('!min-h-[56px] rounded-none')}>
+                <Button asChild className={cn('min-h-[56px]! rounded-none')}>
                   <CustomLink href={ctaBtn.href} openNewTab={ctaBtn.openNewTab}>
                     <span className="relative z-1">{ctaBtn.label}</span>
                     <span className="relative z-1">
@@ -107,7 +107,7 @@ export function Header() {
                   </CustomLink>
                 </Button>
               </div>
-              <div className="flex items-center justify-between pl-9 pr-4">
+              <div className="flex items-center justify-between pr-4 pl-9">
                 {/* Navigation  */}
                 {menuItems && menuItems.length > 0 && (
                   <Navigation menuItems={menuItems} />
@@ -115,7 +115,7 @@ export function Header() {
                 <div>
                   <ul
                     aria-label="header actions"
-                    className="flex items-center gap-30px"
+                    className="gap-30px flex items-center"
                   >
                     <li>
                       <button

@@ -95,11 +95,11 @@ export const VideoPlayer = ({
         className={cn(
           styles['media-wrapper'],
           cursorStyle,
-          'relative  inline-flex overflow-hidden rounded-5',
+          'rounded-5 relative inline-flex overflow-hidden',
           // General
 
           // after => image overlay effect
-          'after:pointer-events-none after:absolute after:left-0 after:top-0 after:z-1 after:h-0 after:w-full after:bg-white/30 after:opacity-100',
+          'after:pointer-events-none after:absolute after:top-0 after:left-0 after:z-1 after:h-0 after:w-full after:bg-white/30 after:opacity-100',
           // hover
           'hover:transition-all hover:after:h-full hover:after:opacity-0 hover:after:duration-400 hover:after:ease-linear'
         )}
@@ -127,7 +127,7 @@ export const VideoPlayer = ({
         <span
           className={cn(
             cursorStyle,
-            'absolute left-1/2 top-1/2 z-10 inline-block -translate-x-1/2 -translate-y-1/2'
+            'absolute top-1/2 left-1/2 z-10 inline-block -translate-x-1/2 -translate-y-1/2'
           )}
         >
           <span

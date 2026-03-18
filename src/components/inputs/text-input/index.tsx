@@ -21,7 +21,7 @@ export function TextInput({ icon, ...props }: TextInputProps) {
     <div className="relative w-full">
       <Input {...props} />
       {icon && (
-        <span className="absolute right-5 top-1/2 w-[14px] -translate-y-1/2 text-primary">
+        <span className="text-primary absolute top-1/2 right-5 w-[14px] -translate-y-1/2">
           {icon}
         </span>
       )}

@@ -33,10 +33,10 @@ export function AboutSection() {
               >
                 {aboutUsPoints.map((point, index) => (
                   <li className="flex items-center gap-3 lg:gap-4" key={index}>
-                    <span className="text-lg text-primary">
+                    <span className="text-primary text-lg">
                       <FaCircleCheck />
                     </span>
-                    <span className="block font-secondary text-md font-bold leading-[1.5] text-accent-900 dark:text-white">
+                    <span className="font-secondary text-md text-accent-900 block leading-[1.5] font-bold dark:text-white">
                       {point}
                     </span>
                   </li>
@@ -69,7 +69,7 @@ export function AboutSection() {
                 )}
               />
               {/* Forground shape  */}
-              <div className="absolute left-0 top-0 -z-1 h-full w-full rotate-3 rounded-5 bg-primary transition-transform duration-350 group-hover:rotate-[2deg] md:rotate-[5deg]"></div>
+              <div className="rounded-5 bg-primary absolute top-0 left-0 -z-1 h-full w-full rotate-3 transition-transform duration-350 group-hover:rotate-[2deg] md:rotate-[5deg]"></div>
             </div>
           </div>
         </div>

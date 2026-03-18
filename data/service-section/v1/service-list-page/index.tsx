@@ -1,3 +1,4 @@
+//data/service-section/v1/service-list-page/index.tsx
 import {
   Share2,
   Layout,
@@ -11,7 +12,7 @@ export const serviceSectionData = {
   services: [
     {
       icon: <Share2 size={24} />,
-      title: 'Social Media Marketing',
+      title: 'Social Media Management',
       description:
         'Boost your brand presence with our strategic social media campaigns. We create engaging content that connects with your audience and drives measurable growth across all platforms.',
       slug: '/social-media-marketing',

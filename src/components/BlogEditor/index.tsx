@@ -169,7 +169,7 @@ const BlogEditor: React.FC<BlogEditorProps> = ({
   };
 
   return (
-    <div className="mx-auto max-w-4xl rounded-20 bg-white p-6 shadow-1">
+    <div className="rounded-20 shadow-1 mx-auto max-w-4xl bg-white p-6">
       {/* Header */}
       <div className="mb-6">
         <input
@@ -178,10 +178,10 @@ const BlogEditor: React.FC<BlogEditorProps> = ({
           placeholder="Blog post title..."
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          className="w-full border-none font-primary text-2xl font-bold placeholder-accent-800 outline-none"
+          className="font-primary placeholder-accent-800 w-full border-none text-2xl font-bold outline-none"
         />
         <div className="mt-4 flex items-center justify-between">
-          <div className="flex items-center space-x-2 text-sm text-accent-800">
+          <div className="text-accent-800 flex items-center space-x-2 text-sm">
             {isAutoSaving && (
               <span className="text-primary">Autosaving...</span>
             )}
@@ -192,14 +192,14 @@ const BlogEditor: React.FC<BlogEditorProps> = ({
           <div className="flex items-center space-x-2">
             <button
               onClick={() => setIsPreview(!isPreview)}
-              className="flex items-center space-x-1 px-3 py-1 text-sm text-accent-800 transition-colors hover:text-primary"
+              className="text-accent-800 hover:text-primary flex items-center space-x-1 px-3 py-1 text-sm transition-colors"
             >
               {isPreview ? <EyeOff size={16} /> : <Eye size={16} />}
               <span>{isPreview ? 'Edit' : 'Preview'}</span>
             </button>
             <button
               onClick={handleSave}
-              className="flex items-center space-x-1 rounded-10 bg-primary px-4 py-2 text-white transition-colors hover:bg-primary/90"
+              className="rounded-10 bg-primary hover:bg-primary/90 flex items-center space-x-1 px-4 py-2 text-white transition-colors"
             >
               <Save size={16} />
               <span>Save</span>
@@ -210,7 +210,7 @@ const BlogEditor: React.FC<BlogEditorProps> = ({
 
       {/* Toolbar */}
       {!isPreview && (
-        <div className="mb-4 flex flex-wrap items-center gap-2 rounded-10 bg-accent-100 p-3">
+        <div className="rounded-10 bg-accent-100 mb-4 flex flex-wrap items-center gap-2 p-3">
           <div className="flex items-center space-x-1">
             <button
               onClick={() => formatText('bold')}
@@ -235,7 +235,7 @@ const BlogEditor: React.FC<BlogEditorProps> = ({
             </button>
           </div>
 
-          <div className="h-6 w-px bg-accent-200" />
+          <div className="bg-accent-200 h-6 w-px" />
 
           <div className="flex items-center space-x-1">
             <button
@@ -261,7 +261,7 @@ const BlogEditor: React.FC<BlogEditorProps> = ({
             </button>
           </div>
 
-          <div className="h-6 w-px bg-accent-200" />
+          <div className="bg-accent-200 h-6 w-px" />
 
           <div className="flex items-center space-x-1">
             <button
@@ -287,7 +287,7 @@ const BlogEditor: React.FC<BlogEditorProps> = ({
             </button>
           </div>
 
-          <div className="h-6 w-px bg-accent-200" />
+          <div className="bg-accent-200 h-6 w-px" />
 
           <div className="flex items-center space-x-1">
             <button
@@ -326,7 +326,7 @@ const BlogEditor: React.FC<BlogEditorProps> = ({
         {isPreview ? (
           <div className="prose prose-lg max-w-none">
             {title && (
-              <h1 className="mb-6 font-primary text-3xl font-bold">{title}</h1>
+              <h1 className="font-primary mb-6 text-3xl font-bold">{title}</h1>
             )}
             <div
               className="font-secondary leading-relaxed"
@@ -339,13 +339,13 @@ const BlogEditor: React.FC<BlogEditorProps> = ({
             value={content}
             onChange={(e) => setContent(e.target.value)}
             placeholder="Start writing your blog post... You can use Markdown syntax or the toolbar above."
-            className="min-h-96 w-full resize-none rounded-10 border border-accent-200 p-4 font-secondary leading-relaxed outline-none transition-colors focus:border-primary"
+            className="rounded-10 border-accent-200 font-secondary focus:border-primary min-h-96 w-full resize-none border p-4 leading-relaxed transition-colors outline-none"
           />
         )}
       </div>
 
       {/* Footer */}
-      <div className="mt-6 border-t border-accent-200 pt-4 text-sm text-accent-800">
+      <div className="border-accent-200 text-accent-800 mt-6 border-t pt-4 text-sm">
         <p>
           <FileText size={14} className="mr-1 inline" />
           Tip: Use Markdown syntax for formatting, or use the toolbar above.

@@ -24,11 +24,11 @@ export function PricingCard({
   button,
 }: PricingCardProps) {
   return (
-    <div className="relative grid rounded-5 border border-accent-200 dark:border-opacity-20 lg:grid-cols-[300px_1fr]  2xl:grid-cols-[386px_1fr]">
+    <div className="rounded-5 border-accent-200 dark:border-opacity-20 relative grid border lg:grid-cols-[300px_1fr] 2xl:grid-cols-[386px_1fr]">
       {isPopular && (
         <div
           className={cn(
-            'absolute right-0 top-2.5 inline-flex min-h-[44px] items-center justify-center bg-primary pl-[54px] pr-[34px] uppercase text-white md:px-6 md:pl-10',
+            'bg-primary absolute top-2.5 right-0 inline-flex min-h-[44px] items-center justify-center pr-[34px] pl-[54px] text-white uppercase md:px-6 md:pl-10',
             // Overlay
             '[background:linear-gradient(0.04deg,#DF2A19_16.34%,#0E0E0E_127.37%)] dark:[background:linear-gradient(90deg,rgba(223,42,25,1)_0%,rgba(223,42,25,0.5634628851540616)_43%,rgba(223,42,25,0.10968137254901966)_99%)]',
             // arrow shape
@@ -38,14 +38,14 @@ export function PricingCard({
           Popular
         </div>
       )}
-      <div className="h-full border-accent-200 p-6 dark:border-opacity-20  max-lg:border-b max-lg:pt-14 lg:border-r  lg:p-10">
-        <h3 className="mb-4 text-lg font-bold leading-[1.3] text-accent-900 dark:text-white lg:mb-5 lg:text-xl">
+      <div className="border-accent-200 dark:border-opacity-20 h-full p-6 max-lg:border-b max-lg:pt-14 lg:border-r lg:p-10">
+        <h3 className="text-accent-900 mb-4 text-lg leading-[1.3] font-bold lg:mb-5 lg:text-xl dark:text-white">
           {title}
         </h3>
         <p>{description}</p>
       </div>
       <div className="relative my-auto p-6 max-lg:pb-14 md:p-10">
-        <div className="ml-auto flex max-w-[800px] flex-col justify-between gap-x-14 gap-y-5  md:flex-row md:items-center">
+        <div className="ml-auto flex max-w-[800px] flex-col justify-between gap-x-14 gap-y-5 md:flex-row md:items-center">
           {features && features.length > 0 && (
             <ul aria-label="pricing point list" className="grid gap-1 md:gap-2">
               {features.map((feature, index) => (
@@ -58,16 +58,16 @@ export function PricingCard({
               ))}
             </ul>
           )}
-          <p className="font-secondary text-xl font-bold leading-[1.25] text-accent-900 dark:text-white lg:text-2xl">
+          <p className="font-secondary text-accent-900 text-xl leading-[1.25] font-bold lg:text-2xl dark:text-white">
             {price}
-            <sub className="relative bottom-0 ml-1.5 inline-block text-base lg:text-md">
+            <sub className="lg:text-md relative bottom-0 ml-1.5 inline-block text-base">
               {duration}
             </sub>
           </p>
           <div className="flex-none">
             <Button
               asChild
-              className="border-2 border-primary bg-transparent text-accent-900 after:bg-primary"
+              className="border-primary text-accent-900 after:bg-primary border-2 bg-transparent"
             >
               <CustomLink href={button.href} openNewTab={button.openNewTab}>
                 <span className="relative z-1">{button.label}</span>

@@ -27,7 +27,7 @@ export function MobileHeader() {
 
       <div className={headerWrapperClasses}>
         {/* Menubar  */}
-        <div className="flex h-[--mobile-height,64px] items-center justify-between gap-4 border-b border-accent-900 bg-white/90 py-2 backdrop-blur-md dark:border-white dark:bg-accent-900">
+        <div className="border-accent-900 dark:bg-accent-900 flex h-[--mobile-height,64px] items-center justify-between gap-4 border-b bg-white/90 py-2 backdrop-blur-md dark:border-white">
           <div className="w-full max-w-full px-4">
             <div className="flex items-center justify-between">
               <div className="max-w-[8.5rem] flex-none">

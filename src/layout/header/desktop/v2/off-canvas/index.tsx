@@ -85,7 +85,7 @@ export function OffCanvas() {
     <Sheet>
       <SheetTrigger
         aria-controls="desktop-offcanvas-handler"
-        className="text-[1.25rem]/[1] text-accent-900 transition-colors duration-300 hover:text-primary dark:text-white dark:hover:text-white"
+        className="text-accent-900 hover:text-primary text-[1.25rem]/[1] transition-colors duration-300 dark:text-white dark:hover:text-white"
       >
         <svg
           id="desktop-offcanvas-handler"
@@ -109,18 +109,18 @@ export function OffCanvas() {
       </SheetTrigger>
       <SheetContent
         side={'left'}
-        className="z-444 border-none bg-accent-100 p-0 dark:bg-black"
+        className="bg-accent-100 z-444 border-none p-0 dark:bg-black"
       >
         <ScrollArea
           viewportClassName={cn('h-[100vh]')}
           scrollBarClassName="w-0"
         >
-          <div className="grid gap-10 p-30px">
+          <div className="p-30px grid gap-10">
             {/* Logo area  */}
             <div className="flex items-center justify-between">
               <BrandLogo />
-              <SheetClose className="data-[state=open]:bg-secondary rounded-sm text-accent-900 ring-offset-0 transition-opacity hover:opacity-100 focus:outline-none focus:ring-0 focus:ring-offset-0 disabled:pointer-events-none dark:text-white   dark:opacity-70">
-                <X className="h-9 w-9 " />
+              <SheetClose className="data-[state=open]:bg-secondary text-accent-900 rounded-sm ring-offset-0 transition-opacity hover:opacity-100 focus:ring-0 focus:ring-offset-0 focus:outline-none disabled:pointer-events-none dark:text-white dark:opacity-70">
+                <X className="h-9 w-9" />
                 <span className="sr-only">Close</span>
               </SheetClose>
             </div>

@@ -17,7 +17,7 @@ export function BlogSection({ className }: SectionProps) {
   return (
     <section
       className={cn(
-        'section-padding-primary overflow-hidden bg-white dark:bg-accent-700 [.light_&]:pt-0',
+        'section-padding-primary dark:bg-accent-700 overflow-hidden bg-white [.light_&]:pt-0',
         className
       )}
     >
@@ -32,7 +32,7 @@ export function BlogSection({ className }: SectionProps) {
           </div>
         </div>
         {blogs && blogs.length > 0 && (
-          <div className="-mx-4 flex flex-wrap justify-center gap-y-30px">
+          <div className="gap-y-30px -mx-4 flex flex-wrap justify-center">
             {blogs.map((blog, index) => (
               <div
                 key={index}

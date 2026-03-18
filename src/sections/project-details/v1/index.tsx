@@ -49,7 +49,7 @@ export function ProjectDetailsSection() {
       <Container>
         <div className="grid gap-6">
           {/* Images and project overview area  */}
-          <div className="mb-8 grid grid-cols-2 grid-rows-[.3fr_.3fr_1fr] gap-30px md:grid-rows-[.5fr_.5fr_1fr] lg:grid-cols-[1fr_1.19fr_1fr] lg:grid-rows-2">
+          <div className="gap-30px mb-8 grid grid-cols-2 grid-rows-[.3fr_.3fr_1fr] md:grid-rows-[.5fr_.5fr_1fr] lg:grid-cols-[1fr_1.19fr_1fr] lg:grid-rows-2">
             <div className="relative">
               <Image
                 src="/assets/images/project-details/image-1.png"
@@ -79,21 +79,21 @@ export function ProjectDetailsSection() {
             </div>
             <div className="col-start-1 col-end-3 row-start-3 lg:col-start-3 lg:row-start-1 lg:row-end-3">
               {projectOverviewList && projectOverviewList.length > 0 && (
-                <div className="flex  h-full flex-col divide-y divide-accent-700 divide-opacity-20 rounded-5 border border-accent-700 border-opacity-20 dark:divide-accent-200 dark:divide-opacity-20 dark:border-accent-200 dark:border-opacity-20">
+                <div className="divide-accent-700 divide-opacity-20 rounded-5 border-accent-700 border-opacity-20 dark:divide-accent-200 dark:divide-opacity-20 dark:border-accent-200 dark:border-opacity-20 flex h-full flex-col divide-y border">
                   {projectOverviewList.map((item, index) => (
                     <div
                       className="flex flex-1 items-center px-5 py-6 2xl:px-10"
                       key={index}
                     >
                       <div className="flex items-center gap-5">
-                        <span className="grid h-[46px] w-[46px] place-items-center rounded-full bg-primary-light/[.15] text-md text-primary-light">
+                        <span className="bg-primary-light/[.15] text-md text-primary-light grid h-[46px] w-[46px] place-items-center rounded-full">
                           {item.icon}
                         </span>
                         <div className="text-accent-700 dark:text-white">
                           <p className="text-sm leading-[1.6]">
                             {item.subHeading}
                           </p>
-                          <h3 className="mt-2 font-secondary text-md font-bold leading-[1.5] ">
+                          <h3 className="font-secondary text-md mt-2 leading-[1.5] font-bold">
                             {item.heading}
                           </h3>
                         </div>
@@ -126,10 +126,10 @@ export function ProjectDetailsSection() {
           <div className="my-3 grid grid-cols-1 gap-5 md:grid-cols-2 lg:gap-8 2xl:grid-cols-3">
             <div className="grid gap-3">
               <div className="flex items-center gap-4">
-                <span className="flex-none text-base/[1] text-primary">
+                <span className="text-primary flex-none text-base/[1]">
                   <FaCheckCircle />
                 </span>
-                <h3 className="flex-1 text-md font-bold text-accent-700 dark:text-white">
+                <h3 className="text-md text-accent-700 flex-1 font-bold dark:text-white">
                   Best Emplementation
                 </h3>
               </div>
@@ -140,10 +140,10 @@ export function ProjectDetailsSection() {
             </div>
             <div className="grid gap-3">
               <div className="flex items-center gap-4">
-                <span className="flex-none text-base/[1] text-primary">
+                <span className="text-primary flex-none text-base/[1]">
                   <FaCheckCircle />
                 </span>
-                <h3 className="flex-1 text-md font-bold text-accent-700 dark:text-white">
+                <h3 className="text-md text-accent-700 flex-1 font-bold dark:text-white">
                   Best Emplementation
                 </h3>
               </div>
@@ -154,10 +154,10 @@ export function ProjectDetailsSection() {
             </div>
             <div className="grid gap-3">
               <div className="flex items-center gap-4">
-                <span className="flex-none text-base/[1] text-primary">
+                <span className="text-primary flex-none text-base/[1]">
                   <FaCheckCircle />
                 </span>
-                <h3 className="flex-1 text-md font-bold text-accent-700 dark:text-white">
+                <h3 className="text-md text-accent-700 flex-1 font-bold dark:text-white">
                   Best Emplementation
                 </h3>
               </div>
@@ -179,22 +179,22 @@ export function ProjectDetailsSection() {
           </p>
 
           {/* Pagination Area  */}
-          <div className="mb-2 mt-5 h-px bg-accent-900/20 dark:bg-white"></div>
+          <div className="bg-accent-900/20 mt-5 mb-2 h-px dark:bg-white"></div>
           <div className="flex flex-col justify-between gap-x-16 gap-y-8 md:flex-row md:items-center">
             {/* Previous  */}
             <CustomLink
               href="#"
-              className="group grid max-w-[255px] gap-3 text-accent-700 dark:text-white"
+              className="group text-accent-700 grid max-w-[255px] gap-3 dark:text-white"
             >
-              <div className="flex items-center  gap-2.5">
-                <span className="transition-colors duration-300 group-hover:text-primary">
+              <div className="flex items-center gap-2.5">
+                <span className="group-hover:text-primary transition-colors duration-300">
                   <FaArrowLeftLong />
                 </span>
-                <p className="text-base font-bold uppercase leading-[2] tracking-wide">
+                <p className="text-base leading-[2] font-bold tracking-wide uppercase">
                   Previous
                 </p>
               </div>
-              <h3 className="text-md font-medium leading-[1.5]">
+              <h3 className="text-md leading-[1.5] font-medium">
                 Aliquam eros justo, posuere loborti viverra laoreet matti{' '}
               </h3>
             </CustomLink>
@@ -202,17 +202,17 @@ export function ProjectDetailsSection() {
             {/* Next  */}
             <CustomLink
               href="#"
-              className="group grid max-w-[255px] gap-3 text-right text-accent-700 dark:text-white max-md:self-end"
+              className="group text-accent-700 grid max-w-[255px] gap-3 text-right max-md:self-end dark:text-white"
             >
               <div className="flex items-center justify-end gap-2.5">
-                <p className="text-base font-bold uppercase leading-[2] tracking-wide">
+                <p className="text-base leading-[2] font-bold tracking-wide uppercase">
                   Next
                 </p>
-                <span className="transition-colors duration-300 group-hover:text-primary">
+                <span className="group-hover:text-primary transition-colors duration-300">
                   <FaArrowRightLong />
                 </span>
               </div>
-              <h3 className="text-md font-medium leading-[1.5]">
+              <h3 className="text-md leading-[1.5] font-medium">
                 Aliquam eros justo, posuere loborti viverra laoreet matti{' '}
               </h3>
             </CustomLink>

@@ -30,7 +30,7 @@ export function TeamCard({ slug, image, name, about, socials }: TeamCardProps) {
   return (
     <div
       ref={mainCardWrapperRef}
-      className="relative flex flex-col gap-4  border-b  border-body/40 py-8 max-md:text-center max-md:last:border-none lg:min-h-[132px] lg:flex-row lg:items-center lg:justify-between lg:py-10 lg:last:border-none"
+      className="border-body/40 relative flex flex-col gap-4 border-b py-8 max-md:text-center max-md:last:border-none lg:min-h-[132px] lg:flex-row lg:items-center lg:justify-between lg:py-10 lg:last:border-none"
     >
       {/* For mobile view  */}
       <div
@@ -53,11 +53,11 @@ export function TeamCard({ slug, image, name, about, socials }: TeamCardProps) {
       <div
         className={cn(
           // base
-          'pointer-events-none absolute z-1 hidden overflow-hidden rounded-full [transition:all_.5s_ease-out] lg:block ',
+          'pointer-events-none absolute z-1 hidden overflow-hidden rounded-full [transition:all_.5s_ease-out] lg:block',
           // after
 
           // normal position
-          'left-[400px] top-[90px] opacity-0 [transform:translateY(-50%)]',
+          'top-[90px] left-[400px] [transform:translateY(-50%)] opacity-0',
           // hovered position
           '[.hovered_&]:opacity-100 lg:[.hovered_&]:left-[650px] xl:[.hovered_&]:left-[760px] 2xl:[.hovered_&]:left-[800px]'
         )}
@@ -89,11 +89,11 @@ export function TeamCard({ slug, image, name, about, socials }: TeamCardProps) {
             if (!mainCardWrapperRef.current) return null;
             mainCardWrapperRef.current.classList.remove('hovered');
           }}
-          className="h3  lg:flex-1"
+          className="h3 lg:flex-1"
         >
           <CustomLink
             href={slug}
-            className="text-accent-900 transition-colors duration-300 hover:text-primary dark:text-white dark:hover:text-primary"
+            className="text-accent-900 hover:text-primary dark:hover:text-primary transition-colors duration-300 dark:text-white"
           >
             {name}
           </CustomLink>
@@ -103,14 +103,14 @@ export function TeamCard({ slug, image, name, about, socials }: TeamCardProps) {
         </div>
       </div>
       {socials && socials.length > 0 && (
-        <div className="group relative cursor-pointer text-lg/[1] text-body">
-          <span className="hidden lg:block ">
+        <div className="group text-body relative cursor-pointer text-lg/[1]">
+          <span className="hidden lg:block">
             <FaPlus />
           </span>
           <ul
             aria-label={`${name} social-links`}
             className={cn(
-              'inline-flex items-center gap-2.5 lg:absolute lg:right-[calc(100%+30px)] lg:top-1/2 lg:-translate-y-1/2 lg:overflow-hidden',
+              'inline-flex items-center gap-2.5 lg:absolute lg:top-1/2 lg:right-[calc(100%+30px)] lg:-translate-y-1/2 lg:overflow-hidden',
 
               // stagger
               'lg:[&_li:nth-child(1)]:[transition-delay:200ms]',
@@ -129,7 +129,7 @@ export function TeamCard({ slug, image, name, about, socials }: TeamCardProps) {
               <li
                 key={index}
                 className={cn(
-                  'opacity-0 [transform-origin:bottom] [transform:perspective(400px)_rotateY(0deg)_translateY(80px)] [transition:all_.5s_ease] group-hover:opacity-100 group-hover:[transform:perspective(400px)_rotateY(0deg)_translateY(0px)]',
+                  '[transform-origin:bottom] [transform:perspective(400px)_rotateY(0deg)_translateY(80px)] opacity-0 [transition:all_.5s_ease] group-hover:[transform:perspective(400px)_rotateY(0deg)_translateY(0px)] group-hover:opacity-100',
 
                   'max-lg:[all:unset]'
                 )}
@@ -139,10 +139,10 @@ export function TeamCard({ slug, image, name, about, socials }: TeamCardProps) {
                   href={social.href}
                   openNewTab
                   className={cn(
-                    'relative z-1 inline-grid h-[42px] w-[42px] place-items-center overflow-hidden rounded-full  border-2 border-accent-800 border-opacity-20 bg-transparent text-[1.125rem]/[1] text-body transition-colors hover:border-primary hover:text-white',
+                    'border-accent-800 border-opacity-20 text-body hover:border-primary relative z-1 inline-grid h-[42px] w-[42px] place-items-center overflow-hidden rounded-full border-2 bg-transparent text-[1.125rem]/[1] transition-colors hover:text-white',
 
                     // after
-                    'after:invisible after:absolute after:inset-0 after:-z-1 after:scale-50 after:rounded-[inherit] after:bg-primary after:opacity-0 after:duration-500 after:[transition:.5s_ease-in-out]',
+                    'after:bg-primary after:invisible after:absolute after:inset-0 after:-z-1 after:scale-50 after:rounded-[inherit] after:opacity-0 after:duration-500 after:[transition:.5s_ease-in-out]',
                     // hover
                     'hover:after:visible hover:after:scale-100 hover:after:opacity-100'
                   )}

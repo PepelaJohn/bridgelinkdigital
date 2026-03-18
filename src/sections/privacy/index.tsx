@@ -9,7 +9,7 @@ const PrivacyPolicy: React.FC = () => {
       <div className="transparent mx-auto max-w-4xl overflow-hidden rounded-lg shadow-md">
         <div className="p-8">
           <div className="mb-10">
-            <h2 className="mb-4 text-2xl font-semibold text-primary">
+            <h2 className="text-primary mb-4 text-2xl font-semibold">
               1. Introduction
             </h2>
             <p className="mb-4 text-gray-200">
@@ -28,7 +28,7 @@ const PrivacyPolicy: React.FC = () => {
           </div>
 
           <div className="mb-10">
-            <h2 className="mb-4 text-2xl font-semibold text-primary">
+            <h2 className="text-primary mb-4 text-2xl font-semibold">
               2. Information We Collect
             </h2>
             <p className="mb-4 text-gray-200">
@@ -70,7 +70,7 @@ const PrivacyPolicy: React.FC = () => {
           </div>
 
           <div className="mb-10">
-            <h2 className="mb-4 text-2xl font-semibold text-primary">
+            <h2 className="text-primary mb-4 text-2xl font-semibold">
               3. How We Collect Your Data
             </h2>
             <p className="mb-4 text-gray-200">
@@ -99,7 +99,7 @@ const PrivacyPolicy: React.FC = () => {
           </div>
 
           <div className="mb-10">
-            <h2 className="mb-4 text-2xl font-semibold text-primary">
+            <h2 className="text-primary mb-4 text-2xl font-semibold">
               4. How We Use Your Data
             </h2>
             <p className="mb-4 text-gray-200">
@@ -119,7 +119,7 @@ const PrivacyPolicy: React.FC = () => {
           </div>
 
           <div className="mb-10">
-            <h2 className="mb-4 text-2xl font-semibold text-primary">
+            <h2 className="text-primary mb-4 text-2xl font-semibold">
               5. Data Security
             </h2>
             <p className="mb-4 text-gray-200">
@@ -137,7 +137,7 @@ const PrivacyPolicy: React.FC = () => {
           </div>
 
           <div className="mb-10">
-            <h2 className="mb-4 text-2xl font-semibold text-primary">
+            <h2 className="text-primary mb-4 text-2xl font-semibold">
               6. Data Retention
             </h2>
             <p className="mb-4 text-gray-200">
@@ -156,7 +156,7 @@ const PrivacyPolicy: React.FC = () => {
           </div>
 
           <div className="mb-10">
-            <h2 className="mb-4 text-2xl font-semibold text-primary">
+            <h2 className="text-primary mb-4 text-2xl font-semibold">
               7. Your Legal Rights
             </h2>
             <p className="mb-4 text-gray-200">
@@ -179,7 +179,7 @@ const PrivacyPolicy: React.FC = () => {
           </div>
 
           <div className="mb-10">
-            <h2 className="mb-4 text-2xl font-semibold text-primary">
+            <h2 className="text-primary mb-4 text-2xl font-semibold">
               8. Third-Party Links
             </h2>
             <p className="mb-4 text-gray-200">
@@ -192,7 +192,7 @@ const PrivacyPolicy: React.FC = () => {
           </div>
 
           <div className="mb-10">
-            <h2 className="mb-4 text-2xl font-semibold text-primary">
+            <h2 className="text-primary mb-4 text-2xl font-semibold">
               9. Cookies
             </h2>
             <p className="mb-4 text-gray-200">
@@ -210,7 +210,7 @@ const PrivacyPolicy: React.FC = () => {
           </div>
 
           <div className="mb-10">
-            <h2 className="mb-4 text-2xl font-semibold text-primary">
+            <h2 className="text-primary mb-4 text-2xl font-semibold">
               10. Contact Information
             </h2>
             <p className="mb-4 text-gray-200">

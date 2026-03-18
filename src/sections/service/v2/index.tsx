@@ -30,7 +30,7 @@ export function ServiceSection({
           </div>
         </div>
         {services && services.length > 0 && (
-          <div className="-mx-4 flex flex-wrap justify-center gap-y-30px">
+          <div className="gap-y-30px -mx-4 flex flex-wrap justify-center">
             {services.map((service, index) => (
               <div
                 key={index}

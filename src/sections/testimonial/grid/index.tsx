@@ -15,7 +15,7 @@ export function TestimonialSection() {
     <section className="section-padding-primary overflow-hidden">
       <Container>
         {cards && cards.length > 0 && (
-          <div className="grid grid-cols-1 gap-30px xl:grid-cols-2">
+          <div className="gap-30px grid grid-cols-1 xl:grid-cols-2">
             {cards.map((card, index) => (
               <TestimonialCard {...card} key={index} />
             ))}

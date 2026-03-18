@@ -24,7 +24,7 @@ export function TestimonialSection() {
   return (
     <section className="section-padding-primary overflow-hidden">
       <Container>
-        <div className="mb-10 mr-30px max-w-[680px] md:mb-[3.75rem] md:pr-[140px]">
+        <div className="mr-30px mb-10 max-w-[680px] md:mb-[3.75rem] md:pr-[140px]">
           <SectionHeading {...sectionHeading} />
         </div>
         {cards && cards.length > 0 && (

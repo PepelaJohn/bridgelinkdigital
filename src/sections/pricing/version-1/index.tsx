@@ -28,7 +28,7 @@ export function PricingSection() {
           />
         </div>
         {cards && cards.length > 0 && (
-          <div className="grid gap-30px">
+          <div className="gap-30px grid">
             {cards.map((card, index) => (
               <div
                 key={index}

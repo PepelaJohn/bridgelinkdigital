@@ -92,7 +92,7 @@ export function Carousel({
         {hasNavigation && sliderReady && instanceRef.current && (
           <div
             className={cn(
-              'flex flex-wrap gap-5 max-md:order-1 max-md:mb-8 md:absolute md:right-0 md:top-[-136px] md:justify-center',
+              'flex flex-wrap gap-5 max-md:order-1 max-md:mb-8 md:absolute md:top-[-136px] md:right-0 md:justify-center',
               navigationWrapperClassName
             )}
           >

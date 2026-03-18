@@ -13,10 +13,10 @@ export function CarouselNavigation({
   return (
     <div
       className={cn(
-        'inline-flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-accent-700 text-[1rem] text-white transition-colors hover:bg-primary md:h-[60px] md:w-[60px]',
+        'bg-accent-700 hover:bg-primary inline-flex h-12 w-12 cursor-pointer items-center justify-center rounded-full text-[1rem] text-white transition-colors md:h-[60px] md:w-[60px]',
         direction === 'prev' && 'left-10',
         direction === 'next' && 'right-10',
-        isDisabled && 'cursor-not-allowed  opacity-90',
+        isDisabled && 'cursor-not-allowed opacity-90',
 
         direction === 'prev' && navigationPrevBtnClassName,
         direction === 'next' && navigationNextBtnClassName

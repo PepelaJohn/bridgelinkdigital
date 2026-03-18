@@ -28,13 +28,13 @@ export function SectionHeading({
       {subtitle && (
         <span
           className={
-            'mb-[.625rem] block font-secondary text-base	 font-bold uppercase leading-[1.5] tracking-widest text-primary md:text-md'
+            'font-secondary text-primary md:text-md mb-[.625rem] block text-base leading-[1.5] font-bold tracking-widest uppercase'
           }
         >
           {subtitle}
         </span>
       )}
-      <h2 className="font-secondary text-xl font-bold leading-[1.25] text-accent-900 dark:text-white md:text-2xl">
+      <h2 className="font-secondary text-accent-900 text-xl leading-[1.25] font-bold md:text-2xl dark:text-white">
         {title}
       </h2>
       {description && (

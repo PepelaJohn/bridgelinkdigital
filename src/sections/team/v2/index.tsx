@@ -26,7 +26,7 @@ export function TeamSection() {
         </div>
 
         {cards && cards.length > 0 && (
-          <div className="grid grid-cols-1 gap-0 max-lg:gap-x-30px md:grid-cols-2 lg:grid-cols-1">
+          <div className="max-lg:gap-x-30px grid grid-cols-1 gap-0 md:grid-cols-2 lg:grid-cols-1">
             {cards.map((card, index) => (
               <TeamCard {...card} key={index} />
             ))}

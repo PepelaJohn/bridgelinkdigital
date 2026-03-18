@@ -13,6 +13,10 @@ export const menuItemsProps: HeaderProps['menuItems'] = [
     label: 'Projects',
     href: '/projects',
   },
+  {
+    label: 'Pricing',
+    href: '/pricing',
+  },
 
   {
     title: 'Pages',

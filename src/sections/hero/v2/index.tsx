@@ -46,8 +46,8 @@ export function HeroSection() {
   } = heroSectionData;
 
   return (
-    <section className="relative z-1 overflow-hidden pb-[140px] pt-[120px] lg:pt-[255px]">
-      <div className="absolute left-0 top-0 -z-1 hidden animate-float-bob-y opacity-20 lg:block">
+    <section className="relative z-1 overflow-hidden pt-[120px] pb-[140px] lg:pt-[255px]">
+      <div className="animate-float-bob-y absolute top-0 left-0 -z-1 hidden opacity-20 lg:block">
         <Image
           src="/assets/images/hero/shape-1.png"
           alt="hero shape 1"
@@ -58,7 +58,7 @@ export function HeroSection() {
           blurDataURL={blurDataUrl}
         />
       </div>
-      <div className="absolute right-0 top-[180px] -z-1 hidden animate-float-bob-y opacity-30 2xl:block">
+      <div className="animate-float-bob-y absolute top-[180px] right-0 -z-1 hidden opacity-30 2xl:block">
         <Image
           src="/assets/images/hero/shape-3.png"
           alt="hero shape 1"
@@ -70,7 +70,7 @@ export function HeroSection() {
         />
       </div>
       <Container>
-        <div className="grid gap-30px text-center text-accent-900 dark:text-white lg:grid-cols-12 xl:text-left">
+        <div className="gap-30px text-accent-900 grid text-center lg:grid-cols-12 xl:text-left dark:text-white">
           <div className="lg:col-span-6 lg:text-left xl:col-span-4 xl:[text-align:inherit]">
             <h1 className="h1 mb-[60px] lg:mb-[130px]">{title}</h1>
             <div className="flex items-center justify-center gap-4 lg:justify-start">
@@ -96,7 +96,7 @@ export function HeroSection() {
                   </li>
                 </ul>
               )}
-              <div className="ml-[17px] text-start text-accent-700 dark:text-white">
+              <div className="text-accent-700 ml-[17px] text-start dark:text-white">
                 <h2 className="h3">
                   <Counter
                     end={customerCounterInfo.count}
@@ -107,7 +107,7 @@ export function HeroSection() {
                 <p>{customerCounterInfo.about}</p>
               </div>
             </div>
-            <Button asChild className="mt-[67px] ">
+            <Button asChild className="mt-[67px]">
               <CustomLink href={ctaButton.href}>
                 <span className="relative z-1">{ctaButton.label}</span>
                 <svg
@@ -125,8 +125,8 @@ export function HeroSection() {
           </div>
           <div className="lg:col-span-6 xl:col-span-5">
             <div className="relative z-1 mx-auto block w-full max-w-[410px] pt-[85px] text-center">
-              <span className="absolute inset-0 -z-[1] rounded-t-[205px] bg-accent-700"></span>
-              <span className="absolute inset-0 -bottom-5 -right-5 z-[-2] rounded-b-5 rounded-t-[205px] [background:linear-gradient(180deg,rgba(185,18,2,0.00)_0%,#B91202_100%)]"></span>
+              <span className="bg-accent-700 absolute inset-0 -z-[1] rounded-t-[205px]"></span>
+              <span className="rounded-b-5 absolute inset-0 -right-5 -bottom-5 z-[-2] rounded-t-[205px] [background:linear-gradient(180deg,rgba(185,18,2,0.00)_0%,#B91202_100%)]"></span>
               <Image
                 src={imageLarge.src}
                 alt={imageLarge.alt}
@@ -139,7 +139,7 @@ export function HeroSection() {
             </div>
           </div>
           <div className="relative z-1 max-xl:mx-auto max-xl:mt-[75px] max-xl:max-w-[600px] lg:col-span-12 xl:col-span-3">
-            <div className="absolute left-[-85px] top-[-60px] -z-1 animate-rotate-me">
+            <div className="animate-rotate-me absolute top-[-60px] left-[-85px] -z-1">
               <Image
                 src="/assets/images/hero/shape-2.png"
                 alt="hero shape 2"
@@ -150,13 +150,13 @@ export function HeroSection() {
                 blurDataURL={blurDataUrl}
               />
             </div>
-            <p className="mb-[75px] text-accent-800 dark:text-body">
+            <p className="text-accent-800 dark:text-body mb-[75px]">
               {description}
             </p>
             <div
               className={cn(
                 // General
-                'relative z-1 mx-auto block w-full max-w-[220px] animate-float-bob-y',
+                'animate-float-bob-y relative z-1 mx-auto block w-full max-w-[220px]',
 
                 // After
                 'after:absolute after:inset-0 after:-z-1 dark:after:[background:linear-gradient(180deg,rgba(20,20,22,0.00)_33.51%,#141416_100%)]'

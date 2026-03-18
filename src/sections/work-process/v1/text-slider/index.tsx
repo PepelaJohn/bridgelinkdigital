@@ -3,7 +3,7 @@ import { WorkprocessSectionProps } from '..';
 export function TextSlider({ texts }: Pick<WorkprocessSectionProps, 'texts'>) {
   if (texts && texts.length > 0) {
     return (
-      <div className="flex animate-infinite-scroll items-center justify-center gap-8 md:justify-start lg:gap-[38px]">
+      <div className="animate-infinite-scroll flex items-center justify-center gap-8 md:justify-start lg:gap-[38px]">
         {texts.map((text, index) => (
           <div
             className="flex items-center justify-center gap-8 lg:gap-[38px]"
@@ -12,7 +12,7 @@ export function TextSlider({ texts }: Pick<WorkprocessSectionProps, 'texts'>) {
             <h3 className="h2 font-secondary text-accent-900 dark:text-white">
               {text}
             </h3>
-            <span className="text-xl text-primary lg:text-[50px]">
+            <span className="text-primary text-xl lg:text-[50px]">
               <svg
                 width="1em"
                 height="1em"

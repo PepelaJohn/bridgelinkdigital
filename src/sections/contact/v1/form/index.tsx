@@ -75,7 +75,7 @@ export function Form() {
       }) => (
         <form
           onSubmit={handleSubmit}
-          className="grid grid-cols-1 gap-x-30px gap-y-5 lg:grid-cols-2"
+          className="gap-x-30px grid grid-cols-1 gap-y-5 lg:grid-cols-2"
         >
           <div>
             <TextInput

@@ -88,14 +88,14 @@ export function OffCanvas({ menuItems }: Pick<HeaderProps, 'menuItems'>) {
         aria-label="Mobile hamburger menu"
         aria-controls="mobile-hamburger-menu"
         className={cn(
-          'group text-[2rem]/[1] text-primary transition-colors duration-300 hover:text-primary-light dark:text-primary-light dark:hover:text-primary'
+          'group text-primary hover:text-primary-light dark:text-primary-light dark:hover:text-primary text-[2rem]/[1] transition-colors duration-300'
         )}
       >
         <MdMenu className="icon-menu" id="mobile-hamburger-menu" />
       </SheetTrigger>
       <SheetContent
         side={'left'}
-        className="z-444 !max-w-[300px] border-none bg-white p-0 dark:bg-accent-900"
+        className="dark:bg-accent-900 z-444 !max-w-[300px] border-none bg-white p-0"
       >
         <ScrollArea
           viewportClassName={cn('h-[100vh]')}
@@ -103,9 +103,9 @@ export function OffCanvas({ menuItems }: Pick<HeaderProps, 'menuItems'>) {
         >
           <div className="grid gap-8">
             {/* Logo area  */}
-            <div className="sticky top-0 flex items-center justify-between bg-white/90 px-5 py-3 shadow-sm backdrop-blur-sm dark:bg-accent-900/90">
+            <div className="dark:bg-accent-900/90 sticky top-0 flex items-center justify-between bg-white/90 px-5 py-3 shadow-sm backdrop-blur-sm">
               <BrandLogo></BrandLogo>
-              <SheetClose className="data-[state=open]:bg-secondary rounded-sm text-accent-900 ring-offset-0 transition-colors hover:text-primary focus:outline-none focus:ring-0 focus:ring-offset-0 disabled:pointer-events-none dark:text-accent-100 dark:hover:text-primary-light">
+              <SheetClose className="data-[state=open]:bg-secondary text-accent-900 hover:text-primary dark:text-accent-100 dark:hover:text-primary-light rounded-sm ring-offset-0 transition-colors focus:ring-0 focus:ring-offset-0 focus:outline-none disabled:pointer-events-none">
                 <X className="h-8 w-8" />
                 <span className="sr-only">Close</span>
               </SheetClose>

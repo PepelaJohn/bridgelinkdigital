@@ -25,7 +25,7 @@ export default function Page() {
     <>
       <MainHeader version="1" />
       <Hero />
-      <ServiceSection className="!pb-0" {...serviceSectionData} />
+      <ServiceSection className="pb-0!" {...serviceSectionData} />
       <AboutSection />
       <CtaSection />
       <ProjectSection {...projectSectionData} />
