@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css';
 
 import SwiperCore from 'swiper';
-import Autoplay from "swiper"
+import Autoplay from 'swiper';
 import { useDomReady } from '@/src/hooks/dom-ready';
 import { WorkprocessCard } from '../card';
 import { WorkprocessSectionProps } from '..';

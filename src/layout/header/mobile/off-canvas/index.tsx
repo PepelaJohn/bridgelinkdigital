@@ -97,10 +97,7 @@ export function OffCanvas({ menuItems }: Pick<HeaderProps, 'menuItems'>) {
         side={'left'}
         className="dark:bg-accent-900 z-444 max-w-[300px]! border-none bg-white p-0"
       >
-        <ScrollArea
-          viewportClassName={cn('h-screen')}
-          scrollBarClassName="w-0"
-        >
+        <ScrollArea viewportClassName={cn('h-screen')} scrollBarClassName="w-0">
           <div className="grid gap-8">
             {/* Logo area  */}
             <div className="dark:bg-accent-900/90 sticky top-0 flex items-center justify-between bg-white/90 px-5 py-3 shadow-sm backdrop-blur-sm">

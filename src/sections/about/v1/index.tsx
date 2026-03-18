@@ -48,9 +48,7 @@ export function AboutSection() {
                 ))}
               </div>
             )}
-            {description && (
-              <p className="mt-5 md:mt-7.5">{description}</p>
-            )}
+            {description && <p className="mt-5 md:mt-7.5">{description}</p>}
           </div>
 
           {/* Images  */}

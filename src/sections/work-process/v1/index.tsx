@@ -11,8 +11,6 @@ export interface WorkprocessSectionProps {
 export function WorkprocessSection() {
   // const { texts, cards } = {text};
   return (
-    <section className="section-padding-primary overflow-hidden pt-0!">
-     
-    </section>
+    <section className="section-padding-primary overflow-hidden pt-0!"></section>
   );
 }

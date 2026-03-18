@@ -38,17 +38,17 @@
   --font-primary: var(--font-primary);
   --font-secondary: var(--font-secondary);
 
-  --color-primary: #FF5000;
-  --color-primary-light: #FFC199;
+  --color-primary: #ff5000;
+  --color-primary-light: #ffc199;
 
-  --color-accent-100: #F5F4FA;
-  --color-accent-200: #E3E3E3;
-  --color-accent-300: #FBF3F2;
-  --color-accent-700: #1A1A1C;
+  --color-accent-100: #f5f4fa;
+  --color-accent-200: #e3e3e3;
+  --color-accent-300: #fbf3f2;
+  --color-accent-700: #1a1a1c;
   --color-accent-800: #616670;
   --color-accent-900: #141416;
 
-  --color-body: #BEBEBE;
+  --color-body: #bebebe;
 
   --breakpoint-sm: 640px;
   --breakpoint-md: 768px;

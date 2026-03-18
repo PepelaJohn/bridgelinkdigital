@@ -1,7 +1,5 @@
 import mongoose from 'mongoose';
 
-
-
 interface GlobalMongoDB {
   conn: typeof mongoose | null;
   promise: Promise<typeof mongoose> | null;
@@ -20,7 +18,6 @@ if (!cached) {
 }
 
 export async function dbConnect() {
-
   const MONGODB_URI = process.env.MONGODB_URI!;
 
   if (!MONGODB_URI) {
